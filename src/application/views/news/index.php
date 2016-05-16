@@ -36,7 +36,7 @@ hr{
 </style>
 
 <hr/>
-<h1>All News</h1>
+<h1>News</h1>
 <?php foreach ($full_news as $news_item):?>  
 <div class="row news_item_row">
   <div class="col-sm-9 news_title_col">

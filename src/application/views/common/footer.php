@@ -29,7 +29,6 @@
     <li>·</li>
     <li><a href="<?php echo $base_path;?>recruit">採用情報</a></li>
     <li>·</li>
-    <li><a href="<?php echo $base_path;?>contact_participating">加盟店の皆様へ：各種変更手続き</a></li>
   </ul>
   <p>Copyright (C) 2007-2016 MERCHANT SUPPORT. All Rights Reserved.</p>
 </footer>

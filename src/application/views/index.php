@@ -27,54 +27,55 @@
 }
 
 
-
-#solutions{
-  margin-top: 10px;
-}
-
-
-
-#ecommerce, #store {
-  border-width: 3px;
+#solutions .item {
+  border-width: 1px;
   border-style: solid;
-  border-radius: 3px;
-  padding: 9px;
-  margin-bottom: 5px;
+  padding: 3px 10px;
+  margin-bottom: 10px;
+  border-color: #ccc;
 }
 
-#ecommerce{
-  border-color: #3FA3D1;
+
+#solutions .item h4 {
+  text-align: center;
 }
 
-#store{
-  border-color: #339933;
-}
-
-#ecommerce h4 a {
+#solutions .item h4 a {
   color: #3FA3D1;
   font-weight: bold;
 }
 
-#store h4 a {
-  color: #339933;
+
+#examples .item{
+  font-size: 1.3em;
   font-weight: bold;
-}
+  text-align: center;
 
-#ecommerce .p-body, #store .p-body {
-  min-height: 5em;
-}
-
-
-#news{
-  margin-top: 15px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 35px 10px;
   margin-bottom: 10px;
+  border-color: #ccc;
 }
 
-#news_h4{
-  padding: 5px 0;
+h3{
   color: rgb(120, 120, 120);
   font-weight: bold;
   font-size: 1.2em;
+}
+
+#links .item{
+  padding-bottom: 25px;
+}
+
+#news{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#news h3{
+  display: inline;
+  padding: 5px 0;
 }
 
 .more_news{
@@ -125,7 +126,6 @@
       <li class="active" data-target="#carousel-857271" data-slide-to="0"></li>
       <li data-target="#carousel-857271" data-slide-to="1"></li>
       <li data-target="#carousel-857271" data-slide-to="2"></li>
-      <li data-target="#carousel-857271" data-slide-to="3"></li>
     </ol>
 
     <div class="carousel-inner">
@@ -133,7 +133,6 @@
       <div class="item active">
         <img alt="Carousel Bootstrap First" src="<?php echo $cdn_path;?>images/bg1.jpg">
       </div>
-
 
       <div class="item">
         <img alt="Carousel Bootstrap Second" src="<?php echo $cdn_path;?>images/bg2.jpg">
@@ -143,9 +142,6 @@
         <img alt="Carousel Bootstrap Second" src="<?php echo $cdn_path;?>images/bg3.jpg">
       </div>
 
-      <div class="item">
-        <img alt="Carousel Bootstrap Second" src="<?php echo $cdn_path;?>images/bg4.jpg">
-      </div>
     </div>
 
     <a class="left carousel-control sysx" href="#carousel-857271" data-slide="prev">
@@ -158,55 +154,80 @@
 
   </div>
 
+  <h3></h3>
   <div class="row" id="solutions">
-    <div class="col-md-6">
-      <div id="ecommerce">
-        <div class="media">
-          <div class="media-left media-middle">
-            <a href="#"><img class="media-object" src="<?php echo $cdn_path;?>images/ecommerce.png"></a>
-          </div>
-
-          <div class="media-body media-middle">
-            <h4><a href="ecommerce">Eコマース向け早期決済サービス</a></h4>
-            <p><strong>7日後決済</strong></p>
-            <p class="p-body">最短7日後のクレジットカード決済を可能にしたEコマース向けオンライン決済代行システム。手続きも簡単で、ネットビジネスのチャンスが大きく広がります。
-            </p>
-          </div>
-        </div>
+    <div class="col-md-4">
+      <div class="item">
+        <h4><a href="ecommerce">早期決済サービス</a></h4>
+        <p class="p-body">『早期決済サービス』はクレジット加盟店向け決済代行サービスです。業界最速クラスの決済スピードで貴店のキャッシュフローをサポートいたします。
+        </p>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="item">
+        <h4><a href="ecommerce">WeChat決済</a></h4>
+        <p class="p-body">WeChat決済は中国人観光客に向けた独自の決済手段で、マーチャント・サポートは日本の公式パートナーとして貴店をお手伝いいたします。
+        </p>
       </div>
     </div>
 
-    <div class="col-md-6">
-      <div id="store">
-        <div class="media">
-          <div class="media-left media-middle">
-            <a href="#"><img class="media-object" src="<?php echo $cdn_path;?>images/store.png"></a>
-          </div>
-
-          <div class="media-body media-middle">
-            <h4><a href="store">店舗向け早期決済サービス</a></h4>
-            <p><strong>3日後決済</strong></p>
-            <p class="p-body">業界最速の3日後決済を実現したクレジットカード決済サービス。VISA、MasterCardによる安全・確実な決済システムにより、ビジネスチャンスを逃しません。
-            </p>
-          </div>
-        </div>
+    <div class="col-md-4">
+      <div class="item">
+        <h4><a href="store">PAX社独自端末機</a></h4>
+        <p class="p-body">世界第3位のシェア率を誇るPAX社のクレジット端末機です。
+  独自の仕入れルートを持つマーチャント・サポートは貴店のニーズにお応えいたします。
+        </p>
       </div>
     </div>
 
   </div>
 
-  <!-- news -->
-  <div id="news">
-    <span id="news_h4">新着情報</span>
-    <span class="more_news"><a href="<?php echo $base_path;?>news" title="more news">more</a></span>
-  </div>
- 
-  <?php foreach ($news_data as $news_item):?>  
-  <div class="row news_item_row">
-    <div class="col-sm-9 news_title_col">
-      <a href="<?php echo $base_path;?>news/show?id=<?php echo $news_item->id; ?>" target="_blank"><?php echo $news_item->title; ?></a>
+  <h3>導入事例</h3>
+  <div class="row" id="examples">
+    <div class="col-xs-6">
+      <div class="item">小売業</div>
     </div>
-    <div class="col-sm-3 news_date_col"><?php echo $news_item->date; ?></div>
+    <div class="col-xs-6">
+      <div class="item">飲食業</div>
+    </div>
+    <div class="col-xs-6">
+      <div class="item">美容業</div>
+    </div>
+    <div class="col-xs-6">
+      <div class="item">自動車業</div>
+    </div>
   </div>
-  <?php endforeach;?> 
+
+
+  <h3></h3>
+  <div class="row">
+    <div class="col-sm-3" id="links">
+      <div class="item"><a href="<?php echo $base_path;?>contact_participating"><img class="img-responsive" src="<?php echo $cdn_path;?>images/participation.gif"></a></div>
+      <div class="item"><a href="<?php echo $base_path;?>contact"><img class="img-responsive" src="<?php echo $cdn_path;?>images/contact.gif"></a></div>
+      <div class="item"><a href="http://www.mscc.co.jp/"><img class="img-responsive" src="<?php echo $cdn_path;?>images/mscc.gif"></a></div>     
+
+
+    </div>
+    
+    <div class="col-sm-9">
+      <!-- news -->
+      <div id="news">
+        <h3>新着情報</h3>
+        <span class="more_news"><a href="<?php echo $base_path;?>news" title="more news">more</a></span>
+      </div>
+     
+      <?php foreach ($news_data as $news_item):?>  
+      <div class="row news_item_row">
+        <div class="col-sm-9 news_title_col">
+          <a href="<?php echo $base_path;?>news/show?id=<?php echo $news_item->id; ?>" target="_blank"><?php echo $news_item->title; ?></a>
+        </div>
+        <div class="col-sm-3 news_date_col"><?php echo $news_item->date; ?></div>
+      </div>
+      <?php endforeach;?> 
+    
+    </div>
+    
+  </div>
+
 

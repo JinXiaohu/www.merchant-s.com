@@ -125,6 +125,12 @@ h2{
         </a>
       </td>
 
+      <td id="td_unionpay" class="hidden-xs">
+        <a href="http://jp.unionpay.com/" target="_blank">
+          <img src="<?php echo $cdn_path;?>images/logo_mastercard.gif" alt="銀聯">
+        </a>
+      </td>
+
       <td id="td_txt" class="hidden-xs">
         <p id="brand_tel">TEL:03-6279-0521</p>
         <p id="brand_time">営業時間　平日9:00～17:00<br>土・日・祝日　休み</p>     
@@ -137,9 +143,13 @@ h2{
       <li id="nav-home">
         <a href="<?php echo $base_path;?>" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">HOME</a>
       </li>
+      
+      <li id="nav-home">
+        <a href="<?php echo $base_path;?>news" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">NEWS</a>
+      </li>
 
       <li id="nav-service" class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service <span class="caret"></span></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">サービス <span class="caret"></span></a>
         <ul class="dropdown-menu dropdown-menu-wide">
           <li><a href="<?php echo $base_path;?>ecommerce">Eコマース向け早期決済サービス</a></li>
           <li><a href="<?php echo $base_path;?>ecommerce/merit">特徴・メリット</a></li>
@@ -159,12 +169,8 @@ h2{
         </ul>
       </li>
 
-      <li id="nav-home">
-        <a href="<?php echo $base_path;?>news" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">NEWS</a>
-      </li>
-      
       <li id="nav-pos">
-        <a href="<?php echo $base_path;?>store/guidance" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">取扱端末のご紹介</a>
+        <a href="<?php echo $base_path;?>store/guidance" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">決済端末</a>
       </li>
 
       <li id="nav-aboutus">
