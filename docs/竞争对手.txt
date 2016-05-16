@@ -1,0 +1,13 @@
+﻿竞争对手
+https://squareup.com/jp
+http://www.netstars.co.jp/
+http://www.zentoshin.com/
+http://www.billingjapan.co.jp/ja/Top.html
+
+
+Bootstrap文档:
+http://v3.bootcss.com/
+
+
+CodeIgniter文档：
+http://codeigniter.org.cn/user_guide/

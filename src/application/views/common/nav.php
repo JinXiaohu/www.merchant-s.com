@@ -54,7 +54,7 @@ h2{
   width: 65px;
 }
 #td_mastercard{
-  width: 40px;
+  width: 45px;
 }
 #td_txt{
   width: 210px;
@@ -127,7 +127,7 @@ h2{
 
       <td id="td_unionpay" class="hidden-xs">
         <a href="http://jp.unionpay.com/" target="_blank">
-          <img src="<?php echo $cdn_path;?>images/logo_mastercard.gif" alt="銀聯">
+          <img src="<?php echo $cdn_path;?>images/logo_unionpay.jpg" alt="銀聯">
         </a>
       </td>
 
@@ -144,33 +144,16 @@ h2{
         <a href="<?php echo $base_path;?>" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">HOME</a>
       </li>
       
-      <li id="nav-home">
+      <li id="nav-news">
         <a href="<?php echo $base_path;?>news" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">NEWS</a>
       </li>
 
-      <li id="nav-service" class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">サービス <span class="caret"></span></a>
-        <ul class="dropdown-menu dropdown-menu-wide">
-          <li><a href="<?php echo $base_path;?>ecommerce">Eコマース向け早期決済サービス</a></li>
-          <li><a href="<?php echo $base_path;?>ecommerce/merit">特徴・メリット</a></li>
-          <li><a href="<?php echo $base_path;?>ecommerce/service">サービスの仕組み</a></li>
-          <li><a href="<?php echo $base_path;?>ecommerce/flow">導入までの流れ</a></li>
-          <li><a href="<?php echo $base_path;?>ecommerce/price">料金表</a></li>
-          <li><a href="<?php echo $base_path;?>ecommerce/faq">FAQ</a></li>
-
-          <li role="separator" class="divider"></li>
-
-          <li><a href="<?php echo $base_path;?>store">店舗向け早期決済サービス</a></li>
-          <li><a href="<?php echo $base_path;?>store/merit">特徴・メリット</a></li>
-          <li><a href="<?php echo $base_path;?>store/service">サービスの仕組み</a></li>
-          <li><a href="<?php echo $base_path;?>store/flow">導入までの流れ</a></li>
-          <li><a href="<?php echo $base_path;?>store/voice">お客様の声（導入事例）</a></li>
-          <li><a href="<?php echo $base_path;?>store/faq">FAQ</a></li>
-        </ul>
+      <li id="nav-service">
+        <a href="<?php echo $base_path;?>service" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">サービス</a>
       </li>
 
       <li id="nav-pos">
-        <a href="<?php echo $base_path;?>store/guidance" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">決済端末</a>
+        <a href="<?php echo $base_path;?>pos" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">決済端末</a>
       </li>
 
       <li id="nav-aboutus">
