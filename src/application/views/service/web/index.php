@@ -1,8 +1,7 @@
 <style type="text/css">
-hr{
-  border-top: 2px solid #339933;
+.img_h1{
+  margin-bottom: 15px;
 }
-
 h2{
   border-color: #3FA3D1;
 }
@@ -42,14 +41,14 @@ h2{
 }
 </style>
 
-<h1>
+<div class="img_h1">
   <img class="img-responsive center-block"  src="<?php echo $cdn_path;?>images/ecommerce/visual_ecommerce01.jpg" alt="Eコマース向け早期決済サービス｜最短7日で売上代金お振込">
-</h1>
+</div>
 
 <p>
 最短7日後のクレジット決済を可能にしたEコマース向けオンライン決済代行システムです。低コストかつ安心・簡単な手続きでクレジットカード決済をご導入。個人で運営されているサイトでもご利用頂けます。インターネットビジネスの可能性が大きく広がります。
 </p>
-<h2>活用例</h2>
+<h2 class="first_h2">活用例</h2>
 
 <div class="row">
   <div class="col-sm-4">

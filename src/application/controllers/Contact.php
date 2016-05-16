@@ -28,7 +28,6 @@ class Contact extends BaseController
 
 	private function index_GET()
 	{
-		//$this->set_view_data('nav_id',  "contact");
 		$this->load_view('other/contact');
 	}
 

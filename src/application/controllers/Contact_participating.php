@@ -27,7 +27,6 @@ class Contact_participating extends BaseController
 
 	public function index_GET()
 	{
-		$this->set_view_data('nav_id', "contact");
 		$this->load_view('other/contact_participating');
 	}
 

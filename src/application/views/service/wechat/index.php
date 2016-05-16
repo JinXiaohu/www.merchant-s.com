@@ -52,7 +52,7 @@
 </div>
 
 
-<h2>サービスの特徴</h2>
+<h2 class="first_h2">サービスの特徴</h2>
 <div class="item">
   <div class="header">
     <span class="light">その1．店舗とお客様の間でQRコードをスキャンするだけで決済が可能に</span>

@@ -40,11 +40,11 @@
 </style>
 
 <h1>
-  <span>店舗向け早期決済サービス｜FAQ</span>
-  <span id="toggle">Toggle</span>
+  <span>店舗向け早期決済サービス｜FAQ<span id="toggle">Toggle</span></span>
+  
 </h1>
 
-<h2>クレジットカード基礎</h2>
+<h2 class="first_h2">クレジットカード基礎</h2>
 <ul class="qa">
   <li>
     <div class="question">

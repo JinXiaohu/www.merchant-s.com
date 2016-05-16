@@ -51,7 +51,7 @@
 </div>
 
 
-<h2>サービスの特徴</h2>
+<h2 class="first_h2">サービスの特徴</h2>
 <div class="item">
   <div class="header">
     <span class="light">その1．中国最大のモバイル広告+決済のプラットフォーム</span>

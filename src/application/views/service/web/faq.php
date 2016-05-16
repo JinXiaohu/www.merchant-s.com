@@ -49,7 +49,7 @@ h2{
   <span id="toggle">Toggle</span>
 </h1>
 
-<h2>Web上のクレジットカード決済について</h2>
+<h2 class="first_h2">Web上のクレジットカード決済について</h2>
 
 <ul class="qa">
   <li>

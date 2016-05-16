@@ -38,7 +38,7 @@ dt{
 </div>
 
 
-<h2>1お申込</h2>
+<h2 class="first_h2">1お申込</h2>
 <div>
   <dl>
     <dt>加盟店申込</dt>

@@ -25,23 +25,37 @@
   display: block;
   line-height: 30px; 
 }
+.slide .slide_link{
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  padding: 8px 18px;
+  border: solid white 1px;
+  border-radius: 6px;
+  color: white;
+}
+
+.slide .slide_link:hover{
+  color: #206020;
+  background-color: white;
+}
+
 
 
 #solutions .item {
-  border-width: 1px;
-  border-style: solid;
-  padding: 3px 10px;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  padding: 3px 15px;
   margin-bottom: 10px;
-  border-color: #ccc;
 }
 
 
 #solutions .item h4 {
   text-align: center;
+  font-size: 1.1em;
 }
 
 #solutions .item h4 a {
-  color: #3FA3D1;
   font-weight: bold;
 }
 
@@ -51,11 +65,10 @@
   font-weight: bold;
   text-align: center;
 
-  border-width: 1px;
-  border-style: solid;
+  border: solid 1px #ccc;
+  border-radius: 4px;
   padding: 35px 10px;
   margin-bottom: 10px;
-  border-color: #ccc;
 }
 
 h3{
@@ -131,15 +144,18 @@ h3{
     <div class="carousel-inner">
 
       <div class="item active">
-        <img alt="Carousel Bootstrap First" src="<?php echo $cdn_path;?>images/bg1.jpg">
+        <img src="<?php echo $cdn_path;?>images/bg1.jpg">
+        <a href="<?php echo $base_path;?>service/wechat" class="slide_link">More</a>
       </div>
 
       <div class="item">
-        <img alt="Carousel Bootstrap Second" src="<?php echo $cdn_path;?>images/bg2.jpg">
+        <img src="<?php echo $cdn_path;?>images/bg2.jpg">
+        <a href="<?php echo $base_path;?>service/store" class="slide_link">More</a>
       </div>
 
       <div class="item">
-        <img alt="Carousel Bootstrap Second" src="<?php echo $cdn_path;?>images/bg3.jpg">
+        <img src="<?php echo $cdn_path;?>images/bg3.jpg">
+        <a href="<?php echo $base_path;?>pos" class="slide_link">More</a>
       </div>
 
     </div>
@@ -231,3 +247,8 @@ h3{
   </div>
 
 
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.carousel').carousel();
+});
+</script>

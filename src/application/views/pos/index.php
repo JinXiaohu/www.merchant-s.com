@@ -34,192 +34,81 @@ h3{
 
   
 <hr/>
-<h1>店舗向け早期決済サービス　取扱端末のご案内</h1>
+<h1>決済端末</h1>
 
-<h2>INFOX</h2>
+<h2 class="first_h2">端末</h2>
+
+<h3>PAX-S80</h3>
+<div class="media">
+  <div class="media-left media-middle">
+    <div class="left_img">
+      <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/pos/pax_s80.png">
+    </div>
+  </div>
+  <div class="media-body media-middle">
+    <div>
+      <p><strong>PAX　S80</strong></p>
+      <p>・本体にピンパッド機能を搭載し省スペースを実現（準備中）</p>
+      <p>・店舗での回線変更にも対応可能なLAN・アナログ回線共用タイプ</p>
+    </div>
+  </div>
+</div>
+
+
+<h3>PAX-S90</h3>
+<div class="media">
+  <div class="media-left media-middle">
+    <div class="left_img">
+      <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/pos/pax_s90.png">
+    </div>
+  </div>
+  <div class="media-body media-middle">
+    <div>
+      <p><strong>PAX　S90</strong></p>
+      <p>・持ち運び可能なモバイルタイプ</p>
+      <p>・飲食店でのテーブルチェックや催事等の屋外での決済など様々な決済シーンに対応可能</p>
+    </div>
+  </div>
+</div>
+
 
 <h3>東芝TEC</h3>
 <div class="media">
-<div class="media-left media-middle">
-  <div class="left_img">
-    <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/store/guidance/guidance_img01.jpg">
+  <div class="media-left media-middle">
+    <div class="left_img">
+      <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/pos/tec_ct_4100.png">
+    </div>
+  </div>
+  <div class="media-body media-middle">
+    <div>
+      <p><strong>東芝TEC　CT-4100</strong></p>
+      <p>・業界初のフルタッチパネル</p>
+      <p>・POS連動や店舗内LANへの接続も可能</p>
+    </div>
   </div>
 </div>
 
-<div class="media-body media-middle">
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>通信機能</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    &lt;アナログ端末&gt;アナログ電話回線<br>
-    &lt;LAN端末&gt;LAN回線（10/100BASE-TX）
-    </div>
-  </div>
 
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>外形寸法</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    幅110ｍｍ×奥行き155ｍｍ×高さ119ｍｍ
-    </div>
-  </div>
-
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>表示部</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    ワイドスクリーン・カラー液晶
-    </div>
-  </div>
-</div>
-</div>
-
-
-<h3>NEC(モバイル)</h3>
+<h3>パナソニック</h3>
 <div class="media">
-<div class="media-left media-middle">
-  <div class="left_img">
-    <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/store/guidance/guidance_img03.gif">
+  <div class="media-left media-middle">
+    <div class="left_img">
+      <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/pos/jt_c16.png">
+    </div>
+  </div>
+  <div class="media-body media-middle">
+    <div>
+      <p><strong>Panasonic　JT-C16</strong></p>
+      <p>・店舗での回線変更にも対応可能なLAN・アナログ回線共用タイプ</p>
+      <p>・コンパクト＆スリム設計</p>
+    </div>
   </div>
 </div>
 
-<div class="media-body media-middle">
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>通信機能</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    FOMA
-    </div>
-  </div>
-
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>外形寸法</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    幅85ｍｍ×奥行き230ｍｍ×高さ44ｍｍ
-    </div>
-  </div>
-
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>重量</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    約465g
-    </div>
-  </div>
-
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>表示部</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    液晶カラーディスプレイ
-    </div>
-  </div>
-</div>
-</div>
 
 
-<h2>JETS</h2>
-
-<h3>パナソニック(Panasonic)</h3>
-<div class="media">
-<div class="media-left media-middle">
-  <div class="left_img">
-    <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/store/guidance/guidance_img04.gif">
-  </div>
-</div>
-
-<div class="media-body media-middle">
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>通信機能</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    電話回線、内線、ISND回線（Bch回線交換）
-    </div>
-  </div>
-
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>外形寸法</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    幅110ｍｍ×奥行き166ｍｍ×高さ118ｍｍ
-    </div>
-  </div>
-
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>重量</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    約860g
-    </div>
-  </div>
-
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>表示部</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    液晶表示（バックライト付き）
-    </div>
-  </div>
-</div>
-</div>
-
-<h3>オムロン(OMRON)</h3>
-<div class="media">
-<div class="media-left media-middle">
-  <div class="left_img">
-    <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/store/guidance/guidance_img05.jpg">
-  </div>
-</div>
-
-<div class="media-body">
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>通信機能</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    アナログ、ISDN回線（Bｃｈ、Dch対応）、LAN
-    </div>
-  </div>
-
-
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>外形寸法</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    幅139.5ｍｍ×奥行き246.5ｍｍ×高さ84ｍｍ
-    </div>
-  </div>
-
-
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>重量</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    約1200g
-    </div>
-  </div>
-
-  <div class="row item">
-    <div class="col-sm-3 col-md-2">
-      <strong>表示部</strong>
-    </div>
-    <div class="col-sm-9 col-md-10">
-    液晶表示(バックライト付き）
-    </div>
-  </div>
-</div>
-</div>
+<h2>センター</h2> 
+<div>ポイントサービス</div>
+<div>データ還元サービス</div>
+<div>Web明細</div>
+<div>アプリ自動更新</div>

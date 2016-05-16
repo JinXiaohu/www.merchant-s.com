@@ -33,14 +33,6 @@
   <p>Copyright (C) 2007-2016 MERCHANT SUPPORT. All Rights Reserved.</p>
 </footer>
 
-<script type="text/javascript">
-$(document).ready(function(){
-<?php if(isset($nav_id)):?>
-  $("#nav-<?php echo $nav_id; ?>").addClass('active');
-<?php endif;?>
-});
-</script>
-
 </div><!--end of container-->
 </body>
 </html>
