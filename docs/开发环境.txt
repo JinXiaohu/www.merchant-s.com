@@ -1,0 +1,3 @@
+﻿PC站使用域名pc.merchant-s.com , 手机站使用域名mb.merchant-s.com（参考src/application/config/config.php）
+可以通过修改C:\Windows\System32\drivers\etc\hosts文件，使用虚拟的域名。
+Web服务器的配置文件中要支持地址重写。

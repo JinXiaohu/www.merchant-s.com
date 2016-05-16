@@ -1,0 +1,178 @@
+<style type="text/css">
+body{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.container{
+  max-width: 900px;
+}
+
+
+a{
+  color: #206020;
+}
+a:hover, a:focus {
+  color: #194D19;
+}
+h1{
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 30px;
+}
+h2{
+  padding: 5px 10px;
+  margin-top: 20px;
+  border-radius: 2px;    
+  font-size: 1.1em;
+  font-weight: bold;
+  border-style: none none none solid;
+  border-color: #339933;
+  border-left-width: 10px;
+  box-shadow: rgb(200, 200, 200) 1px 1px 3px;
+  color: rgb(120, 120, 120);
+  background-color: rgb(250, 250, 250);
+  line-height: 25px;
+  
+  background: linear-gradient(to right, #fafafa 0%,#f0f0f0 100%);
+  background: -moz-linear-gradient(left, #fafafa 0%, #f0f0f0 100%);
+  background: -webkit-linear-gradient(left, #fafafa 0%,#f0f0f0 100%);
+  background: -o-linear-gradient(left, #fafafa 0%,#f0f0f0 100%);
+  background: -ms-linear-gradient(left, #fafafa 0%,#f0f0f0 100%);
+}
+.smallText{
+   font-size: 0.9em;
+}
+   
+
+#table_brand{
+  width: 100%;
+}
+#td_logo{
+  min-width: 280px;
+}
+#td_visa{
+  width: 65px;
+}
+#td_mastercard{
+  width: 40px;
+}
+#td_txt{
+  width: 210px;
+  text-align: right;
+}
+#brand_tel{
+  font-size: 23px;
+  margin-bottom: 3px;
+}
+#brand_time{
+  font-size: 0.9em;
+}
+
+
+
+#div_nav{
+  background-color: #fafafa;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+@media (max-width: 767px){
+  #div_nav{
+    padding-left:15px;
+    padding-right:15px;
+  }
+}
+
+#nav_bar{
+  float: none;
+}
+#nav_bar .menu{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+#nav_bar a{
+  color: rgb(128,128,128);
+}
+#nav_bar a:focus, #nav_bar a:hover{
+  color: #339933;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+}
+.dropdown-menu > li > a {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+</style>
+
+<body>
+<div class="container">
+  <table id="table_brand">
+    <tr>
+      <td id="td_logo">
+        <img src="<?php echo $cdn_path;?>images/logo.gif" alt="Merchant Support">
+      </td>
+
+      <td id="td_visa" class="hidden-xs">
+        <a href="http://www.visa-asia.com/ap/jp/" target="_blank">
+          <img src="<?php echo $cdn_path;?>images/logo_visa.gif" alt="VISA">
+        </a>
+      </td>
+
+      <td id="td_mastercard" class="hidden-xs">
+        <a href="http://www.mastercard.com/jp/" target="_blank">
+          <img src="<?php echo $cdn_path;?>images/logo_mastercard.gif" alt="MasterCard">
+        </a>
+      </td>
+
+      <td id="td_txt" class="hidden-xs">
+        <p id="brand_tel">TEL:03-6279-0521</p>
+        <p id="brand_time">営業時間　平日9:00～17:00<br>土・日・祝日　休み</p>     
+      </td>
+    </tr>
+  </table>
+
+  <div id="div_nav">
+    <ul class="nav navbar-nav" id="nav_bar">
+      <li id="nav-home">
+        <a href="<?php echo $base_path;?>" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">HOME</a>
+      </li>
+
+      <li id="nav-service" class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service <span class="caret"></span></a>
+        <ul class="dropdown-menu dropdown-menu-wide">
+          <li><a href="<?php echo $base_path;?>ecommerce">Eコマース向け早期決済サービス</a></li>
+          <li><a href="<?php echo $base_path;?>ecommerce/merit">特徴・メリット</a></li>
+          <li><a href="<?php echo $base_path;?>ecommerce/service">サービスの仕組み</a></li>
+          <li><a href="<?php echo $base_path;?>ecommerce/flow">導入までの流れ</a></li>
+          <li><a href="<?php echo $base_path;?>ecommerce/price">料金表</a></li>
+          <li><a href="<?php echo $base_path;?>ecommerce/faq">FAQ</a></li>
+
+          <li role="separator" class="divider"></li>
+
+          <li><a href="<?php echo $base_path;?>store">店舗向け早期決済サービス</a></li>
+          <li><a href="<?php echo $base_path;?>store/merit">特徴・メリット</a></li>
+          <li><a href="<?php echo $base_path;?>store/service">サービスの仕組み</a></li>
+          <li><a href="<?php echo $base_path;?>store/flow">導入までの流れ</a></li>
+          <li><a href="<?php echo $base_path;?>store/voice">お客様の声（導入事例）</a></li>
+          <li><a href="<?php echo $base_path;?>store/faq">FAQ</a></li>
+        </ul>
+      </li>
+
+      <li id="nav-home">
+        <a href="<?php echo $base_path;?>news" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">NEWS</a>
+      </li>
+      
+      <li id="nav-pos">
+        <a href="<?php echo $base_path;?>store/guidance" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">取扱端末のご紹介</a>
+      </li>
+
+      <li id="nav-aboutus">
+        <a href="<?php echo $base_path;?>aboutus" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">会社概要</a>
+      </li>
+
+      <li id="nav-contact">
+        <a href="<?php echo $base_path;?>contact" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">お問い合わせ</a>
+      </li>
+    </ul>
+  </div>
