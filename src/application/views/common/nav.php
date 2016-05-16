@@ -54,7 +54,7 @@ h2{
   width: 65px;
 }
 #td_mastercard{
-  width: 45px;
+  width: 50px;
 }
 #td_txt{
   width: 210px;

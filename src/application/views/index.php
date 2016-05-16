@@ -158,7 +158,7 @@ h3{
   <div class="row" id="solutions">
     <div class="col-md-4">
       <div class="item">
-        <h4><a href="ecommerce">早期決済サービス</a></h4>
+        <h4><a href="<?php echo $base_path;?>service/store">早期決済サービス</a></h4>
         <p class="p-body">『早期決済サービス』はクレジット加盟店向け決済代行サービスです。業界最速クラスの決済スピードで貴店のキャッシュフローをサポートいたします。
         </p>
       </div>
@@ -166,7 +166,7 @@ h3{
     
     <div class="col-md-4">
       <div class="item">
-        <h4><a href="ecommerce">WeChat決済</a></h4>
+        <h4><a href="<?php echo $base_path;?>service/wechat">WeChat決済</a></h4>
         <p class="p-body">WeChat決済は中国人観光客に向けた独自の決済手段で、マーチャント・サポートは日本の公式パートナーとして貴店をお手伝いいたします。
         </p>
       </div>
@@ -174,7 +174,7 @@ h3{
 
     <div class="col-md-4">
       <div class="item">
-        <h4><a href="store">PAX社独自端末機</a></h4>
+        <h4><a href="<?php echo $base_path;?>pos">PAX社独自端末機</a></h4>
         <p class="p-body">世界第3位のシェア率を誇るPAX社のクレジット端末機です。
   独自の仕入れルートを持つマーチャント・サポートは貴店のニーズにお応えいたします。
         </p>
@@ -186,16 +186,16 @@ h3{
   <h3>導入事例</h3>
   <div class="row" id="examples">
     <div class="col-xs-6">
-      <div class="item">小売業</div>
+      <div class="item"><a href="<?php echo $base_path;?>cases/retail">小売業</a></div>
     </div>
     <div class="col-xs-6">
-      <div class="item">飲食業</div>
+      <div class="item"><a href="<?php echo $base_path;?>cases/catering">飲食業</a></div>
     </div>
     <div class="col-xs-6">
-      <div class="item">美容業</div>
+      <div class="item"><a href="<?php echo $base_path;?>cases/beauty">美容業</a></div>
     </div>
     <div class="col-xs-6">
-      <div class="item">自動車業</div>
+      <div class="item"><a href="<?php echo $base_path;?>cases/automobile">自動車業</a></div>
     </div>
   </div>
 
