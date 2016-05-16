@@ -4,7 +4,7 @@ body{
   margin-bottom: 15px;
 }
 .container{
-  max-width: 900px;
+  max-width: 890px;
 }
 
 
@@ -17,11 +17,11 @@ a:hover, a:focus {
 h1{
   font-size: 1.4em;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 h2{
   padding: 5px 10px;
-  margin-top: 20px;
+  margin-top: 40px;
   border-radius: 2px;    
   font-size: 1.1em;
   font-weight: bold;
@@ -38,6 +38,9 @@ h2{
   background: -webkit-linear-gradient(left, #fafafa 0%,#f0f0f0 100%);
   background: -o-linear-gradient(left, #fafafa 0%,#f0f0f0 100%);
   background: -ms-linear-gradient(left, #fafafa 0%,#f0f0f0 100%);
+}
+h2.first_h2{
+  margin-top: 15px;
 }
 .smallText{
    font-size: 0.9em;
@@ -56,8 +59,11 @@ h2{
 #td_mastercard{
   width: 50px;
 }
+#td_unionpay{
+  width: 45px;
+}
 #td_txt{
-  width: 210px;
+  width: 200px;
   text-align: right;
 }
 #brand_tel{
@@ -78,8 +84,17 @@ h2{
 }
 @media (max-width: 767px){
   #div_nav{
+    margin-top:15px;
     padding-left:15px;
     padding-right:15px;
+  }
+  .nav > li{
+    float: left;
+    width: 33.33333333%;
+    padding: 10px 2px 10px 8px;
+  }
+  .navbar-nav > li > a {
+    padding:  0;
   }
 }
 
@@ -102,7 +117,9 @@ h2{
 .dropdown-menu > li > a {
   padding-top: 6px;
   padding-bottom: 6px;
+
 }
+
 </style>
 
 <body>
