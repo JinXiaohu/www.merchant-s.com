@@ -48,6 +48,9 @@ input[type="text"],input[type="password"],input[type="file"]{
   height: 30px;
 }
 
+select{
+  height: 30px;
+}
 
 button{
   background-color: #339933;
@@ -88,6 +91,11 @@ button{
       </div>
     </div>
 
+    <div class="tr">
+      <div class="th">Publish Date</div>
+      <div class="td"><input type="text" name="date" placeholder="填写日期，作为新闻的发布日期，格式是2016-05-17；如果不填，将使用今天作为新闻的发布日期"></div>
+    </div>
+
     <div class="tr" id="userfile">
       <div class="th">Upload</div>
       <div class="td">
@@ -98,7 +106,7 @@ button{
     <div class="tr" id="content">
       <div class="th">Edit</div>
       <div class="td">
-      <textarea rows="10" name="content"></textarea></div>
+      <textarea rows="20" name="content" placeholder="write html code here"></textarea></div>
     </div>
 
     <?php if(isset($error)): ?>

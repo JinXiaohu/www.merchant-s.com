@@ -44,15 +44,15 @@ class News extends BaseController
 	public function show()
 	{
 		$id	 = trim(urldecode($this->input->get("id")));
-		$file = $this->find_news_file($id);
+		$file_type = $this->find_news_file_type($id);
 
-		if($file == "html")
+		if($file_type == "html")
 		{
 			$html_path = $this->get_web_path("$id.html");
 			$this->set_view_data('html_path', $html_path);
 			$this->load_view('news/show');
 		}
-		else if($file == "pdf")
+		else if($file_type == "pdf")
 		{
 			redirect($this->get_web_path("$id.pdf"));
 		}
@@ -62,8 +62,8 @@ class News extends BaseController
 		}
 	}
 	
-	//根据新闻的id，从文件系统中查找出该新闻的文件
-	private function find_news_file($id)
+	//根据新闻的id，从文件系统中查找出该新闻的文件类型
+	private function find_news_file_type($id)
 	{
 		if(file_exists($this->get_system_path("$id.html")))
 		{
@@ -197,21 +197,17 @@ class News extends BaseController
 		}
 		else
 		{
-			$news        = new NewsInfo();
-			$news->id    = $id;
-			$news->title = $this->input->post("title");
-			$news->date  = date("Y-m-d");
-			return $news;		 
+			return $this->create_newsInfo($id);	 
 		}
 	}
 
 
+	//将管理员提交的文本内容作为html代码，写入到一个html文件中，作为一条新闻。
+	//返回一个NewsInfo对象。如果创建失败，返回null
 	private function create_news_by_edit()
 	{
 		$id       = date("YmdHis");
 		$fullname = $this->get_system_path("$id"). ".". $this->input->post("type");
-		
-		$title    = $this->input->post("title");
 		$content  = $this->input->post("content");
 		
 		if(file_put_contents($fullname, $content) === false)
@@ -220,13 +216,27 @@ class News extends BaseController
 			return null;
 		}
 
-		$news = new NewsInfo();
-		$news->id = $id;
-		$news->title = $title;
-		$news->date = date("Y-m-d");
-		return $news;
+		return $this->create_newsInfo($id);
 	}
 
+
+	private function create_newsInfo($id)
+	{
+		$news        = new NewsInfo();
+		$news->id    = $id;
+		$news->title = $this->input->post("title");
+
+		if($this->input->post("date"))
+		{
+			$news->date  = $this->input->post("date");
+		}
+		else
+		{
+			$news->date  = date("Y-m-d");
+		}
+		
+		return $news;		 		
+	}
 
 
 	//////////////////////////////////////////////////////////
@@ -236,23 +246,26 @@ class News extends BaseController
 		$this->logined_first();
 		$id = trim(urldecode($this->input->post("id")));
 		
-		$file = $this->find_news_file($id);
-		if($file == null)
+		$file_type = $this->find_news_file_type($id);
+		if($file_type == null)
 		{
 			show_404();
 			return;
 		}
-		
+
 		$news_manager = new NewsManager();
 		$news_manager->delete_news($id);
+
+		$file_name = $this->get_system_path($id. ".". $file_type);
 		
-		if(unlink($this->get_system_path($file)))
+		if(unlink($file_name))
 		{
 			redirect($this->base_path. "news");
 		}
 		else
 		{
 			redirect($this->base_path. "news");
+			//show_500();
 		}
 	}
 	
