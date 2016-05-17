@@ -86,8 +86,7 @@ h1 img{
     <ul>
       <li>Beijing Hi Sunsray Information Technology Limited（通信関連ソフト開発）</li>
       <li>Hunan Hi Sun Mobile Pay IT Limited（モバイル決済）</li>
-      <li>Beijing Hi Sun Advanced Business Solutions Information Technology </li>
-      <li>Limited（金融機関向けソフト開発および設備販売）</li>
+      <li>Beijing Hi Sun Advanced Business Solutions Information Technology Limited（金融機関向けソフト開発および設備販売）</li>
       <li>Hangzhou PAX Electricity Technology Limited（電力メーター製造販売）</li>
       <li>PAX Technology Limited（クレジットカード端末製造販売）</li>
     </ul>

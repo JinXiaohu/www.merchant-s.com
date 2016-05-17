@@ -5,9 +5,11 @@ require_once('base/BaseController.php');
 
 
 class Aboutus extends BaseController 
-{
+{	
+
 	public function index()
 	{
+		$this->set_view_data('nav_id',  "nav-aboutus");
 		$this->set_view_data('title',   "会社概要 | ". $this->config->item('site_name'));
 		$this->load_view('other/aboutus');
 	}

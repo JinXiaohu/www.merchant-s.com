@@ -4,8 +4,8 @@
   margin-top: 20px;
 }
 .bs-docs-footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     margin-top: 30px;
     color: #767676;
     text-align: center;
@@ -32,6 +32,10 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
+  <?php if(isset($nav_id)):?>
+  $("#<?php echo $nav_id; ?>").addClass('active');
+  <?php endif;?>
+
   $('h2:eq(0)').addClass("first-h2");
 });
 </script>

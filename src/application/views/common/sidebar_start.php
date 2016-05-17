@@ -65,8 +65,7 @@ h1{
       <li id="wechat" class="level1"><a href="<?php echo $base_path;?>service/wechat">WeChat決済</a></li>
       <li id="wechat_merit" class="level2"><a href="<?php echo $base_path;?>service/wechat_merit">特徴・メリット</a></li> 
 
-      <li id="wechatad" class="level1"><a href="<?php echo $base_path;?>service/wechatad">WeChat広告<br/>
-      プロモーション (公式アカウント作成)</a></li>
+      <li id="wechatad" class="level1"><a href="<?php echo $base_path;?>service/wechatad">WeChat広告<br/>プロモーション (公式アカウント作成)</a></li>
       <li id="wechatad_merit" class="level2"><a href="<?php echo $base_path;?>service/wechatad_merit">特徴・メリット</a></li>
     </ul>
   </div>

@@ -9,6 +9,7 @@ class Home extends BaseController
 	public function index()
 	{
 		$this->set_view_data('title', $this->config->item('site_name'));
+		$this->set_view_data('nav_id',  "nav-home");
 
 		require_once(APPPATH. "libraries/NewsManager.class.php");
 		$news = new NewsManager();

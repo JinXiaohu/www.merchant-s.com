@@ -6,6 +6,11 @@ require_once('base/BaseController.php');
 
 class Service extends BaseController 
 {
+	function __construct()
+	{
+		parent::__construct();
+		$this->set_view_data('nav_id',  "nav-service");
+	}
 
 	protected function load_pc_template($view_name)
 	{
@@ -35,7 +40,7 @@ class Service extends BaseController
 	public function store()
 	{
 		$this->set_view_data('title',   "クレジットカード決済（早期）＜店舗＞ | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "store");
+		$this->set_view_data('side_menu_id',  "store");
 		$this->load_view('service/store/index');
 	}
 
@@ -43,28 +48,28 @@ class Service extends BaseController
 	public function store_merit()
 	{
 		$this->set_view_data('title',   "特徴・メリット | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "store_merit");
+		$this->set_view_data('side_menu_id',  "store_merit");
 		$this->load_view('service/store/merit');
 	}
 
 	public function store_service()
 	{
 		$this->set_view_data('title',   "サービスの仕組み | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "store_service");
+		$this->set_view_data('side_menu_id',  "store_service");
 		$this->load_view('service/store/service');
 	}
 
 	public function store_flow()
 	{
 		$this->set_view_data('title',   "導入までの流れ | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "store_flow");
+		$this->set_view_data('side_menu_id',  "store_flow");
 		$this->load_view('service/store/flow');
 	}
 
 	public function store_faq()
 	{
 		$this->set_view_data('title',   "FAQ | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "store_faq");
+		$this->set_view_data('side_menu_id',  "store_faq");
 		$this->load_view('service/store/faq');
 	}
 	
@@ -73,42 +78,42 @@ class Service extends BaseController
 	public function web()
 	{
 		$this->set_view_data('title',   "Eコマース向け早期決済サービス | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "web");
+		$this->set_view_data('side_menu_id',  "web");
 		$this->load_view('service/web/index');
 	}
 	
 	public function web_merit()
 	{
 		$this->set_view_data('title',   "特徴・メリット | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "web_merit");
+		$this->set_view_data('side_menu_id',  "web_merit");
 		$this->load_view('service/web/merit');
 	}
 	
 	public function web_service()
 	{
 		$this->set_view_data('title',   "サービスの仕組み | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "web_service");
+		$this->set_view_data('side_menu_id',  "web_service");
 		$this->load_view('service/web/service');
 	}
 	
 	public function web_flow()
 	{
 		$this->set_view_data('title',   "導入までの流れ | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "web_flow");
+		$this->set_view_data('side_menu_id',  "web_flow");
 		$this->load_view('service/web/flow');
 	}
 	
 	public function web_price()
 	{
 		$this->set_view_data('title',   "料金表 | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "web_price");
+		$this->set_view_data('side_menu_id',  "web_price");
 		$this->load_view('service/web/price');
 	}
 	
 	public function web_faq()
 	{
 		$this->set_view_data('title',   "FAQ | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "web_faq");
+		$this->set_view_data('side_menu_id',  "web_faq");
 		$this->load_view('service/web/faq');
 	}
 
@@ -117,28 +122,28 @@ class Service extends BaseController
 	public function wechat()
 	{
 		$this->set_view_data('title',   "WeChat決済サービス | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "wechat");
+		$this->set_view_data('side_menu_id',  "wechat");
 		$this->load_view('service/wechat/index');
 	}
 
 	public function wechat_merit()
 	{
 		$this->set_view_data('title',   "特徴・メリット | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "wechat_merit");
+		$this->set_view_data('side_menu_id',  "wechat_merit");
 		$this->load_view('service/wechat/merit');
 	}
 	
 	public function wechatad()
 	{
 		$this->set_view_data('title',   "WeChat決済サービス | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "wechatad");
+		$this->set_view_data('side_menu_id',  "wechatad");
 		$this->load_view('service/wechatad/index');
 	}
 
 	public function wechatad_merit()
 	{
 		$this->set_view_data('title',   "特徴・メリット | ". $this->config->item('site_name'));
-		$this->set_view_data('nav_id',  "wechatad_merit");
+		$this->set_view_data('side_menu_id',  "wechatad_merit");
 		$this->load_view('service/wechatad/merit');
 	}
 	

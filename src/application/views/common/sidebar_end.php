@@ -3,8 +3,8 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-<?php if(isset($nav_id)):?>
-  $("#<?php echo $nav_id; ?>").addClass('active');
+<?php if(isset($side_menu_id)):?>
+  $("#<?php echo $side_menu_id; ?>").addClass('active');
 <?php endif;?>
 });
 </script>

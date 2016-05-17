@@ -74,10 +74,7 @@ h2{
   font-size: 0.9em;
 }
 
-
-
 #div_nav{
-  background-color: #fafafa;
   border-radius: 4px;
   margin-top: 5px;
   margin-bottom: 12px;
@@ -98,26 +95,29 @@ h2{
   }
 }
 
-#nav_bar{
+#id_navbar{
   float: none;
 }
-#nav_bar .menu{
+#id_navbar .menu{
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
 }
-#nav_bar a{
+#id_navbar a{
   color: rgb(128,128,128);
 }
-#nav_bar a:focus, #nav_bar a:hover{
+#id_navbar a:focus, #id_navbar a:hover{
   color: #339933;
-  background-color: #f4f4f4;
-  border-radius: 4px;
+  background-color: #f8f8f8;
+  border-radius: 2px;
 }
-.dropdown-menu > li > a {
-  padding-top: 6px;
-  padding-bottom: 6px;
-
+#id_navbar .active a{
+  color: #339933;
+  font-weight: bold;
+}
+#id_navbar .active a:focus, #id_navbar .active a:hover{
+  color: #339933;
+  font-weight: bold;
 }
 
 </style>
@@ -156,7 +156,7 @@ h2{
   </table>
 
   <div id="div_nav">
-    <ul class="nav navbar-nav" id="nav_bar">
+    <ul class="nav navbar-nav" id="id_navbar">
       <li id="nav-home">
         <a href="<?php echo $base_path;?>" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">HOME</a>
       </li>

@@ -6,6 +6,13 @@ require_once('base/BaseController.php');
 
 class Contact_participating extends BaseController 
 {
+	
+	function __construct()
+	{
+		parent::__construct();
+		$this->set_view_data('nav_id',  "nav-contact");
+	}
+
 	public function thanks()
 	{
 		$this->set_view_data('title',   "店舗情報変更に関するお手続き | ". $this->config->item('site_name'));

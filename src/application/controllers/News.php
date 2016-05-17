@@ -11,6 +11,7 @@ class News extends BaseController
 		parent::__construct();
 
 		$this->set_view_data('title',	 "News | ". $this->config->item('site_name'));
+		$this->set_view_data('nav_id',  "nav-news");
 		$this->load->helper('url');
 		require_once(APPPATH. "libraries/NewsManager.class.php");
 	}
