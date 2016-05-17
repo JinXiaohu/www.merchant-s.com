@@ -120,12 +120,26 @@ class Service extends BaseController
 		$this->set_view_data('nav_id',  "wechat");
 		$this->load_view('service/wechat/index');
 	}
+
+	public function wechat_merit()
+	{
+		$this->set_view_data('title',   "特徴・メリット | ". $this->config->item('site_name'));
+		$this->set_view_data('nav_id',  "wechat_merit");
+		$this->load_view('service/wechat/merit');
+	}
 	
 	public function wechatad()
 	{
 		$this->set_view_data('title',   "WeChat決済サービス | ". $this->config->item('site_name'));
 		$this->set_view_data('nav_id',  "wechatad");
 		$this->load_view('service/wechatad/index');
+	}
+
+	public function wechatad_merit()
+	{
+		$this->set_view_data('title',   "特徴・メリット | ". $this->config->item('site_name'));
+		$this->set_view_data('nav_id',  "wechatad_merit");
+		$this->load_view('service/wechatad/merit');
 	}
 	
 	

@@ -17,27 +17,44 @@ h2{
 .item{
   margin-bottom: 25px;
 }
-.header{
+.item_header{
   border-bottom-style: dotted;
   border-bottom-width: 1px;
   border-bottom-color: rgb(180,180,180);
   margin-bottom: 10px;
   padding: 5px 0;
 }
-.header .light{
+.item_header .text{
   color: #3FA3D1;
   font-weight: bold;
 }
-.header .details{
-  text-align: right;
-  float: right;
+.item_header .details{
+  text-align: center;
   background-color: #3FA3D1;
-  padding: 1px 7px;
+  padding: 3px 7px;
   border-radius: 4px;
+  width: 90px;
 }
-.header .details a{
+.item_header .details a{
   color: white;
   font-size: 0.9em;
+}
+
+@media (min-width: 768px){
+  ._table{
+    display: table;
+    width: 100%;
+  }
+  ._tbody{
+    display: table-row-group;
+  }
+  ._tr{
+    display: table-row;
+  }
+  ._td{
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 </style>
 
@@ -92,10 +109,15 @@ h2{
 
 <h2>サービスの特徴</h2>
 <div class="item">
-  <div class="header">
-    <span class="light">その1．最短7日のスピード決済を実現</span>
-    <span class="details"><a href="<?php echo $base_path;?>ecommerce/merit#merit01">詳細はこちら</a></span>
+  <div class="item_header _table">
+    <div class="_tbody">
+      <div class="_tr">
+        <div class="text _td">その1．最短7日のスピード決済を実現</div>
+        <div class="details _td"><a href="<?php echo $base_path;?>service/web_merit#merit01">詳細はこちら</a></div>
+      </div>
+    </div>
   </div>
+
   <div>
   代金のお振込は決済日から最短で7日後。オンライン決済でありながら、限りなく現金決済に近いキャッシュフローを実現することで、ビジネスチャンスがさらに広がります。
   </div>
@@ -103,10 +125,15 @@ h2{
 
 
 <div class="item">
-  <div class="header">
-    <span class="light">その2．高い安全性を確保する3-Dセキュアを導入</span>
-    <span class="details"><a href="<?php echo $base_path;?>ecommerce/merit#merit02">詳細はこちら</a></span>
+  <div class="item_header _table">
+    <div class="_tbody">
+      <div class="_tr">
+        <div class="text _td">その2．高い安全性を確保する3-Dセキュアを導入</div>
+        <div class="details _td"><a href="<?php echo $base_path;?>service/web_merit#merit02">詳細はこちら</a></div>
+      </div>
+    </div>
   </div>
+
   <div>
   カード番号認証と会員本人認証を同時に行う3-Dセキュアの導入により、クレジットカードの不正利用を未然に防止。オンライン決済のリスク回避に大きく貢献します。
   </div>
@@ -114,10 +141,15 @@ h2{
 
 
 <div class="item">
-  <div class="header">
-    <span class="light">その3．信頼のVISA、MasterCardに対応</span>
-    <span class="details"><a href="<?php echo $base_path;?>/ecommerce/merit#merit03">詳細はこちら</a></span>
+  <div class="item_header _table">
+    <div class="_tbody">
+      <div class="_tr">
+        <div class="text _td">その3．信頼のVISA、MasterCardに対応</div>
+        <div class="details _td"><a href="<?php echo $base_path;?>service/web_merit#merit03">詳細はこちら</a></div>
+      </div>
+    </div>
   </div>
+
   <div>
   世界各国で高い信頼を集めるVISA、MasterCardによるオンライン決済に対応。世界シェアを誇る2大ブランドがサイトの信頼性を高め、ビジネスの拡大を強力にバックアップします。
   </div>

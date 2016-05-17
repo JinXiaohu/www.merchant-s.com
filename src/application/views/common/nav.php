@@ -15,9 +15,9 @@ a:hover, a:focus {
   color: #194D19;
 }
 h1{
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: bold;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 h2{
   padding: 5px 10px;

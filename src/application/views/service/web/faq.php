@@ -1,27 +1,44 @@
 <style type="text/css">
+@media (min-width: 768px){
+  ._table{
+    display: table;
+    width: 100%;
+  }
+  ._tbody{
+    display: table-row-group;
+  }
+  ._tr{
+    display: table-row;
+  }
+  ._td{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+#toggle{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90px;
+  text-align: center;
+  background-color: #3FA3D1;
+  color: white;
+  font-size: 0.9em;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: default;
+}
 
 h2{
   border-color: #3FA3D1;
 }
-#toggle{
-  float: right;
-  background-color: #3FA3D1;
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 8px 15px;
-  border-radius: 8px;
-  cursor: default;
-}
-
 .qa{
   list-style: none;
   padding-left: 0;
 }
 .qa li{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px dotted rgb(225,225,225);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .question, .answer{
   padding-left: 8px;
@@ -34,20 +51,24 @@ h2{
   color: #3FA3D1;
   font-weight: bold;
   padding-top: 10px;
-  padding-bottom: 3px;
+  padding-bottom: 6px;
 }
 .answer{
   border-radius: 0 0 6px 6px;
-  padding-top: 3px;
+  padding-top: 0;
   padding-bottom: 10px;
 }
 </style>
 
 
-<h1>
-  <span>Eコマース向け早期決済サービス｜FAQ</span>
-  <span id="toggle">Toggle</span>
-</h1>
+<div class="_table">
+  <div class="_tbody">
+    <div class="_tr">
+      <h1 class="_td">Eコマース向け早期決済サービス｜FAQ</h1>
+      <div class="_td" id="toggle">toggle</div>
+    </div>
+  </div>
+</div>
 
 <h2 class="first_h2">Web上のクレジットカード決済について</h2>
 

@@ -16,27 +16,44 @@
 .item{
   margin-bottom: 25px;
 }
-.header{
+.item_header{
   border-bottom-style: dotted;
   border-bottom-width: 1px;
   border-bottom-color: rgb(180,180,180);
   margin-bottom: 10px;
   padding: 5px 0;
 }
-.header .light{
+.item_header .text{
   color: #339933;
   font-weight: bold;
 }
-.header .details{
-  text-align: right;
-  float: right;
+.item_header .details{
+  text-align: center;
   background-color: #339933;
-  padding: 1px 7px;
+  padding: 3px 7px;
   border-radius: 4px;
+  width: 90px;
 }
-.header .details a{
+.item_header .details a{
   color: white;
   font-size: 0.9em;
+}
+
+@media (min-width: 768px){
+  ._table{
+    display: table;
+    width: 100%;
+  }
+  ._tbody{
+    display: table-row-group;
+  }
+  ._tr{
+    display: table-row;
+  }
+  ._td{
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 </style>
 
@@ -54,10 +71,15 @@
 
 <h2 class="first_h2">サービスの特徴</h2>
 <div class="item">
-  <div class="header">
-    <span class="light">その1．店舗とお客様の間でQRコードをスキャンするだけで決済が可能に</span>
-    <span class="details"><a href="<?php echo $base_path;?>service/webchat#merit01">詳細はこちら</a></span>
+  <div class="item_header _table">
+    <div class="_tbody">
+      <div class="_tr">
+        <div class="text _td">その1．店舗とお客様の間でQRコードをスキャンするだけで決済が可能に</div>
+        <div class="details _td"><a href="<?php echo $base_path;?>service/wechat_merit#merit01">詳細はこちら</a></div>
+      </div>
+    </div>
   </div>
+
   <div>
   決済アプリを無料でダウンロードするだけで、クラウド上で簡単に
 売上を管理できます。
@@ -66,10 +88,15 @@
 
 
 <div class="item">
-  <div class="header">
-    <span class="light">その2．購買意欲を刺激する様々なキャンペーンを展開</span>
-    <span class="details"><a href="<?php echo $base_path;?>service/webchat#merit02">詳細はこちら</a></span>
+  <div class="item_header _table">
+    <div class="_tbody">
+      <div class="_tr">
+        <div class="text _td">その2．購買意欲を刺激する様々なキャンペーンを展開</div>
+        <div class="details _td"><a href="<?php echo $base_path;?>service/wechat_merit#merit02">詳細はこちら</a></div>
+      </div>
+    </div>
   </div>
+
   <div>
   WeChatの入ったスマートホンを振る動作をする「WeChatシェイク」をするだけで
 お年玉やクーポン券などをユーザーへ配信し、購買意欲を喚起します。

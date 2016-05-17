@@ -16,28 +16,47 @@
 .item{
   margin-bottom: 25px;
 }
-.header{
+
+.item_header{
   border-bottom-style: dotted;
   border-bottom-width: 1px;
   border-bottom-color: rgb(180,180,180);
   margin-bottom: 10px;
   padding: 5px 0;
 }
-.header .light{
+.item_header .text{
   color: #339933;
   font-weight: bold;
 }
-.header .details{
-  text-align: right;
-  float: right;
+.item_header .details{
+  text-align: center;
   background-color: #339933;
-  padding: 1px 7px;
+  padding: 3px 7px;
   border-radius: 4px;
+  width: 90px;
 }
-.header .details a{
+.item_header .details a{
   color: white;
   font-size: 0.9em;
 }
+
+@media (min-width: 768px){
+  ._table{
+    display: table;
+    width: 100%;
+  }
+  ._tbody{
+    display: table-row-group;
+  }
+  ._tr{
+    display: table-row;
+  }
+  ._td{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
 </style>
 
 <div class="img_h1">
@@ -51,10 +70,15 @@
 
 <h2 class="first_h2">サービスの特徴</h2>
 <div class="item">
-  <div class="header">
-    <span class="light">その1．業界最速の3日後決済を実現</span>
-    <span class="details"><a href="<?php echo $base_path;?>store/merit#merit01">詳細はこちら</a></span>
+  <div class="item_header _table">
+    <div class="_tbody">
+      <div class="_tr">
+        <div class="text _td">その1．業界最速の3日後決済を実現</div>
+        <div class="details _td"><a href="<?php echo $base_path;?>service/store_merit#merit01">詳細はこちら</a></div>
+      </div>
+    </div>
   </div>
+
   <div>
   カード決済による売上代金は、売上計上3日後（銀行営業日）に指定口座にお振込。円滑なキャッシュフローが実現し、現金決済並の資金運用が可能になります。
   </div>
@@ -62,21 +86,32 @@
 
 
 <div class="item">
-  <div class="header">
-    <span class="light">その2．信頼のVISA、MasterCardに対応</span>
-    <span class="details"><a href="<?php echo $base_path;?>store/merit#merit02">詳細はこちら</a></span>
+  <div class="item_header _table">
+    <div class="_tbody">
+      <div class="_tr">
+        <div class="text _td">その2．信頼のVISA、MasterCardに対応</div>
+        <div class="details _td"><a href="<?php echo $base_path;?>service/store_merit#merit02">詳細はこちら</a></div>
+      </div>
+    </div>
   </div>
+
   <div>
   国内外で高い普及率を誇るVISA、MasterCardに対応。安心・安全なクレジットカード決済により、お客様の購買意欲を高め販売チャンスを大幅に広げます。
   </div>
 </div>
 
 
+
 <div class="item">
-  <div class="header">
-    <span class="light">その3．簡単手続きで手軽に導入</span>
-    <span class="details"><a href="<?php echo $base_path;?>store/merit#merit03">詳細はこちら</a></span>
+  <div class="item_header _table">
+    <div class="_tbody">
+      <div class="_tr">
+        <div class="text _td">その3．簡単手続きで手軽に導入</div>
+        <div class="details _td"><a href="<?php echo $base_path;?>service/store_merit#merit03">詳細はこちら</a></div>
+      </div>
+    </div>
   </div>
+
   <div>
   マーチャント・サポートでは、クレジットカード会社への加盟店契約取次サービスを実施。クレジットカード決済未導の場合でも、簡単にお申込頂けます。
   </div>

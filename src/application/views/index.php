@@ -101,9 +101,7 @@ h3{
 .news_item_row{
   margin-left: 0;
   margin-right: 0;
-  border-top-style: dotted;
-  border-top-width: 1px;
-  border-top-color: rgb(120,120,120);
+  border-top: dotted 1px rgb(220,220,220);
   padding-top: 6px;
   padding-bottom: 6px;
 }

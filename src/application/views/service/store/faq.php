@@ -1,23 +1,40 @@
 <style type="text/css">
-#toggle{
-  float: right;
-  background-color: #339933;
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 8px 15px;
-  border-radius: 8px;
-  cursor: default;
+@media (min-width: 768px){
+  ._table{
+    display: table;
+    width: 100%;
+  }
+  ._tbody{
+    display: table-row-group;
+  }
+  ._tr{
+    display: table-row;
+  }
+  ._td{
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 
+#toggle{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90px;
+  text-align: center;
+  background-color: #339933;
+  color: white;
+  font-size: 0.9em;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: default;
+}
 .qa{
   list-style: none;
   padding-left: 0;
 }
 .qa li{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px dotted rgb(225,225,225);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .question, .answer{
   padding-left: 8px;
@@ -30,19 +47,23 @@
   color: #339933;
   font-weight: bold;
   padding-top: 10px;
-  padding-bottom: 3px;
+  padding-bottom: 6px;
 }
 .answer{
   border-radius: 0 0 6px 6px;
-  padding-top: 3px;
+  padding-top: 0;
   padding-bottom: 10px;
 }
 </style>
 
-<h1>
-  <span>店舗向け早期決済サービス｜FAQ<span id="toggle">Toggle</span></span>
-  
-</h1>
+<div class="_table">
+  <div class="_tbody">
+    <div class="_tr">
+      <h1 class="_td">店舗向け早期決済サービス｜FAQ</h1>
+      <div class="_td" id="toggle">toggle</div>
+    </div>
+  </div>
+</div>
 
 <h2 class="first_h2">クレジットカード基礎</h2>
 <ul class="qa">
@@ -320,15 +341,6 @@
     </div>
     <div class="answer">
     A30： 日次と月次の明細書をご提供致します。　 詳しくはこちらをご覧ください。
-    </div>
-  </li>
-
-  <li>
-    <div class="question">
-    Q31： 端末を利用していましたが閉店予定です。端末はどうしたら良いですか？
-    </div>
-    <div class="answer">
-    A31： 閉店前にマーチャント・サポートまでご連絡をお願いします。なお、端末機はカード会社に帰属するものですので、ご返却をお願いします。
     </div>
   </li>
 

@@ -1,4 +1,7 @@
 <style type="text/css">
+#cases{
+  margin-top: 20px;
+}
 .sidebar ul{
   list-style: none;
   padding-left: 0;
@@ -44,13 +47,13 @@ h2{
 クレジットカードの利用シーンが多様化し、消費者にとって利用しやすい環境を整えることが今後のテーマとなっております。
 </p>
 
-<div class="row">
+<div class="row" id="cases">
   <div class="col-sm-3 sidebar">
     <ul>
-      <li><a href="<?php echo $base_path;?>cases/retail">小売</a></li>
-      <li><a href="<?php echo $base_path;?>cases/catering">飲食</a></li>
-      <li><a href="<?php echo $base_path;?>cases/beauty">美容</a></li>
-      <li class="active"><a href="<?php echo $base_path;?>cases/automobile">自動車関連</a></li>
+      <li><a href="<?php echo $base_path;?>cases/retail"><strong>小売</strong></a></li>
+      <li><a href="<?php echo $base_path;?>cases/catering"><strong>飲食</strong></a></li>
+      <li><a href="<?php echo $base_path;?>cases/beauty"><strong>美容</strong></a></li>
+      <li class="active"><a href="<?php echo $base_path;?>cases/automobile"><strong>自動車関連</strong></a></li>
     </ul>
   </div>
 
@@ -59,7 +62,7 @@ h2{
 
     <div class="row">
       <div class="row_left">
-        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/automobile1.png">
+        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/automobile1.jpg">
       </div>
       <div class="row_right">
         <p>自動車の整備や修理は、一回の決済金額が高額になりカード決済で分割払いを希望されるお客さまも多数いらっしゃいます。</p>
@@ -71,13 +74,13 @@ h2{
         <p>当社ではメンテナンスが完了するとお客さまのご自宅まで納車に伺うケースが多く、インプリンターで手書き伝票を使用しておりましたがミスも多くお客さまをおませたせることも多かったです。</p>
       </div>
       <div class="row_right">
-        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/automobile2.png">
+        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/automobile2.jpg">
       </div>
     </div>
 
     <div class="row">
       <div class="row_left">
-        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/automobile3.png">
+        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/automobile3.jpg">
       </div>
       <div class="row_right">
         <p>そんな中、プンリンタ一体型のモバイル端末を導入したことで結果お客様をお待たせするお時間やスタッフの手間も省くことができ非常に助かっております。</p>

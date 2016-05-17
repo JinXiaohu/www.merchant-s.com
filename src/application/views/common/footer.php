@@ -26,9 +26,6 @@
     <li><a href="<?php echo $base_path;?>disclaimer">免責事項</a></li>
     <li>·</li>
     <li><a href="<?php echo $base_path;?>link">当サイトへのリンク</a></li>
-    <li>·</li>
-    <li><a href="<?php echo $base_path;?>recruit">採用情報</a></li>
-    <li>·</li>
   </ul>
   <p>Copyright (C) 2007-2016 MERCHANT SUPPORT. All Rights Reserved.</p>
 </footer>

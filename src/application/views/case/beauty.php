@@ -1,4 +1,7 @@
 <style type="text/css">
+#cases{
+  margin-top: 20px;
+}
 .sidebar ul{
   list-style: none;
   padding-left: 0;
@@ -44,13 +47,13 @@ h2{
 クレジットカードの利用シーンが多様化し、消費者にとって利用しやすい環境を整えることが今後のテーマとなっております。
 </p>
 
-<div class="row">
+<div class="row" id="cases">
   <div class="col-sm-3 sidebar">
     <ul>
-      <li><a href="<?php echo $base_path;?>cases/retail">小売</a></li>
-      <li><a href="<?php echo $base_path;?>cases/catering">飲食</a></li>
-      <li class="active"><a href="<?php echo $base_path;?>cases/beauty">美容</a></li>
-      <li><a href="<?php echo $base_path;?>cases/automobile">自動車関連</a></li>
+      <li><a href="<?php echo $base_path;?>cases/retail"><strong>小売</strong></a></li>
+      <li><a href="<?php echo $base_path;?>cases/catering"><strong>飲食</strong></a></li>
+      <li class="active"><a href="<?php echo $base_path;?>cases/beauty"><strong>美容</strong></a></li>
+      <li><a href="<?php echo $base_path;?>cases/automobile"><strong>自動車関連</strong></a></li>
     </ul>
   </div>
 
@@ -59,7 +62,7 @@ h2{
 
     <div class="row">
       <div class="row_left">
-        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/beauty1.png">
+        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/beauty1.jpg">
       </div>
       <div class="row_right">
         <p>最近は、スマートホンやPCからオンライン予約をしていただけるお客様が増えクレジットカード払いがあるかないかで店舗の集客が大きく変わってくると友人の美容院オーナーからマーチャント・サポートさんを紹介してもらい導入を決めました。</p>
@@ -71,13 +74,13 @@ h2{
         <p>クレジットカードが使えるようになったことで施術当日に追加でトリートメントやカラーを希望されるお客さまも増え好きなスタイルに合ったご提案できるようになりました。</p>
       </div>
       <div class="row_right">
-        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/beauty2.png">
+        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/beauty2.jpg">
       </div>
     </div>
 
     <div class="row">
       <div class="row_left">
-        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/beauty3.png">
+        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/beauty3.jpg">
       </div>
       <div class="row_right">
         <p>最近では、分割払いも対応ができるようにヘアケア商品をまとめ買いされる方もおられ導入して良かったと感じております。</p>

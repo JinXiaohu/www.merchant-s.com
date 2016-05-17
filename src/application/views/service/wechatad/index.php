@@ -16,27 +16,44 @@
 .item{
   margin-bottom: 25px;
 }
-.header{
+.item_header{
   border-bottom-style: dotted;
   border-bottom-width: 1px;
   border-bottom-color: rgb(180,180,180);
   margin-bottom: 10px;
   padding: 5px 0;
 }
-.header .light{
+.item_header .text{
   color: #339933;
   font-weight: bold;
 }
-.header .details{
-  text-align: right;
-  float: right;
+.item_header .details{
+  text-align: center;
   background-color: #339933;
-  padding: 1px 7px;
+  padding: 3px 7px;
   border-radius: 4px;
+  width: 90px;
 }
-.header .details a{
+.item_header .details a{
   color: white;
   font-size: 0.9em;
+}
+
+@media (min-width: 768px){
+  ._table{
+    display: table;
+    width: 100%;
+  }
+  ._tbody{
+    display: table-row-group;
+  }
+  ._tr{
+    display: table-row;
+  }
+  ._td{
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 </style>
 
@@ -53,10 +70,15 @@
 
 <h2 class="first_h2">サービスの特徴</h2>
 <div class="item">
-  <div class="header">
-    <span class="light">その1．中国最大のモバイル広告+決済のプラットフォーム</span>
-    <span class="details"><a href="<?php echo $base_path;?>service/webchat#merit01">詳細はこちら</a></span>
+  <div class="item_header _table">
+    <div class="_tbody">
+      <div class="_tr">
+        <div class="text _td">その1．中国最大のモバイル広告+決済のプラットフォーム</div>
+        <div class="details _td"><a href="<?php echo $base_path;?>service/wechatad_merit#merit01">詳細はこちら</a></div>
+      </div>
+    </div>
   </div>
+
   <div>
 ・200以上の国・地域のユーザーが利用<br/>
 ・全ユーザー数：約8億人/アクティブユーザー数： 6.5億人<br/>
@@ -66,10 +88,15 @@
 
 
 <div class="item">
-  <div class="header">
-    <span class="light">その2．公式アカウントを開設し中国人観光客へ効果的なマーケティング</span>
-    <span class="details"><a href="<?php echo $base_path;?>service/webchat#merit02">詳細はこちら</a></span>
+  <div class="item_header _table">
+    <div class="_tbody">
+      <div class="_tr">
+        <div class="text _td">その2．公式アカウントを開設し中国人観光客へ効果的なマーケティング</div>
+        <div class="details _td"><a href="<?php echo $base_path;?>service/wechatad_merit#merit02">詳細はこちら</a></div>
+      </div>
+    </div>
   </div>
+
   <div>
 ・WeChatユーザー向けの定期的な情報発信・宣伝が可能<br/>
 ・日本文化に関心が高く来日意向の強い観光客に向け効果的に訴求<br/>
