@@ -68,7 +68,7 @@
   border: solid 1px #ccc;
   border-radius: 4px;
   padding: 35px 10px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 h3{
@@ -77,9 +77,20 @@ h3{
   font-size: 1.2em;
 }
 
-#links .item{
-  padding-bottom: 25px;
+#links{
+  margin-bottom: 20px;
 }
+#links .item{
+  padding-bottom: 10px;
+}
+
+@media (max-width: 767px){
+  #links img{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 #news{
   margin-top: 0;
@@ -102,8 +113,8 @@ h3{
   margin-left: 0;
   margin-right: 0;
   border-top: dotted 1px rgb(220,220,220);
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .news_title_col{
@@ -117,6 +128,7 @@ h3{
   padding-left: 0;
   padding-right: 15px;
   color:rgb(120,120,120);
+  margin-top: 10px;
 }
 
 @media (min-width: 768px){
@@ -124,6 +136,7 @@ h3{
     text-align: right;
     padding-right: 0;
     padding-left: 15px;
+    margin-top: 0;
   }  
 }
 

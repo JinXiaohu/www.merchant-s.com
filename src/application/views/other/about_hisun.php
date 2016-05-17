@@ -5,12 +5,16 @@ hr{
 h1 img{
   vertical-align: middle;
 }
+.hisun_logo{
+  height: 32px;
+}
 .summary{
   margin-top: 10px;
   margin-bottom: 10px;
 }
 #table_hisun{
   width:100%;
+  margin-top:20px;
   margin-bottom: 30px;
 }
 #table_hisun th{
@@ -31,15 +35,33 @@ h1 img{
   margin-top: 15px;
   margin-bottom: 15px;
 }
+@media (max-width: 767px){
+  .hisun_logo{
+    height: 48px;
+  }
+  #table_hisun th{
+    width: 35%;
+  }
+}
+
+#market{
+  margin-top: 20px;
+}
+#market img{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 </style>
 
 
 <hr />
-<h1>
-  <p>
-  <img src="<?php echo $cdn_path;?>images/company/hisun_logo.png">
-  Hi Sun Technology (China) Limited 会社概要
-  </p>
+<h1 class="media">
+  <div class="media-left media-middle">
+    <img class="hisun_logo" src="<?php echo $cdn_path;?>images/company/hisun_logo.png">
+  </div>
+  <div class="media-body media-middle">
+    Hi Sun Technology (China) Limited 会社概要
+  </div>
 </h1>
 
 <div class="summary">マーチャント・サポート社はHi Sun Technology(China)社のグループ企業です。</div>
@@ -95,19 +117,19 @@ h1 img{
 
 
 <hr />
-<h1>
-  <p>
-  <img src="<?php echo $cdn_path;?>images/company/hisun_logo.png">
-  Hi Sun Technology 関連企業の国内・海外市場展開
-  </p>
+<h1 class="media">
+  <div class="media-left media-middle">
+    <img class="hisun_logo" src="<?php echo $cdn_path;?>images/company/hisun_logo.png">
+  </div>
+  <div class="media-body media-middle">Hi Sun Technology 関連企業の国内・海外市場展開</div>
 </h1>
- 
-<div class="row">
+
+<div class="row" id="market">
   <div class="col-sm-6">
-    <img src="<?php echo $cdn_path;?>images/company/hisun1.png" alt="海外拠点">
+    <img class="center-block" src="<?php echo $cdn_path;?>images/company/hisun1.png" alt="海外拠点">
   </div>
 
   <div class="col-sm-6">
-    <img src="<?php echo $cdn_path;?>images/company/hisun2.png" alt="中国でのサービス拠点">
+    <img class="center-block" src="<?php echo $cdn_path;?>images/company/hisun2.png" alt="中国でのサービス拠点">
   </div>
 </div>

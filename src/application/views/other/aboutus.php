@@ -25,9 +25,14 @@ hr{
 #a_hisun{
   color: #6D4780;
 }
+
+@media (max-width: 767px){
+  .table_aboutus th{
+    width: 35%;
+  }
+}
 </style>
 
-    
 
 <hr/>
 <h1>会社概要</h1>

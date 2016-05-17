@@ -8,14 +8,6 @@ h2{
 
 
 @media (min-width: 768px){
-  #case{
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  #case .col-sm-4{
-    padding-left: 10px;
-    padding-right: 10px;
-  }
   .media{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -53,18 +45,21 @@ h2{
   font-weight: bold;
 }
 .item_header .details{
-  text-align: center;
-  background-color: #3FA3D1;
-  padding: 3px 7px;
-  border-radius: 4px;
-  width: 90px;
+  text-align: right;
+  width: 100px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
 .item_header .details a{
   color: white;
   font-size: 0.9em;
+  background-color: #3FA3D1;
+  padding: 4px 9px;
+  border-radius: 4px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 300px){
   ._table{
     display: table;
     width: 100%;
@@ -77,7 +72,6 @@ h2{
   }
   ._td{
     display: table-cell;
-    vertical-align: middle;
   }
 }
 

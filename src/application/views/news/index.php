@@ -8,21 +8,20 @@ hr{
   border-top-style: dotted;
   border-top-width: 1px;
   border-top-color: rgb(225,225,225);
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .news_title_col{
   padding-left: 0;
   padding-right: 15px;
-  font-size: 1.1em;
 }
 
 .news_date_col{
   text-align: left;
   padding-left: 0;
   padding-right: 15px;
-  color:rgb(120,120,120);
+  color:rgb(150,150,150);
 }
 
 @media (min-width: 768px){
@@ -30,7 +29,6 @@ hr{
     text-align: right;
     padding-right: 0;
     padding-left: 15px;
-    font-size:0.9em;
   }  
 }
 </style>
