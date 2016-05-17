@@ -70,7 +70,7 @@ class Contact extends BaseController
 		if($this->send_using_jphpmailer())
 		{
 			$this->load->helper('url');
-			redirect($this->config->item('base_path'). "contact/thanks");
+			redirect($this->base_path. "contact/thanks");
 		}
 		else
 		{

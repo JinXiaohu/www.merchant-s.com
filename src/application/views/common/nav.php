@@ -39,7 +39,7 @@ h2{
   background: -o-linear-gradient(left, #fafafa 0%,#f0f0f0 100%);
   background: -ms-linear-gradient(left, #fafafa 0%,#f0f0f0 100%);
 }
-h2.first_h2{
+.first-h2{
   margin-top: 15px;
 }
 .smallText{

@@ -69,7 +69,7 @@
 </div>
 
 
-<h2 class="first_h2">サービスの特徴</h2>
+<h2>サービスの特徴</h2>
 <div class="item">
   <div class="item_header _table">
     <div class="_tbody">

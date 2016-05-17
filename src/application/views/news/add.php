@@ -74,31 +74,31 @@ button{
   <div class="table">
     <div class="tr">
       <div class="th">Title</div>
-      <div class="td"><input type="text" id="title" name="title"></div>
+      <div class="td"><input type="text" name="title"></div>
     </div>
     
     <div class="tr">
       <div class="th">News Type</div>
       <div class="td">
-        <select id="type" name="type" onChange="typeChanged();">
+        <select name="type" onChange="typeChanged();">
           <option value=""></option>
           <option value="upload">Upload a pdf file</option>
-          <option value="edit">Edit text</option>
+          <option value="html">Edit html</option>
         </select>
       </div>
     </div>
 
-    <div class="tr">
+    <div class="tr" id="userfile">
       <div class="th">Upload</div>
       <div class="td">
-        <input type="file" id="userfile" name="userfile">
+        <input type="file" name="userfile">
       </div>
     </div>
 
-    <div class="tr">
+    <div class="tr" id="content">
       <div class="th">Edit</div>
       <div class="td">
-      <textarea rows="10" id="content" name="content"></textarea></div>
+      <textarea rows="10" name="content"></textarea></div>
     </div>
 
     <?php if(isset($error)): ?>
@@ -152,18 +152,18 @@ function typeChanged()
 {
   if (document.form1.type.value == 'upload')
   {
-    document.form1.userfile.disabled = false;
-    document.form1.content.disabled = true;
+    $("#userfile").show();
+    $("#content").hide();
   }
-  else if(document.form1.type.value == 'edit')
+  else if(document.form1.type.value == 'txt' || document.form1.type.value == 'html')
   {
-    document.form1.userfile.disabled = true;
-    document.form1.content.disabled = false;
+    $("#userfile").hide();
+    $("#content").show();
   }
   else
   {
-    document.form1.userfile.disabled = true;
-    document.form1.content.disabled = true;
+    $("#userfile").hide();
+    $("#content").hide();
   }
 }
 typeChanged();

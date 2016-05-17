@@ -30,6 +30,12 @@
   <p>Copyright (C) 2007-2016 MERCHANT SUPPORT. All Rights Reserved.</p>
 </footer>
 
+<script type="text/javascript">
+$(document).ready(function(){
+  $('h2:eq(0)').addClass("first-h2");
+});
+</script>
+
 </div><!--end of container-->
 </body>
 </html>

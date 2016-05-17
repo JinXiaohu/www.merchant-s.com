@@ -36,7 +36,7 @@ h3{
 <hr/>
 <h1>決済端末</h1>
 
-<h2 class="first_h2">端末</h2>
+<h2>端末</h2>
 
 <h3>PAX-S80</h3>
 <div class="media">

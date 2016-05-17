@@ -36,7 +36,7 @@ class Contact_participating extends BaseController
 		if($this->send_using_jphpmailer())
 		{
 			$this->load->helper('url');
-			redirect($this->config->item('base_path'). "contact_participating/thanks");
+			redirect($this->base_path. "contact_participating/thanks");
 		}
 		else
 		{

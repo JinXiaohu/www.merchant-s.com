@@ -56,7 +56,7 @@ class User extends BaseController
       $this->load->library("session");
       $this->session->set_userdata('username', $username);
       $this->load->helper('url');
-      redirect($this->config->item('base_path'));
+      redirect($this->base_path);
     }
     
     

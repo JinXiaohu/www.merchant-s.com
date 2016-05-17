@@ -48,7 +48,7 @@ else
 {
 	$config['pc_host'] = 'www.merchant-s.com';		//PC站域名
 	$config['mb_host'] = 'm.merchant-s.com';		//手机站域名
-	$config['base_dir'] = "new";
+	$config['base_dir'] = "new/";
 	
 	//图片、js、css等静态文件的基础路径
 	$config['cdn_path'] = 'http://www.merchant-s.com/new/assets/';

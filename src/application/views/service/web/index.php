@@ -6,14 +6,38 @@ h2{
   border-color: #3FA3D1;
 }
 
+
+@media (min-width: 768px){
+  #case{
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  #case .col-sm-4{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .media{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .media-left{
+    padding-right: 5px;
+    vertical-align: top;
+  }
+  .m_header{
+    font-size: 0.9em;
+  }
+  .m_text{
+    font-size: 0.9em;
+  }
+}
 .media{
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .m_header{
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
-
 .item{
   margin-bottom: 25px;
 }
@@ -56,6 +80,7 @@ h2{
     vertical-align: middle;
   }
 }
+
 </style>
 
 <div class="img_h1">
@@ -65,43 +90,43 @@ h2{
 <p>
 最短7日後のクレジット決済を可能にしたEコマース向けオンライン決済代行システムです。低コストかつ安心・簡単な手続きでクレジットカード決済をご導入。個人で運営されているサイトでもご利用頂けます。インターネットビジネスの可能性が大きく広がります。
 </p>
-<h2 class="first_h2">活用例</h2>
+<h2>活用例</h2>
 
-<div class="row">
+<div class="row" id="case">
   <div class="col-sm-4">
-    <div class="media">
-      <div class="media-left media-middle">
-        <img src="<?php echo $cdn_path;?>images/ecommerce/sh_example01.gif">
-      </div>
-      <div class="media-body media-middle">
-        <div class="m_header"><strong>円滑な資金運用</strong></div>
-        <div>カード会社の代金回収を早め、より円滑な資金運用を実現したい！</div>
-      </div>
+  <div class="media">
+    <div class="media-left media-middle">
+      <img src="<?php echo $cdn_path;?>images/ecommerce/sh_example01.gif">
     </div>
+    <div class="media-body media-middle">
+      <div class="m_header"><strong>円滑な資金運用</strong></div>
+      <div class="m_text">カード会社の代金回収を早め、より円滑な資金運用を実現したい！</div>
+    </div>
+  </div>
   </div>
 
   <div class="col-sm-4">
-    <div class="media">
-      <div class="media-left media-middle">
-        <img src="<?php echo $cdn_path;?>images/ecommerce/sh_example02.gif">
-      </div>
-      <div class="media-body media-middle">
-        <div class="m_header"><strong>購入率・単価の向上</strong></div>
-        <div>商品の購入率や購入単価をアップさせたい！</div>
-      </div>
+  <div class="media">
+    <div class="media-left media-middle">
+      <img src="<?php echo $cdn_path;?>images/ecommerce/sh_example02.gif">
     </div>
+    <div class="media-body media-middle">
+      <div class="m_header"><strong>購入率・単価の向上</strong></div>
+      <div class="m_text">商品の購入率や購入単価をアップさせたい！</div>
+    </div>
+  </div>
   </div>
 
   <div class="col-sm-4">
-    <div class="media">
-      <div class="media-left media-middle">
-        <img src="<?php echo $cdn_path;?>images/ecommerce/sh_example03.gif">
-      </div>
-      <div class="media-body media-middle">
-        <div class="m_header"><strong>購入意欲の向上</strong></div>
-        <div>サイトの信頼性や安心感をアピールし、購入意欲を高めたい！</div>
-      </div>
+  <div class="media">
+    <div class="media-left media-middle">
+      <img src="<?php echo $cdn_path;?>images/ecommerce/sh_example03.gif">
     </div>
+    <div class="media-body media-middle">
+      <div class="m_header"><strong>購入意欲の向上</strong></div>
+      <div class="m_text">サイトの信頼性や安心感をアピールし、購入意欲を高めたい！</div>
+    </div>
+  </div>
   </div>
 
 </div>

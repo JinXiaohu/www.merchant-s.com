@@ -6,7 +6,9 @@ class BaseController extends CI_Controller
 	{
 		parent::__construct();
 
-		$this->set_view_data('base_path', $this->get_base_path());
+		$this->base_path = $this->get_base_path();
+		
+		$this->set_view_data('base_path', $this->base_path);
 		$this->set_view_data('cdn_path',  $this->config->item('cdn_path'));
 	}
 
@@ -14,8 +16,9 @@ class BaseController extends CI_Controller
 	//存放信息，给提供页面参数
 	protected $view_data = array();
 
+	protected $base_path;
 
-	protected function get_base_path()
+	private function get_base_path()
 	{
 		$protocol = $this->config->item('protocol');
 		$host = $_SERVER["HTTP_HOST"];
@@ -83,7 +86,7 @@ class BaseController extends CI_Controller
 		if (!$this->get_session_item('username'))
 		{
 			$this->load->helper('url');
-			redirect($this->config->item('base_path'). "user/login");
+			redirect($this->base_path. "user/login");
 		}		
 	}
 		

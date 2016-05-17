@@ -17,6 +17,7 @@ class News extends BaseController
 	
 	private $error;
 
+
 	//news的列表页显示
 	public function index()
 	{
@@ -38,16 +39,17 @@ class News extends BaseController
 	}
 
 
-	//打开一个news
+
+	//打开一个news。要求url中带有一个参数id
 	public function show()
 	{
 		$id	 = trim(urldecode($this->input->get("id")));
-		$file = $this->find_file($id);
+		$file = $this->find_news_file($id);
 
 		if($file == "html")
 		{
-			$content = file_get_contents($this->get_system_path("$id.html"));
-			$this->set_view_data('news_content', $content);
+			$html_path = $this->get_web_path("$id.html");
+			$this->set_view_data('html_path', $html_path);
 			$this->load_view('news/show');
 		}
 		else if($file == "pdf")
@@ -61,7 +63,7 @@ class News extends BaseController
 	}
 	
 	//根据新闻的id，从文件系统中查找出该新闻的文件
-	private function find_file($id)
+	private function find_news_file($id)
 	{
 		if(file_exists($this->get_system_path("$id.html")))
 		{
@@ -86,10 +88,13 @@ class News extends BaseController
 	//文件在url上的路径全名
 	private function get_web_path($filename)
 	{
-		return $this->config->item("base_path"). "uploads/$filename";
+		return $this->base_path. "uploads/$filename";
 	}
 
-	//添加一个新闻
+
+	////////////////////////////////////////////////////////////////////////////////////
+
+	//管理员添加一个新闻
 	public function add()
 	{
 		$this->logined_first();
@@ -104,19 +109,19 @@ class News extends BaseController
 		}
 	}
 	
-
+	//添加新闻-GET请求
 	private function add_GET()
 	{
 		$this->load_view('news/add');
 	}
 
+	//添加新闻-POST请求
 	private function add_POST()
 	{
 		$this->validate_input();
 		
-		$news = ($this->input->post("type") == "upload") ? 
-			$this->create_news_by_upload() : $this->create_news_by_edit();
-		
+		$news =  $this->create_news();
+
 		if($news == null)
 		{
 			$this->set_view_data('error', $this->error);
@@ -126,7 +131,7 @@ class News extends BaseController
 		{
 			$news_manager = new NewsManager();
 			$news_manager->add_news($news);
-			redirect($this->config->item('base_path'). "news");
+			redirect($this->base_path. "news");
 		}
 	}
 	
@@ -154,8 +159,25 @@ class News extends BaseController
 		$this->load_view('news/add');
 	}
 
+	private function create_news()
+	{
+		$type = $this->input->post("type");
+
+		if($type == "html")
+		{
+			return $this->create_news_by_edit();
+		}
+		else if($type == "upload")
+		{
+			return $this->create_news_by_upload();
+		}
+		else
+		{
+			return null;
+		}
+	}
 	
-	//上传文件，然后创建新的news。
+	//上传pdf文件，然后创建新的news。
 	//返回一个NewsInfo对象。如果创建失败，返回null
 	private function create_news_by_upload()
 	{
@@ -187,7 +209,7 @@ class News extends BaseController
 	private function create_news_by_edit()
 	{
 		$id       = date("YmdHis");
-		$fullname = $this->get_system_path("$id.html");
+		$fullname = $this->get_system_path("$id"). ".". $this->input->post("type");
 		
 		$title    = $this->input->post("title");
 		$content  = $this->input->post("content");
@@ -214,7 +236,7 @@ class News extends BaseController
 		$this->logined_first();
 		$id = trim(urldecode($this->input->post("id")));
 		
-		$file = $this->find_file($id);
+		$file = $this->find_news_file($id);
 		if($file == null)
 		{
 			show_404();
@@ -226,11 +248,11 @@ class News extends BaseController
 		
 		if(unlink($this->get_system_path($file)))
 		{
-			redirect($this->config->item('base_path'). "news");
+			redirect($this->base_path. "news");
 		}
 		else
 		{
-			redirect($this->config->item('base_path'). "news");
+			redirect($this->base_path. "news");
 		}
 	}
 	

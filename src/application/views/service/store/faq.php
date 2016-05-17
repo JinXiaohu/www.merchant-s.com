@@ -65,7 +65,7 @@
   </div>
 </div>
 
-<h2 class="first_h2">クレジットカード基礎</h2>
+<h2>クレジットカード基礎</h2>
 <ul class="qa">
   <li>
     <div class="question">
