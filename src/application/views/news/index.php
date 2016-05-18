@@ -18,18 +18,18 @@ hr{
 }
 
 .news_date_col{
-  text-align: left;
-  padding-left: 0;
-  padding-right: 15px;
+  text-align: right;
+  padding-right: 0;
+  padding-left: 15px;
+  margin-top: 0;
   color:rgb(150,150,150);
 }
-
-@media (min-width: 768px){
+@media (max-width: 767px){
   .news_date_col{
-    text-align: right;
-    padding-right: 0;
-    padding-left: 15px;
-  }  
+    text-align: left;
+    padding-left: 0;
+    margin-top: 5px;
+  }
 }
 </style>
 
@@ -37,10 +37,10 @@ hr{
 <h1>News</h1>
 <?php foreach ($full_news as $news_item):?>  
 <div class="row news_item_row">
-  <div class="col-sm-9 news_title_col">
+  <div class="col-sm-10 news_title_col">
     <a href="<?php echo $base_path;?>news/show?id=<?php echo $news_item->id; ?>" target="_blank"><?php echo $news_item->title; ?></a>
   </div>
 
-  <div class="col-sm-3 news_date_col"><?php echo $news_item->date; ?></div>
+  <div class="col-sm-2 news_date_col"><?php echo $news_item->date; ?></div>
 </div>
 <?php endforeach;?> 

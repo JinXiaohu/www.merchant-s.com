@@ -1,18 +1,22 @@
 <style type="text/css">
-@media (min-width: 768px){
-  ._table{
-    display: table;
-    width: 100%;
-  }
-  ._tbody{
-    display: table-row-group;
-  }
-  ._tr{
-    display: table-row;
-  }
-  ._td{
-    display: table-cell;
-    vertical-align: middle;
+._table{
+  display: table;
+  width: 100%;
+}
+._tbody{
+  display: table-row-group;
+}
+._tr{
+  display: table-row;
+}
+._td{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (max-width: 400px){
+  ._table,._tbody,._tr,._td{
+    display: block;
   }
 }
 

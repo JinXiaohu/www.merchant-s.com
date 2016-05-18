@@ -2,18 +2,17 @@
 #cases{
   margin-top: 20px;
 }
+.sidebar{
+  border-right: solid 1px #e5e5e5;
+}
 .sidebar ul{
   list-style: none;
   padding-left: 0;
-}
-.sidebar{
-  border-right: solid 1px #e5e5e5;
 }
 .sidebar li{
   padding: 11px 14px;
 }
 .sidebar li:hover{
-  background-color: #D9F2D9;
   background-color: #f8f8f8;
 }
 .sidebar li.active{
@@ -38,10 +37,10 @@ h2{
   padding-right: 8px;
 }
 .col_img{
-  width: 49.5%;
+  width: 70%;
 }
 .col_txt{
-  width: 49.5%;
+  width: 29%;
 }
 
 @media (max-width: 767px){
@@ -62,19 +61,12 @@ h2{
     display: block;
     width: 100%;
   }
-}
-@media (min-width: 768px){
   .sidebar{
-    border-right: solid 1px #e5e5e5;
-  }
-  .col_img{
-    width: 70%;
-  }
-  .col_txt{
-    width: 29%;
+    border-right: none;
   }
 }
 </style>
+
   
 <h1>導入事例</h1>
 <p>

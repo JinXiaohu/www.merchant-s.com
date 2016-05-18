@@ -11,7 +11,6 @@ h3{
   border-bottom-style: solid;
   border-bottom-color: rgb(225, 225, 225);
 }
-
 .item{
   margin-top: 10px;
   margin-bottom: 10px;
@@ -24,7 +23,6 @@ h3{
     width: 120px;
   }
 }
-
 @media (min-width: 991px){
   .left_img{
     width: 200px;

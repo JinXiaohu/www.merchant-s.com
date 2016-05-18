@@ -8,7 +8,7 @@
   <meta name="description" content="クレジットカード決済は最短3日後決済、オンライン決済は最短7日後決済。VISA・Masterカードで決済できる安心と信頼のクレジットカード決済システム。" />
   <title><?php echo $title; ?></title>
   <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php echo $cdn_path;?>images/MSIcon.ico" />
-  <link href="<?php echo $cdn_path;?>css/bootstrap.css" rel="stylesheet">
+  <link href="<?php echo $cdn_path;?>css/bootstrap.min.css" rel="stylesheet">
   <script src="<?php echo $cdn_path;?>js/jquery.min.js"></script>
   <script src="<?php echo $cdn_path;?>js/bootstrap.min.js"></script>
 

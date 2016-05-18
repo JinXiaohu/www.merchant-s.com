@@ -5,8 +5,6 @@
   float: left; 
   background: #0d132d;
 }
-
-
 .slide_txt span { 
   float: left; 
   margin-top: 25px; 
@@ -15,7 +13,6 @@
   text-align: center; 
   display: block;
 }
-
 .slide_txt p{ 
   margin-bottom: 20px; 
   float: left; 
@@ -33,17 +30,41 @@
   padding: 3px 15px;
   margin-bottom: 10px;
 }
-
-
 #solutions .item h4 {
   text-align: center;
   font-size: 1.1em;
 }
-
 #solutions .item h4 a {
   font-weight: bold;
 }
-
+._table{
+  display: table;
+  width: 100%;
+}
+._tbody{
+  display: table-row-group;
+}
+._tr{
+  display: table-row;
+}
+._td{
+  display: table-cell;
+  padding:3px;
+}
+._td.item{
+  width: 32%;
+}
+._td.separator{
+  width: 2%;
+}
+@media (max-width: 767px){
+  ._table,._tbody,._tr,._td{
+    display: block;
+  }
+  ._td.item, ._td.separator{
+    width: 100%;
+  }
+}
 
 #examples .item{
   font-size: 1.3em;
@@ -67,7 +88,6 @@ h3{
 #links .item{
   padding-bottom: 10px;
 }
-
 @media (max-width: 767px){
   #links img{
     margin-left: auto;
@@ -103,41 +123,20 @@ h3{
   font-size: 1.1em;
 }
 .news_date_col{
-  text-align: left;
-  padding-left: 0;
-  padding-right: 15px;
+  text-align: right;
+  padding-right: 0;
+  padding-left: 15px;
+  margin-top: 0;
   color:rgb(120,120,120);
-  margin-top: 10px;
+}
+@media (max-width: 767px){
+  .news_date_col{
+    text-align: left;
+    padding-left: 0;
+    margin-top: 5px;
+  }
 }
 
-@media (min-width: 768px){
-  .news_date_col{
-    text-align: right;
-    padding-right: 0;
-    padding-left: 15px;
-    margin-top: 0;
-  }
-  ._table{
-    display: table;
-    width: 100%;
-  }
-  ._tbody{
-    display: table-row-group;
-  }
-  ._tr{
-    display: table-row;
-  }
-  ._td{
-    display: table-cell;
-    padding:3px;
-  }
-  ._td.item{
-    width: 32%;
-  }
-  ._td.separator{
-    width: 2%;
-  }
-}
 </style>
 
 <!-- slide -->
@@ -149,7 +148,6 @@ h3{
   </ol>
 
   <div class="carousel-inner">
-
     <div class="item active">
       <a href="<?php echo $base_path;?>service/wechat"><img src="<?php echo $cdn_path;?>images/bg1.jpg"></a>
     </div>

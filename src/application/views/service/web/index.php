@@ -7,23 +7,28 @@ h2{
 }
 
 .media{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-@media (min-width: 768px){
+.media-left{
+  padding-right: 5px;
+  vertical-align: top;
+}
+.m_header,.m_text{
+  font-size: 0.9em;
+}
+
+@media (max-width: 767px){
   .media{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .media-left{
-    padding-right: 5px;
-    vertical-align: top;
+    padding-right: 10px;
+    vertical-align: middle;
   }
-  .m_header{
-    font-size: 0.9em;
-  }
-  .m_text{
-    font-size: 0.9em;
+  .m_header,.m_text{
+    font-size: 1em;
   }
 }
 
@@ -34,9 +39,7 @@ h2{
   margin-bottom: 25px;
 }
 .item_header{
-  border-bottom-style: dotted;
-  border-bottom-width: 1px;
-  border-bottom-color: rgb(180,180,180);
+  border-bottom: dotted 1px rgb(180,180,180);
   margin-bottom: 10px;
   padding: 5px 0;
 }
@@ -58,21 +61,29 @@ h2{
   padding: 4px 9px;
   border-radius: 4px;
 }
-
-@media (min-width: 300px){
-  ._table{
-    display: table;
-    width: 100%;
+._table{
+  display: table;
+  width: 100%;
+}
+._tbody{
+  display: table-row-group;
+}
+._tr{
+  display: table-row;
+}
+._td{
+  display: table-cell;
+}
+@media (max-width: 320px){
+  ._table,._tbody,._tr,._td{
+    display: block;
   }
-  ._tbody{
-    display: table-row-group;
-  }
-  ._tr{
-    display: table-row;
-  }
-  ._td{
-    display: table-cell;
-  }
+ .item_header .details{
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+  } 
 }
 
 </style>
