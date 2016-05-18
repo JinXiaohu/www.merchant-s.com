@@ -28,13 +28,19 @@ h2{
 .row{
   margin-bottom: 30px;
 }
-.row_left, .row_right{
+.col_img, .col_txt{
   display: inline-block;
   vertical-align: middle;
   padding-left: 8px;
   padding-right: 8px;
+}
+.col_img{
   width: 49.5%;
 }
+.col_txt{
+  width: 49.5%;
+}
+
 @media (max-width: 767px){
   .sidebar li{
     display: inline;
@@ -44,9 +50,25 @@ h2{
     margin-bottom: 20px;
   }
 }
+@media (max-width: 420px){
+  .sidebar li{
+    display: inline;
+    margin-right: 0;
+  }
+  .col_img, .col_txt{
+    display: block;
+    width: 100%;
+  }
+}
 @media (min-width: 768px){
   .sidebar{
     border-right: solid 1px #e5e5e5;
+  }
+  .col_img{
+    width: 70%;
+  }
+  .col_txt{
+    width: 29%;
   }
 }
 </style>
@@ -72,28 +94,28 @@ h2{
   <div class="col-sm-9">
     <h2>小売業</h2>
     <div class="row">
-      <div class="row_left">
+      <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/retail1.jpg">
       </div>
-      <div class="row_right">
+      <div class="col_txt">
         表参道で子供服を販売しており,年に数回大きな会場をお借りし定期的にファミリーセールを開催しています。
       </div>
     </div>
 
     <div class="row">
-      <div class="row_left">
+      <div class="col_txt">
         セールでは、通常期よりお求めやすい価格になっているため、ご好評をいただいておりますが唯一の悩みがお支払い時のクレジットカード決済です。
       </div>
-      <div class="row_right">
+      <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/retail2.jpg">
       </div>
     </div>
 
     <div class="row">
-      <div class="row_left">
+      <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/retail3.jpg">
       </div>
-      <div class="row_right">
+      <div class="col_txt">
         これまでの手書き伝票では時間がかかり、スマートホン決済では分割払いに対応でできません。そんな中、プリンタ付モバイル端末に出会い両方の問題が解決でき今では、ファミリーセールに欠かせない存在になっています。
       </div>
     </div>

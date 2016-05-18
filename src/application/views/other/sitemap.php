@@ -69,6 +69,7 @@ li{
   <li><a href="<?php echo $base_path;?>policy">個人情報保護方針</a></li>
   <li><a href="<?php echo $base_path;?>disclaimer">免責事項</a></li>
   <li><a href="<?php echo $base_path;?>link">当サイトへのリンク</a></li>
+  <li><a href="<?php echo $base_path;?>recruit">採用情報</a></li>
 
   <br/>
 

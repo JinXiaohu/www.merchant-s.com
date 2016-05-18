@@ -31,13 +31,19 @@ h2{
 .row{
   margin-bottom: 30px;
 }
-.row_left, .row_right{
+.col_img, .col_txt{
   display: inline-block;
   vertical-align: middle;
   padding-left: 8px;
   padding-right: 8px;
+}
+.col_img{
   width: 49.5%;
 }
+.col_txt{
+  width: 49.5%;
+}
+
 @media (max-width: 767px){
   .sidebar li{
     display: inline;
@@ -47,9 +53,25 @@ h2{
     margin-bottom: 20px;
   }
 }
+@media (max-width: 420px){
+  .sidebar li{
+    display: inline;
+    margin-right: 0;
+  }
+  .col_img, .col_txt{
+    display: block;
+    width: 100%;
+  }
+}
 @media (min-width: 768px){
   .sidebar{
     border-right: solid 1px #e5e5e5;
+  }
+  .col_img{
+    width: 70%;
+  }
+  .col_txt{
+    width: 29%;
   }
 }
 </style>

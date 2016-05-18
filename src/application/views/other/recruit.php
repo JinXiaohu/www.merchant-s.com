@@ -22,6 +22,11 @@ hr{
   padding-top: 12px;
   padding-bottom: 12px;
 }
+@media (max-width: 767px){
+  #table_recruit th{
+    width: 30%;
+  }
+}
 </style>
 
 <hr/>

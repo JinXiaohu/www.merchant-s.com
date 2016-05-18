@@ -6,14 +6,10 @@
   list-style: none;
   padding-left: 0;
 }
-.sidebar{
-  border-right: solid 1px #e5e5e5;
-}
 .sidebar li{
   padding: 11px 14px;
 }
 .sidebar li:hover{
-  background-color: #D9F2D9;
   background-color: #f8f8f8;
 }
 .sidebar li.active{
@@ -31,13 +27,19 @@ h2{
 .row{
   margin-bottom: 30px;
 }
-.row_left, .row_right{
+.col_img, .col_txt{
   display: inline-block;
   vertical-align: middle;
   padding-left: 8px;
   padding-right: 8px;
+}
+.col_img{
   width: 49.5%;
 }
+.col_txt{
+  width: 49.5%;
+}
+
 @media (max-width: 767px){
   .sidebar li{
     display: inline;
@@ -47,9 +49,25 @@ h2{
     margin-bottom: 20px;
   }
 }
+@media (max-width: 420px){
+  .sidebar li{
+    display: inline;
+    margin-right: 0;
+  }
+  .col_img, .col_txt{
+    display: block;
+    width: 100%;
+  }
+}
 @media (min-width: 768px){
   .sidebar{
     border-right: solid 1px #e5e5e5;
+  }
+  .col_img{
+    width: 70%;
+  }
+  .col_txt{
+    width: 29%;
   }
 }
 </style>
@@ -74,28 +92,28 @@ h2{
     <h2>自動車関連業</h2>
 
     <div class="row">
-      <div class="row_left">
+      <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/automobile1.jpg">
       </div>
-      <div class="row_right">
+      <div class="col_txt">
         自動車の整備や修理は、一回の決済金額が高額になりカード決済で分割払いを希望されるお客さまも多数いらっしゃいます。
       </div>
     </div>
 
     <div class="row">
-      <div class="row_left">
+      <div class="col_txt">
         当社ではメンテナンスが完了するとお客さまのご自宅まで納車に伺うケースが多く、インプリンターで手書き伝票を使用しておりましたがミスも多くお客さまをおませたせることも多かったです。
       </div>
-      <div class="row_right">
+      <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/automobile2.jpg">
       </div>
     </div>
 
     <div class="row">
-      <div class="row_left">
+      <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/automobile3.jpg">
       </div>
-      <div class="row_right">
+      <div class="col_txt">
         そんな中、プンリンタ一体型のモバイル端末を導入したことで結果お客様をお待たせするお時間やスタッフの手間も省くことができ非常に助かっております。
       </div>
     </div>

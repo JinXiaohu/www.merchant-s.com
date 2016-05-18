@@ -31,13 +31,19 @@ h2{
 .row{
   margin-bottom: 30px;
 }
-.row_left, .row_right{
+.col_img, .col_txt{
   display: inline-block;
   vertical-align: middle;
   padding-left: 8px;
   padding-right: 8px;
+}
+.col_img{
   width: 49.5%;
 }
+.col_txt{
+  width: 49.5%;
+}
+
 @media (max-width: 767px){
   .sidebar li{
     display: inline;
@@ -47,9 +53,25 @@ h2{
     margin-bottom: 20px;
   }
 }
+@media (max-width: 420px){
+  .sidebar li{
+    display: inline;
+    margin-right: 0;
+  }
+  .col_img, .col_txt{
+    display: block;
+    width: 100%;
+  }
+}
 @media (min-width: 768px){
   .sidebar{
     border-right: solid 1px #e5e5e5;
+  }
+  .col_img{
+    width: 70%;
+  }
+  .col_txt{
+    width: 29%;
   }
 }
 </style>
@@ -74,28 +96,28 @@ h2{
     <h2>美容業</h2>
 
     <div class="row">
-      <div class="row_left">
+      <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/beauty1.jpg">
       </div>
-      <div class="row_right">
+      <div class="col_txt">
         最近は、スマートホンやPCからオンライン予約をしていただけるお客様が増えクレジットカード払いがあるかないかで店舗の集客が大きく変わってくると友人の美容院オーナーからマーチャント・サポートさんを紹介してもらい導入を決めました。
       </div>
     </div>
 
     <div class="row">
-      <div class="row_left">
+      <div class="col_txt">
         クレジットカードが使えるようになったことで施術当日に追加でトリートメントやカラーを希望されるお客さまも増え好きなスタイルに合ったご提案できるようになりました。
       </div>
-      <div class="row_right">
+      <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/beauty2.jpg">
       </div>
     </div>
 
     <div class="row">
-      <div class="row_left">
+      <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/beauty3.jpg">
       </div>
-      <div class="row_right">
+      <div class="col_txt">
         最近では、分割払いも対応ができるようにヘアケア商品をまとめ買いされる方もおられ導入して良かったと感じております。
       </div>
     </div>
