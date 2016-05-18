@@ -16,7 +16,7 @@ class Contact_participating extends BaseController
 	public function thanks()
 	{
 		$this->set_view_data('title',   "店舗情報変更に関するお手続き | ". $this->config->item('site_name'));
-		$this->load_view("other/contact_thanks");
+		$this->load_view("contact/contact_thanks");
 	}
     
 	public function index()
@@ -34,7 +34,7 @@ class Contact_participating extends BaseController
 
 	public function index_GET()
 	{
-		$this->load_view('other/contact_participating');
+		$this->load_view('contact/contact_participating');
 	}
 
 
@@ -48,7 +48,7 @@ class Contact_participating extends BaseController
 		else
 		{
 			$this->set_view_data("error", "oops, send mail failed.");
-			$this->load_view('other/contact_participating');
+			$this->load_view('contact/contact_participating');
 		}
 	}
 

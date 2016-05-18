@@ -65,41 +65,12 @@ h2{
     <ul>
       <li><a href="<?php echo $base_path;?>cases/retail"><strong>小売</strong></a></li>
       <li><a href="<?php echo $base_path;?>cases/catering"><strong>飲食</strong></a></li>
-      <li class="active"><a href="<?php echo $base_path;?>cases/beauty"><strong>美容</strong></a></li>
+      <li><a href="<?php echo $base_path;?>cases/beauty"><strong>美容</strong></a></li>
       <li><a href="<?php echo $base_path;?>cases/automobile"><strong>自動車関連</strong></a></li>
     </ul>
   </div>
 
   <div class="col-sm-9">
-    <h2>美容業</h2>
-
-    <div class="row">
-      <div class="row_left">
-        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/beauty1.jpg">
-      </div>
-      <div class="row_right">
-        最近は、スマートホンやPCからオンライン予約をしていただけるお客様が増えクレジットカード払いがあるかないかで店舗の集客が大きく変わってくると友人の美容院オーナーからマーチャント・サポートさんを紹介してもらい導入を決めました。
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="row_left">
-        クレジットカードが使えるようになったことで施術当日に追加でトリートメントやカラーを希望されるお客さまも増え好きなスタイルに合ったご提案できるようになりました。
-      </div>
-      <div class="row_right">
-        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/beauty2.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="row_left">
-        <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/beauty3.jpg">
-      </div>
-      <div class="row_right">
-        最近では、分割払いも対応ができるようにヘアケア商品をまとめ買いされる方もおられ導入して良かったと感じております。
-      </div>
-    </div>
-
   </div>
 </div>
 

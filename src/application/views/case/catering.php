@@ -26,19 +26,32 @@
   color: white;
 }
 h2{
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 .row{
   margin-bottom: 30px;
 }
 .row_left, .row_right{
-  display: table-cell;
+  display: inline-block;
   vertical-align: middle;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 50%;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 49.5%;
 }
-
+@media (max-width: 767px){
+  .sidebar li{
+    display: inline;
+    margin-right: 10px;
+  }
+  .sidebar ul{
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px){
+  .sidebar{
+    border-right: solid 1px #e5e5e5;
+  }
+}
 </style>
   
 <h1>導入事例</h1>
@@ -65,13 +78,13 @@ h2{
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/catering1.jpg">
       </div>
       <div class="row_right">
-        <p>当店は、ビジネス街にお店を構えているため会社関係の宴会や接待でご利用いただくことが非常に多く、そのほとんどがクレジットカードでのお支払いです。最近では、お勤めされている会社のコーポレートカードをご利用いただく頻度も増えてきており現金でのお支払いがほとんどない日もございます。</p>
+        当店は、ビジネス街にお店を構えているため会社関係の宴会や接待でご利用いただくことが非常に多く、そのほとんどがクレジットカードでのお支払いです。最近では、お勤めされている会社のコーポレートカードをご利用いただく頻度も増えてきており現金でのお支払いがほとんどない日もございます。
       </div>
     </div>
 
     <div class="row">
       <div class="row_left">
-        <p>月末は、お客様も多く嬉しい限りですがそれとは逆にレジの中の現金が乏しくなります。。創業時から毎日築地に足を運び活きのいい新鮮な食材をお客様に提供することが当店のモットーですが仕入れは全て現金払いのため、</p>
+        月末は、お客様も多く嬉しい限りですがそれとは逆にレジの中の現金が乏しくなります。。創業時から毎日築地に足を運び活きのいい新鮮な食材をお客様に提供することが当店のモットーですが仕入れは全て現金払いのため、
       </div>
       <div class="row_right">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/catering2.jpg">
@@ -83,7 +96,7 @@ h2{
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/catering3.jpg">
       </div>
       <div class="row_right">
-        <p>現在利用している「3日後決済」は非常に心強い味方です。今日も資金繰りを気にすることなくお客様へ最高の食材で「おもてなし」させていただきます。</p>
+        現在利用している「3日後決済」は非常に心強い味方です。今日も資金繰りを気にすることなくお客様へ最高の食材で「おもてなし」させていただきます。
       </div>
     </div>
 

@@ -26,19 +26,32 @@
   color: white;
 }
 h2{
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 .row{
   margin-bottom: 30px;
 }
 .row_left, .row_right{
-  display: table-cell;
+  display: inline-block;
   vertical-align: middle;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 50%;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 49.5%;
 }
-
+@media (max-width: 767px){
+  .sidebar li{
+    display: inline;
+    margin-right: 10px;
+  }
+  .sidebar ul{
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px){
+  .sidebar{
+    border-right: solid 1px #e5e5e5;
+  }
+}
 </style>
   
 <h1>導入事例</h1>
@@ -65,13 +78,13 @@ h2{
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/automobile1.jpg">
       </div>
       <div class="row_right">
-        <p>自動車の整備や修理は、一回の決済金額が高額になりカード決済で分割払いを希望されるお客さまも多数いらっしゃいます。</p>
+        自動車の整備や修理は、一回の決済金額が高額になりカード決済で分割払いを希望されるお客さまも多数いらっしゃいます。
       </div>
     </div>
 
     <div class="row">
       <div class="row_left">
-        <p>当社ではメンテナンスが完了するとお客さまのご自宅まで納車に伺うケースが多く、インプリンターで手書き伝票を使用しておりましたがミスも多くお客さまをおませたせることも多かったです。</p>
+        当社ではメンテナンスが完了するとお客さまのご自宅まで納車に伺うケースが多く、インプリンターで手書き伝票を使用しておりましたがミスも多くお客さまをおませたせることも多かったです。
       </div>
       <div class="row_right">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/automobile2.jpg">
@@ -83,7 +96,7 @@ h2{
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/automobile3.jpg">
       </div>
       <div class="row_right">
-        <p>そんな中、プンリンタ一体型のモバイル端末を導入したことで結果お客様をお待たせするお時間やスタッフの手間も省くことができ非常に助かっております。</p>
+        そんな中、プンリンタ一体型のモバイル端末を導入したことで結果お客様をお待たせするお時間やスタッフの手間も省くことができ非常に助かっております。
       </div>
     </div>
 

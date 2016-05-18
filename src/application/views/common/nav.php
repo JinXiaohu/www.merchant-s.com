@@ -6,8 +6,6 @@ body{
 .container{
   max-width: 890px;
 }
-
-
 a{
   color: #206020;
 }
@@ -45,8 +43,6 @@ h2{
 .smallText{
    font-size: 0.9em;
 }
-   
-
 #table_brand{
   width: 100%;
 }
@@ -73,7 +69,6 @@ h2{
 #brand_time{
   font-size: 0.9em;
 }
-
 #div_nav{
   border-radius: 4px;
   margin-top: 5px;
@@ -81,20 +76,19 @@ h2{
 }
 @media (max-width: 767px){
   #div_nav{
-    margin-top:15px;
-    padding-left:15px;
-    padding-right:15px;
+    margin-top: 15px;
+    padding-left: 1px;
+    padding-right: 8px;
   }
   .nav > li{
     float: left;
     width: 33.33333333%;
-    padding: 10px 2px 10px 8px;
+    padding: 0px 2px 0px 8px;
   }
   .navbar-nav > li > a {
-    padding:  0;
+    padding: 8px 0;
   }
 }
-
 #id_navbar{
   float: none;
 }
@@ -105,6 +99,7 @@ h2{
 }
 #id_navbar a{
   color: rgb(128,128,128);
+  font-size: 1.1em;
 }
 #id_navbar a:focus, #id_navbar a:hover{
   color: #339933;

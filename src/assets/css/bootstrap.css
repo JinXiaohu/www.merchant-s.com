@@ -1088,7 +1088,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic",  "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -6043,7 +6043,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic",  "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6161,7 +6161,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic",  "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;

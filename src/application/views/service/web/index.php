@@ -6,7 +6,10 @@ h2{
   border-color: #3FA3D1;
 }
 
-
+.media{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 @media (min-width: 768px){
   .media{
     padding-top: 10px;
@@ -23,10 +26,7 @@ h2{
     font-size: 0.9em;
   }
 }
-.media{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+
 .m_header{
   margin-bottom: 10px;
 }

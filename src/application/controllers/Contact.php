@@ -15,7 +15,7 @@ class Contact extends BaseController
 	public function thanks()
 	{
 		$this->set_view_data('title',   "お問い合わせ | ". $this->config->item('site_name'));
-		$this->load_view("other/contact_thanks");
+		$this->load_view("contact/contact_thanks");
 	}
 
 
@@ -34,7 +34,7 @@ class Contact extends BaseController
 
 	private function index_GET()
 	{
-		$this->load_view('other/contact');
+		$this->load_view('contact/contact');
 	}
 
 
@@ -53,19 +53,19 @@ class Contact extends BaseController
 		if(!$name_mei)
 		{
 			$this->set_view_data("error", "Please write your name.");
-			$this->load_view('other/contact');
+			$this->load_view('contact/contact');
 			exit;
 		}
 		if(!$shop_name)
 		{
 			$this->set_view_data("error", "Please write your shop's name.");
-			$this->load_view('other/contact');
+			$this->load_view('contact/contact');
 			exit;
 		}
 		if(!$tel)
 		{
 			$this->set_view_data("error", "Please write your telephone.");
-			$this->load_view('other/contact');
+			$this->load_view('contact/contact');
 			exit;
 		}
 	}
@@ -81,7 +81,7 @@ class Contact extends BaseController
 		else
 		{
 			$this->set_view_data("error", "oops, send mail failed.");
-			$this->load_view('other/contact');
+			$this->load_view('contact/contact');
 		}
 	}
 

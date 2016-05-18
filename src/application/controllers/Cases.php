@@ -12,6 +12,12 @@ class Cases extends BaseController
 		$this->set_view_data('title',   "導入事例 | ". $this->config->item('site_name'));
 	}
 
+	//
+	public function index()
+	{
+		$this->load_view('case/index');
+	}
+
 	//零售业
 	public function retail()
 	{
