@@ -1,7 +1,7 @@
 <style type="text/css">
 body{
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 .container{
   max-width: 890px;
