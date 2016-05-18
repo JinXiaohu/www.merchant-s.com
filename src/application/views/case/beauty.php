@@ -61,13 +61,14 @@ h2{
     display: block;
     width: 100%;
   }
+  .col_txt{
+    margin-top: 5px;
+  }
   .sidebar{
     border-right: none;
   }
 }
 </style>
-
-  
 <h1>導入事例</h1>
 <p>
 今日、さまざまなシチュエーションでクレジットカードは利用できるようになってきました。クレジットカードの利用率は10年前と比べ、2倍に増えているものの民間最終消費支出の20％にも満たない数字です。<br/>
@@ -117,3 +118,13 @@ h2{
   </div>
 </div>
 
+
+<script type="text/javascript">
+$(document).ready(function(){
+  var txt = $('.col_txt:eq(1)');
+  if(txt.css('display') == "block")
+  {
+    txt.insertAfter($('.col_img:eq(1)'));
+  }
+});
+</script>

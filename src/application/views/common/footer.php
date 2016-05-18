@@ -1,24 +1,27 @@
 <style type="text/css">
-.bs-docs-footer-links {
+.footer-links {
   padding-left: 0;
   margin-top: 20px;
 }
-.bs-docs-footer {
-    padding-top: 30px;
-    padding-bottom: 10px;
-    margin-top: 30px;
-    color: #767676;
-    text-align: center;
-    border-top: 1px solid #e5e5e5;
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  color: #767676;
+  background-color: #fafafa;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
 }
-.bs-docs-footer-links li {
+.footer-links li {
   display: inline; 
   padding: 0 2px;
 }
 </style>
 
-<footer class="bs-docs-footer" role="contentinfo">
-  <ul class="bs-docs-footer-links text-muted">
+</div><!--end of container-->
+
+<div class="footer" role="contentinfo">
+  <ul class="footer-links text-muted">
     <li><a href="<?php echo $base_path;?>sitemap">サイトマップ</a></li>
     <li>·</li>
     <li><a href="<?php echo $base_path;?>policy">個人情報保護方針</a></li>
@@ -28,7 +31,7 @@
     <li><a href="<?php echo $base_path;?>link">当サイトへのリンク</a></li>
   </ul>
   <p>Copyright (C) 2007-2016 MERCHANT SUPPORT. All Rights Reserved.</p>
-</footer>
+</div>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -40,6 +43,5 @@ $(document).ready(function(){
 });
 </script>
 
-</div><!--end of container-->
 </body>
 </html>

@@ -13,9 +13,9 @@ class Cases extends BaseController
 	}
 
 	//
-	public function index()
+	public function test()
 	{
-		$this->load_view('case/index');
+		$this->load_view('case/test');
 	}
 
 	//零售业

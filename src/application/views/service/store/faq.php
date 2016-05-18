@@ -358,11 +358,11 @@ $(document).ready(function(){
   $("#toggle").click(function(){
     if(expand_all)
     {
-      $(".answer").show();
+      $(".answer").fadeIn();
     }
     else
     {
-      $(".answer").hide();
+      $(".answer").fadeOut();
     }
     expand_all = !expand_all;
   });
