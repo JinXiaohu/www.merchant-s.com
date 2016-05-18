@@ -19,7 +19,7 @@
 
 <footer class="bs-docs-footer" role="contentinfo">
   <ul class="bs-docs-footer-links text-muted">
-    <li><a href="<?php echo $base_path;?>credit">集客につながるクレジットカード</a></li>
+    <li><a href="<?php echo $base_path;?>sitemap">サイトマップ</a></li>
     <li>·</li>
     <li><a href="<?php echo $base_path;?>policy">個人情報保護方針</a></li>
     <li>·</li>

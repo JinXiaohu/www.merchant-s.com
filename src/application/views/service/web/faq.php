@@ -57,6 +57,7 @@ h2{
   border-radius: 0 0 6px 6px;
   padding-top: 0;
   padding-bottom: 10px;
+  display: none;
 }
 </style>
 
@@ -235,10 +236,9 @@ h2{
 
 <script type="text/javascript">
 $(document).ready(function(){
-
-  var allHiden = false;
+  var expand_all = true;
   $("#toggle").click(function(){
-    if(allHiden)
+    if(expand_all)
     {
       $(".answer").show();
     }
@@ -246,7 +246,7 @@ $(document).ready(function(){
     {
       $(".answer").hide();
     }
-    allHiden = !allHiden;
+    expand_all = !expand_all;
   });
 
 
