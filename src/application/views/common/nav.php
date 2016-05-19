@@ -76,7 +76,7 @@ h2{
 
 #div_nav{
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 #id_navbar{
   float: none;
@@ -93,6 +93,7 @@ h2{
 }
 #id_navbar .active a{
   background-color: #339933;
+  background: linear-gradient(to top, #339933 0%,#66CC66 100%);
   color: white;
   border-radius: 3px;
 }
@@ -102,6 +103,7 @@ h2{
 @media (max-width: 767px){
   #div_nav{
     margin-top: 15px;
+    margin-bottom: 5px;
     padding-left: 1px;
     padding-right: 8px;
   }

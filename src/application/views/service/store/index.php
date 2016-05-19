@@ -34,6 +34,7 @@
   color: white;
   font-size: 0.9em;
   background-color: #339933;
+  background: linear-gradient(to top, #339933 0%,#66CC66 100%);
   padding: 4px 9px;
   border-radius: 4px;
 }
