@@ -6,7 +6,7 @@ iframe{
 	border-style: none;
 }
 </style>
-
+<hr />
 <div>
 	<iframe src="<?php echo $html_path;?>" frameborder="no" border="0">
 	</iframe>

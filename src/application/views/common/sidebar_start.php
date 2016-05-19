@@ -1,4 +1,24 @@
 <style type="text/css">
+.hidden_hr{
+  height: 0;
+  border:none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 767px){
+  .hidden_hr{
+    background-color: #f5f5f5;
+    height: 15px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+#content{
+  margin-top: 10px;
+}
 .sidebar ul{
   list-style: none;
   padding-left: 0;
@@ -38,34 +58,15 @@
 .sidebar li.web.active:hover{
   background-color: #3FA3D1;
 }
-
-
 h1{
   margin-top: 5px;
 }
-hr{
-  height: 0;
-  border:none;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-@media (max-width: 767px){
-  hr{
-    background-color: #f5f5f5;
-    height: 15px;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
-
-
 </style>
 
-<div class="row">
+<hr />
+
+<div class="row" id="content">
   <div class="col-sm-4 sidebar">
-  <hr />
     <ul>
       <li id="store" class="level1"><a href="<?php echo $base_path;?>service/store">クレジットカード決済（早期）＜店舗＞</a></li>
       <li id="store_merit" class="level2"><a href="<?php echo $base_path;?>service/store_merit">特徴・メリット</a></li>
@@ -89,4 +90,4 @@ hr{
   </div>
 
   <div class="col-sm-8">
-    <hr />
+    <div class="hidden_hr"></div>
