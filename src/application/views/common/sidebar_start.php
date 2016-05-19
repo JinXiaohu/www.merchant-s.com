@@ -1,21 +1,4 @@
 <style type="text/css">
-.hidden_hr{
-  height: 0;
-  border:none;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-@media (max-width: 767px){
-  .hidden_hr{
-    background-color: #f5f5f5;
-    height: 15px;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
-
 #content{
   margin-top: 10px;
 }
@@ -63,8 +46,7 @@ h1{
 }
 </style>
 
-<hr />
-
+<hr class="mb_separator" />
 <div class="row" id="content">
   <div class="col-sm-4 sidebar">
     <ul>
@@ -90,4 +72,4 @@ h1{
   </div>
 
   <div class="col-sm-8">
-    <div class="hidden_hr"></div>
+    <div class="mb_separator div_hidden"></div>

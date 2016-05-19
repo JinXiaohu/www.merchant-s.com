@@ -31,7 +31,8 @@
 </style>
 
 
-<hr/>
+
+<hr class="mb_separator" />
 <h1>会社概要</h1>
 
 <table class="table_aboutus">
@@ -107,7 +108,8 @@
 </table>
 
     
-<hr />
+
+<hr class="mb_separator" />
 <h1>沿革</h1>
 
 <table class="table_aboutus">

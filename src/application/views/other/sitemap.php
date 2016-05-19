@@ -10,7 +10,8 @@ li{
 </style>
 
 
-<hr/>
+
+<hr class="mb_separator" />
 <h1>サイトマップ</h1>
 
 

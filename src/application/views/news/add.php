@@ -67,7 +67,8 @@ button{
 
 
 
-<hr />
+
+<hr class="mb_separator" />
 <h1>Add News</h1>
 
 <form method="post" action="" name="form1" enctype="multipart/form-data">

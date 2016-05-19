@@ -102,7 +102,7 @@ h2{
 }
 @media (max-width: 767px){
   #div_nav{
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 5px;
     padding-left: 1px;
     padding-right: 8px;
@@ -130,18 +130,27 @@ hr{
   border-top: 2px solid #339933;  margin-top: 0;
   margin-bottom: 0;
 }
+.div_hidden{
+  height: 0;
+  border:none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.div_separator{
+  height: 1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 @media (max-width: 767px){
-  hr{
-    border-top:none;
+  /*用于在手机上分割block*/
+  .mb_separator{
+    border:none;
     background-color: #f5f5f5;
     height: 15px;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px -8px;
+    padding: 0;
   }
 }
-
 </style>
 
 <body>
@@ -176,6 +185,8 @@ hr{
       </td>
     </tr>
   </table>
+
+  <div class="mb_separator div_hidden"></div>
 
   <div id="div_nav">
     <ul class="nav navbar-nav" id="id_navbar">

@@ -55,7 +55,7 @@
   display: table-cell;
 }
 #solutions{
-  margin-top: 20px;
+  margin-top: 25px;
 }
 #solutions .item{
   width: 32%;
@@ -158,23 +158,9 @@
 
 
 
-.div_separator{
-  height: 1px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-@media (max-width: 767px){
-  .div_separator{
-    background-color: #f5f5f5;
-    height: 15px;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
 </style>
 
+<div class="mb_separator div_hidden"></div>
 <!-- slide -->
 <div class="carousel slide" id="carousel-857271">
   <ol class="carousel-indicators syeq">
@@ -237,7 +223,7 @@
   </div>
 </div>
 
-<div class="div_separator"></div>
+<div class="div_separator mb_separator"></div>
 
 <div class="_h3">導入事例</div>
 <div class="row" id="cases">
@@ -256,7 +242,8 @@
 </div>
 
 
-<div class="div_separator"></div>
+<div class="div_separator 
+class="mb_separator"></div>
 
 <div class="row">
   <div class="col-sm-8">
@@ -272,7 +259,8 @@
     </div>
     <?php endforeach;?> 
   
-    <div class="div_separator"></div>
+    <div class="div_hidden 
+class="mb_separator"></div>
   </div>
 
   <div class="col-sm-4" id="links">

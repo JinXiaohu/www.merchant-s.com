@@ -117,9 +117,7 @@ function onConfirmClick() {
 
 </script>
 
-
-<hr />
-
+<hr class="mb_separator" />
 <h1>お問い合わせ</h1>
 
 <form method="post" action="" name="form1">

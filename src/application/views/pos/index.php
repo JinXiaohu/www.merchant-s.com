@@ -23,7 +23,8 @@
 </style>
 
   
-<hr/>
+
+<hr class="mb_separator" />
 <h1>決済端末</h1>
 
 <h2>端末</h2>

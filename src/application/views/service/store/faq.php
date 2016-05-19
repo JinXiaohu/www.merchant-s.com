@@ -14,7 +14,7 @@
   vertical-align: middle;
 }
 
-@media (max-width: 400px){
+@media (max-width: 370px){
   ._table,._tbody,._tr,._td{
     display: block;
   }

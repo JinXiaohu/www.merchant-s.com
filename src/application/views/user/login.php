@@ -106,7 +106,8 @@ function onConfirmClick() {
 </script>
 
 
-<hr />
+
+<hr class="mb_separator" />
 <h1>Administator Login</h1>
 
 <form method="post" action="" name="form1">

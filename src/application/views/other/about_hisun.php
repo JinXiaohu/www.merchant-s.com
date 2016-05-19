@@ -51,7 +51,8 @@ h1 img{
 </style>
 
 
-<hr />
+
+<hr class="mb_separator" />
 <h1 class="media">
   <div class="media-left media-middle">
     <img class="hisun_logo" src="<?php echo $cdn_path;?>images/company/hisun_logo.png">
@@ -112,7 +113,8 @@ h1 img{
 </table>
 
 
-<hr />
+
+<hr class="mb_separator" />
 <h1 class="media">
   <div class="media-left media-middle">
     <img class="hisun_logo" src="<?php echo $cdn_path;?>images/company/hisun_logo.png">

@@ -8,6 +8,11 @@
   border-top: 1px solid #e5e5e5;
   text-align: center;
 }
+@media (max-width: 767px){
+  .footer{
+    border-top: 15px solid #f5f5f5;
+  }
+}
 .block-sm{
   display: inline;
 }
