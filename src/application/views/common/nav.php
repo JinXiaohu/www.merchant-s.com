@@ -115,6 +115,14 @@ h2{
   #id_navbar a {
     padding: 8px 0;
   }
+  #id_navbar .active a{
+    background-color: white;
+    background:none;
+    color: #339933;
+  }
+  #id_navbar .active a:focus, #id_navbar .active a:hover{
+    color: #339933;
+  }
 }
 
 

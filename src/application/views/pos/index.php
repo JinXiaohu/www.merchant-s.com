@@ -1,15 +1,11 @@
 <style type="text/css">
-h3{
+.item_header{
   font-size: 1.2em;
   font-weight: bold;
-  padding: 5px 0;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgb(225, 225, 225);
+  padding: 15px 0 8px 0;
 }
-.item{
-  margin-top: 10px;
-  margin-bottom: 10px;
+.media{
+  border-top: solid 1px rgb(225, 225, 225);
 }
 .left_img{
   width: 170px;
@@ -32,8 +28,8 @@ h3{
 
 <h2>端末</h2>
 
-<h3>PAX-S80</h3>
 <div class="media">
+  <div class="item_header">PAX-S80</div>
   <div class="media-left media-middle">
     <div class="left_img">
       <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/pos/pax_s80.png">
@@ -49,8 +45,8 @@ h3{
 </div>
 
 
-<h3>PAX-S90</h3>
 <div class="media">
+  <div class="item_header">PAX-S90</div>
   <div class="media-left media-middle">
     <div class="left_img">
       <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/pos/pax_s90.png">
@@ -66,8 +62,8 @@ h3{
 </div>
 
 
-<h3>東芝TEC</h3>
 <div class="media">
+  <div class="item_header">東芝TEC</div>
   <div class="media-left media-middle">
     <div class="left_img">
       <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/pos/tec_ct_4100.png">
@@ -82,9 +78,8 @@ h3{
   </div>
 </div>
 
-
-<h3>パナソニック</h3>
 <div class="media">
+  <div class="item_header">パナソニック</div>
   <div class="media-left media-middle">
     <div class="left_img">
       <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/pos/jt_c16.png">
@@ -99,6 +94,7 @@ h3{
   </div>
 </div>
 
+<div class="media"></div>
 
 
 <h2>センター</h2> 
