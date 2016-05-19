@@ -1,7 +1,4 @@
 <style type="text/css">
-hr{
-  border-top: 2px solid #339933;
-}
 pre{
   white-space: pre-wrap;
   background-color: #fbfbfb;

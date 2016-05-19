@@ -114,7 +114,21 @@ h2{
   color: white;
   font-weight: bold;
 }
-
+hr{
+  border-top: 2px solid #339933;  margin-top: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 767px){
+  hr{
+    border-top:none;
+    background-color: #f5f5f5;
+    height: 15px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
 
 </style>
 

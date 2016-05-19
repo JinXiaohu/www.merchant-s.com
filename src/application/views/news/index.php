@@ -1,7 +1,4 @@
 <style type="text/css">
-hr{
-  border-top: 2px solid #339933;
-}
 .news_item_row{
   margin-left: 0;
   margin-right: 0;

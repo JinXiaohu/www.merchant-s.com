@@ -1,8 +1,4 @@
 <style type="text/css">
-hr{
-  border-top: 2px solid #339933;
-}
-
 #table_recruit{
   width:100%;
   margin-bottom: 30px;

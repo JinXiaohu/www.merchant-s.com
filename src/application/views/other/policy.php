@@ -1,10 +1,4 @@
-<style type="text/css">
-hr{
-  border-top: 2px solid #339933;
-}
-</style>
 
-  
 <div class="row">
   <div class="col-md-12">
     <hr/>

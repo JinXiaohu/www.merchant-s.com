@@ -1,7 +1,4 @@
 <style type="text/css">
-hr{
-  border-top: 2px solid #6D4780;
-}
 h1 img{
   vertical-align: middle;
 }

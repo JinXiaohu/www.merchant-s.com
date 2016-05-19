@@ -1,7 +1,4 @@
 <style type="text/css">
-hr{
-  border-top: 2px solid #339933;
-}
 .table_aboutus{
   width:100%;
   margin-bottom: 30px;

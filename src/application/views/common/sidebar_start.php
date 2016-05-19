@@ -5,7 +5,6 @@
 }
 .sidebar{
   border-right: solid 1px #e5e5e5;
-  margin-bottom: 30px;
 }
 .sidebar a{
   color: rgb(80, 80, 80);
@@ -44,13 +43,14 @@
 h1{
   margin-top: 5px;
 }
-.div_separator{
+hr{
   height: 0;
+  border:none;
   margin-top: 0;
   margin-bottom: 0;
 }
 @media (max-width: 767px){
-  .div_separator{
+  hr{
     background-color: #f5f5f5;
     height: 15px;
     margin-left: -8px;
@@ -65,7 +65,7 @@ h1{
 
 <div class="row">
   <div class="col-sm-4 sidebar">
-  <div class="div_separator"></div>
+  <hr />
     <ul>
       <li id="store" class="level1"><a href="<?php echo $base_path;?>service/store">クレジットカード決済（早期）＜店舗＞</a></li>
       <li id="store_merit" class="level2"><a href="<?php echo $base_path;?>service/store_merit">特徴・メリット</a></li>
@@ -89,4 +89,4 @@ h1{
   </div>
 
   <div class="col-sm-8">
-    <div class="div_separator"></div>
+    <hr />

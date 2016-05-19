@@ -1,8 +1,4 @@
 <style type="text/css">
-hr{
-  border-top: 2px solid #339933;
-}
-
 h3{
   font-size: 1.2em;
   font-weight: bold;
