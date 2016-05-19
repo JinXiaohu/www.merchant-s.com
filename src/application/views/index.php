@@ -1,5 +1,4 @@
 <style type="text/css">
-  
 .slide_txt{ 
   width: 100%; 
   float: left; 
@@ -24,18 +23,17 @@
 }
 
 
+
+
+
+
+
 #solutions .item {
   border: solid 1px #ccc;
   border-radius: 6px;
   padding: 10px 15px;
   margin-bottom: 10px;
 }
-
-#solutions .item:hover{
- box-shadow: 0 15px 30px rgba(0,0,0,0.1);
- transform: translate3d(0, -2px, 0);
-}
-
 #solutions .item h4 {
   text-align: center;
   font-size: 1.1em;
@@ -55,7 +53,6 @@
 }
 ._td{
   display: table-cell;
-  padding:3px;
 }
 #solutions{
   margin-top: 20px;
@@ -73,6 +70,31 @@
   #solutions .item, #solutions .separator{
     width: 100%;
   }
+  #solutions .item{
+    border:none;
+    border-top: solid 1px #ccc;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px){
+  #solutions .item:hover{
+   box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+   transform: translate3d(0, -2px, 0);
+  }
+}
+
+
+
+
+
+
+
+._h3{
+  color: rgb(120, 120, 120);
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 #cases .col{
   margin-top: 8px;
@@ -109,12 +131,8 @@
 }
 
 
-._h3{
-  color: rgb(120, 120, 120);
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
+
+
 
 #links .item{
   padding-top: 5px;
@@ -126,6 +144,11 @@
     margin-right: auto;
   }
 }
+
+
+
+
+
 
 .news_item{
   margin-left: 0;
@@ -146,6 +169,9 @@
   color:rgb(120,120,120);
 }
 @media (max-width: 767px){
+  .news_item{
+    border-top: solid 1px rgb(225,225,225);
+  }
   .col_title{
     padding-right: 0;
   }
@@ -155,6 +181,8 @@
     margin-top: 5px;
   }
 }
+
+
 .div_separator{
   height: 1px;
   margin-top: 15px;
@@ -210,7 +238,7 @@
     <div class="_tr">
       <div class="_td item">
           <h4><a href="<?php echo $base_path;?>service/store">早期決済サービス</a></h4>
-          <p class="p-body">『早期決済サービス』はクレジット加盟店向け決済代行サービスです。業界最速クラスの決済スピードで貴店のキャッシュフローをサポートいたします。
+          <p>『早期決済サービス』はクレジット加盟店向け決済代行サービスです。業界最速クラスの決済スピードで貴店のキャッシュフローをサポートいたします。
           </p>
       </div>
       
@@ -218,7 +246,7 @@
 
       <div class="_td item">
           <h4><a href="<?php echo $base_path;?>service/wechat">WeChat決済</a></h4>
-          <p class="p-body">WeChat決済は中国人観光客に向けた独自の決済手段で、マーチャント・サポートは日本の公式パートナーとして貴店をお手伝いいたします。
+          <p>WeChat決済は中国人観光客に向けた独自の決済手段で、マーチャント・サポートは日本の公式パートナーとして貴店をお手伝いいたします。
           </p>
       </div>
       
@@ -226,7 +254,7 @@
 
       <div class="_td item">
           <h4><a href="<?php echo $base_path;?>pos">PAX社独自端末機</a></h4>
-          <p class="p-body">世界第3位のシェア率を誇るPAX社のクレジット端末機です。独自の仕入れルートを持つマーチャント・サポートは貴店のニーズにお応えいたします。
+          <p>世界第3位のシェア率を誇るPAX社のクレジット端末機です。独自の仕入れルートを持つマーチャント・サポートは貴店のニーズにお応えいたします。
           </p>    
       </div>
 

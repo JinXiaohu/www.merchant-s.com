@@ -1,10 +1,8 @@
 <style type="text/css">
-.news_item_row{
+.news_item{
   margin-left: 0;
   margin-right: 0;
-  border-top-style: dotted;
-  border-top-width: 1px;
-  border-top-color: rgb(225,225,225);
+  border-top: dotted 1px rgb(225,225,225);
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -26,6 +24,9 @@
   padding-right: 0;
 }
 @media (max-width: 767px){
+  .news_item{
+    border-top: solid 1px rgb(225,225,225);
+  }
   .col-date{
     text-align: left;
     padding-left: 0;
@@ -45,7 +46,7 @@
 <hr/>
 <h1>All News</h1>
 <?php foreach ($full_news as $news_item):?>  
-<div class="row news_item_row">
+<div class="row news_item">
   <div class="col-sm-8 col-xs-12 col-title">
     <a href="<?php echo $base_path;?>news/show?id=<?php echo $news_item->id; ?>" target="_blank"><?php echo $news_item->title; ?></a>
   </div>

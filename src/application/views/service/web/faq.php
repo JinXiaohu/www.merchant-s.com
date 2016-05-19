@@ -21,8 +21,8 @@
 }
 
 #toggle{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 90px;
   text-align: center;
   background-color: #3FA3D1;
