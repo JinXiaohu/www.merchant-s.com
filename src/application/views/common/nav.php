@@ -69,10 +69,35 @@ h2{
 #brand_time{
   font-size: 0.9em;
 }
+
+
+
+
+
 #div_nav{
-  border-radius: 4px;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+#id_navbar{
+  float: none;
+}
+#id_navbar a{
+  color: rgb(120,120,120);
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 11px 20px;
+}
+#id_navbar a:focus, #id_navbar a:hover{
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+#id_navbar .active a{
+  background-color: #339933;
+  color: white;
+  border-radius: 3px;
+}
+#id_navbar .active a:focus, #id_navbar .active a:hover{
+  color: white;
 }
 @media (max-width: 767px){
   #div_nav{
@@ -80,40 +105,17 @@ h2{
     padding-left: 1px;
     padding-right: 8px;
   }
-  .nav > li{
+  #id_navbar li{
     float: left;
     width: 33.33333333%;
     padding: 0px 2px 0px 8px;
   }
-  .navbar-nav > li > a {
+  #id_navbar a {
     padding: 8px 0;
   }
 }
-#id_navbar{
-  float: none;
-}
-#id_navbar .menu{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-#id_navbar a{
-  color: rgb(128,128,128);
-  font-size: 1.1em;
-}
-#id_navbar a:focus, #id_navbar a:hover{
-  color: white;
-  background-color: #339933;
-  border-radius: 2px;
-}
-#id_navbar .active a{
-  color: #339933;
-  font-weight: bold;
-}
-#id_navbar .active a:focus, #id_navbar .active a:hover{
-  color: white;
-  font-weight: bold;
-}
+
+
 hr{
   border-top: 2px solid #339933;  margin-top: 0;
   margin-bottom: 0;
@@ -167,7 +169,7 @@ hr{
 
   <div id="div_nav">
     <ul class="nav navbar-nav" id="id_navbar">
-      <li id="nav-home">
+      <li id="nav-home1">
         <a href="<?php echo $base_path;?>" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">HOME</a>
       </li>
       
