@@ -26,10 +26,15 @@
 
 #solutions .item {
   border: solid 1px #ccc;
-  border-radius: 4px;
-  padding: 3px 15px;
+  border-radius: 5px;
+  padding: 10px 15px;
   margin-bottom: 10px;
 }
+
+#solutions .item:hover{
+    box-shadow: inset 0 0 0 1px #339933;
+}
+
 #solutions .item h4 {
   text-align: center;
   font-size: 1.1em;
@@ -51,31 +56,62 @@
   display: table-cell;
   padding:3px;
 }
-._td.item{
+#solutions{
+  margin-top: 20px;
+}
+#solutions .item{
   width: 32%;
 }
-._td.separator{
+#solutions .separator{
   width: 2%;
 }
 @media (max-width: 767px){
   ._table,._tbody,._tr,._td{
     display: block;
   }
-  ._td.item, ._td.separator{
+  #solutions .item, #solutions .separator{
     width: 100%;
   }
 }
 
-#examples .item{
+#cases .item{
   font-size: 1.3em;
   font-weight: bold;
   text-align: center;
-
-  border: solid 1px #ccc;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  padding: 35px 10px;
+  margin-bottom: 15px;
+  padding-top: 60.3125%;
+  border-radius: 5px;
 }
+#case1{
+  background-image: url(<?php echo $cdn_path; ?>images/case1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+#case2{
+  background-image: url(<?php echo $cdn_path; ?>images/case2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+#case3{
+  background-image: url(<?php echo $cdn_path; ?>images/case3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+#case4{
+  background-image: url(<?php echo $cdn_path; ?>images/case4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+#cases img8{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
 h3{
   color: rgb(120, 120, 120);
   font-weight: bold;
@@ -110,19 +146,19 @@ h3{
   float: right;
 }
 
-.news_item_row{
+.news_item{
   margin-left: 0;
   margin-right: 0;
   border-top: dotted 1px rgb(220,220,220);
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.news_title_col{
+.col_title{
   padding-left: 0;
   padding-right: 15px;
   font-size: 1.1em;
 }
-.news_date_col{
+.col_date{
   text-align: right;
   padding-right: 0;
   padding-left: 15px;
@@ -130,7 +166,7 @@ h3{
   color:rgb(120,120,120);
 }
 @media (max-width: 767px){
-  .news_date_col{
+  .col_date{
     text-align: left;
     padding-left: 0;
     margin-top: 5px;
@@ -139,6 +175,7 @@ h3{
 
 </style>
 
+<div id="case1"></div>
 <!-- slide -->
 <div class="carousel slide" id="carousel-857271">
   <ol class="carousel-indicators syeq">
@@ -172,7 +209,6 @@ h3{
 
 </div>
 
-<h3></h3>
 <div class="_table" id="solutions">
   <div class="_tbody">
     <div class="_tr">
@@ -202,19 +238,20 @@ h3{
   </div>
 </div>
 
+
 <h3>導入事例</h3>
-<div class="row" id="examples">
+<div class="row" id="cases">
   <div class="col-xs-6">
-    <a href="<?php echo $base_path;?>cases/retail"><div class="item">小売業</div></a>
+    <a href="<?php echo $base_path;?>cases/retail"><div class="item" id="case1"></div></a>
   </div>
   <div class="col-xs-6">
-    <a href="<?php echo $base_path;?>cases/catering"><div class="item">飲食業</div></a>
+    <a href="<?php echo $base_path;?>cases/catering"><div class="item" id="case2"></div></a>
   </div>
   <div class="col-xs-6">
-    <a href="<?php echo $base_path;?>cases/beauty"><div class="item">美容業</div></a>
+    <a href="<?php echo $base_path;?>cases/beauty"><div class="item" id="case3"></div></a>
   </div>
   <div class="col-xs-6">
-    <a href="<?php echo $base_path;?>cases/automobile"><div class="item">自動車業</div></a>
+    <a href="<?php echo $base_path;?>cases/automobile"><div class="item" id="case4"></div></a>
   </div>
 </div>
 
@@ -235,11 +272,11 @@ h3{
     </div>
    
     <?php foreach ($news_data as $news_item):?>  
-    <div class="row news_item_row">
-      <div class="col-sm-9 news_title_col">
+    <div class="row news_item">
+      <div class="col-sm-9 col_title">
         <a href="<?php echo $base_path;?>news/show?id=<?php echo $news_item->id; ?>" target="_blank"><?php echo $news_item->title; ?></a>
       </div>
-      <div class="col-sm-3 news_date_col"><?php echo $news_item->date; ?></div>
+      <div class="col-sm-3 col_date"><?php echo $news_item->date; ?></div>
     </div>
     <?php endforeach;?> 
   

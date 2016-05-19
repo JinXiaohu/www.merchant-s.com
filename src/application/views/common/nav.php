@@ -114,6 +114,15 @@ h2{
   color: #339933;
   font-weight: bold;
 }
+@media (max-width: 767px){
+  .div_separator{
+    background-color: #e0e0e0;
+    height: 10px;
+    margin-left: -8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
 
 </style>
 
