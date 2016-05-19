@@ -14,13 +14,13 @@ hr{
 
 .news_title_col{
   padding-left: 0;
-  padding-right: 15px;
+  padding-right: 0;
 }
 
 .news_date_col{
   text-align: right;
   padding-right: 0;
-  padding-left: 15px;
+  padding-left: 25px;
   margin-top: 0;
   color:rgb(150,150,150);
 }

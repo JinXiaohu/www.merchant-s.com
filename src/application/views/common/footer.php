@@ -1,8 +1,8 @@
 <style type="text/css">
 .footer {
   padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 30px;
+  padding-bottom: 25px;
+  margin-top: 20px;
   color: #767676;
   background-color: #fafafa;
   border-top: 1px solid #e5e5e5;

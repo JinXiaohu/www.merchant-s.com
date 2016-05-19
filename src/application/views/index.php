@@ -26,13 +26,14 @@
 
 #solutions .item {
   border: solid 1px #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 10px 15px;
   margin-bottom: 10px;
 }
 
 #solutions .item:hover{
-    box-shadow: inset 0 0 0 1px #339933;
+ box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+ transform: translate3d(0, -2px, 0);
 }
 
 #solutions .item h4 {
@@ -73,77 +74,57 @@
     width: 100%;
   }
 }
-
+#cases .col{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
 #cases .item{
   font-size: 1.3em;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 15px;
-  padding-top: 60.3125%;
-  border-radius: 5px;
+  padding-top: 44.6875%;
+  height: 100px;
+  border-radius: 6px;
+  border:solid 1px rgb(150,150,150);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+#cases .item:hover{
+ box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+ transform: translate3d(0, -2px, 0);
 }
 #case1{
   background-image: url(<?php echo $cdn_path; ?>images/case1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
 }
 #case2{
   background-image: url(<?php echo $cdn_path; ?>images/case2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
 }
 #case3{
   background-image: url(<?php echo $cdn_path; ?>images/case3.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
 }
 #case4{
   background-image: url(<?php echo $cdn_path; ?>images/case4.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
-#cases img8{
-  width: 100%;
-  max-width: 300px;
-  height: auto;
 }
 
-h3{
+
+._h3{
   color: rgb(120, 120, 120);
-  font-weight: bold;
   font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-#links{
-  margin-bottom: 20px;
-}
 #links .item{
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 @media (max-width: 767px){
   #links img{
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-
-#news{
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-#news h3{
-  display: inline;
-  padding: 5px 0;
-}
-.more_news{
-  text-align: right;
-  float: right;
 }
 
 .news_item{
@@ -155,7 +136,6 @@ h3{
 }
 .col_title{
   padding-left: 0;
-  padding-right: 15px;
   font-size: 1.1em;
 }
 .col_date{
@@ -166,16 +146,32 @@ h3{
   color:rgb(120,120,120);
 }
 @media (max-width: 767px){
+  .col_title{
+    padding-right: 0;
+  }
   .col_date{
     text-align: left;
     padding-left: 0;
     margin-top: 5px;
   }
 }
-
+.div_separator{
+  height: 1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px){
+  .div_separator{
+    background-color: #f5f5f5;
+    height: 15px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
 </style>
 
-<div id="case1"></div>
 <!-- slide -->
 <div class="carousel slide" id="carousel-857271">
   <ol class="carousel-indicators syeq">
@@ -238,38 +234,31 @@ h3{
   </div>
 </div>
 
+<div class="div_separator"></div>
 
-<h3>導入事例</h3>
+<div class="_h3">導入事例</div>
 <div class="row" id="cases">
-  <div class="col-xs-6">
+  <div class="col-sm-6 col-md-4 col">
     <a href="<?php echo $base_path;?>cases/retail"><div class="item" id="case1"></div></a>
   </div>
-  <div class="col-xs-6">
+  <div class="col-sm-6 col-md-4 col">
     <a href="<?php echo $base_path;?>cases/catering"><div class="item" id="case2"></div></a>
   </div>
-  <div class="col-xs-6">
+  <div class="col-sm-6 col-md-4 col">
     <a href="<?php echo $base_path;?>cases/beauty"><div class="item" id="case3"></div></a>
   </div>
-  <div class="col-xs-6">
+  <div class="col-sm-6 col-md-4 col">
     <a href="<?php echo $base_path;?>cases/automobile"><div class="item" id="case4"></div></a>
   </div>
 </div>
 
 
-<h3></h3>
+<div class="div_separator"></div>
+
 <div class="row">
-  <div class="col-sm-3" id="links">
-    <div class="item"><a href="<?php echo $base_path;?>contact_participating"><img class="img-responsive" src="<?php echo $cdn_path;?>images/participation.gif"></a></div>
-    <div class="item"><a href="<?php echo $base_path;?>contact"><img class="img-responsive" src="<?php echo $cdn_path;?>images/contact.gif"></a></div>
-    <div class="item"><a href="http://www.mscc.co.jp/"><img class="img-responsive" src="<?php echo $cdn_path;?>images/mscc.gif"></a></div>
-  </div>
-  
   <div class="col-sm-9">
     <!-- news -->
-    <div id="news">
-      <h3>新着情報</h3>
-      <span class="more_news"><a href="<?php echo $base_path;?>news" title="more news">more</a></span>
-    </div>
+    <a href="<?php echo $base_path; ?>news"><div class="_h3">新着情報</div></a>
    
     <?php foreach ($news_data as $news_item):?>  
     <div class="row news_item">
@@ -280,8 +269,15 @@ h3{
     </div>
     <?php endforeach;?> 
   
+    <div class="div_separator"></div>
   </div>
-  
+
+  <div class="col-sm-3" id="links">
+
+    <div class="item"><a href="<?php echo $base_path;?>contact_participating"><img class="img-responsive" src="<?php echo $cdn_path;?>images/participation.gif"></a></div>
+    <div class="item"><a href="<?php echo $base_path;?>contact"><img class="img-responsive" src="<?php echo $cdn_path;?>images/contact.gif"></a></div>
+    <div class="item"><a href="http://www.mscc.co.jp/"><img class="img-responsive" src="<?php echo $cdn_path;?>images/mscc.gif"></a></div>
+  </div>
 </div>
 
 

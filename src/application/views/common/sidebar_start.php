@@ -44,10 +44,28 @@
 h1{
   margin-top: 5px;
 }
+.div_separator{
+  height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 767px){
+  .div_separator{
+    background-color: #f5f5f5;
+    height: 15px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+
 </style>
 
 <div class="row">
   <div class="col-sm-4 sidebar">
+  <div class="div_separator"></div>
     <ul>
       <li id="store" class="level1"><a href="<?php echo $base_path;?>service/store">クレジットカード決済（早期）＜店舗＞</a></li>
       <li id="store_merit" class="level2"><a href="<?php echo $base_path;?>service/store_merit">特徴・メリット</a></li>
@@ -71,4 +89,4 @@ h1{
   </div>
 
   <div class="col-sm-8">
-
+    <div class="div_separator"></div>

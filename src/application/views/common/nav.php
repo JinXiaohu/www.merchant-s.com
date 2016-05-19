@@ -72,7 +72,7 @@ h2{
 #div_nav{
   border-radius: 4px;
   margin-top: 5px;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 }
 @media (max-width: 767px){
   #div_nav{
@@ -102,8 +102,8 @@ h2{
   font-size: 1.1em;
 }
 #id_navbar a:focus, #id_navbar a:hover{
-  color: #339933;
-  background-color: #f8f8f8;
+  color: white;
+  background-color: #339933;
   border-radius: 2px;
 }
 #id_navbar .active a{
@@ -111,18 +111,10 @@ h2{
   font-weight: bold;
 }
 #id_navbar .active a:focus, #id_navbar .active a:hover{
-  color: #339933;
+  color: white;
   font-weight: bold;
 }
-@media (max-width: 767px){
-  .div_separator{
-    background-color: #e0e0e0;
-    height: 10px;
-    margin-left: -8px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-}
+
 
 </style>
 

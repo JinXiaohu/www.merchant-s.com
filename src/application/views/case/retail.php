@@ -1,4 +1,19 @@
 <style type="text/css">
+.div_separator{
+  height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 767px){
+  .div_separator{
+    background-color: #f5f5f5;
+    height: 15px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
 #cases{
   margin-top: 20px;
 }
@@ -69,6 +84,8 @@ h2{
   }
 }
 </style>
+
+<div class="div_separator"></div>
 <h1>導入事例</h1>
 <p>
 今日、さまざまなシチュエーションでクレジットカードは利用できるようになってきました。クレジットカードの利用率は10年前と比べ、2倍に増えているものの民間最終消費支出の20％にも満たない数字です。<br/>
