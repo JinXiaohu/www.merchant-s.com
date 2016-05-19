@@ -134,17 +134,6 @@
 
 
 
-#links .item{
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-@media (max-width: 767px){
-  #links img{
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 
 
 
@@ -153,7 +142,7 @@
 .news_item{
   margin-left: 0;
   margin-right: 0;
-  border-top: dotted 1px rgb(220,220,220);
+  border-top: solid 1px rgb(220,220,220);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -169,9 +158,6 @@
   color:rgb(120,120,120);
 }
 @media (max-width: 767px){
-  .news_item{
-    border-top: solid 1px rgb(225,225,225);
-  }
   .col_title{
     padding-right: 0;
   }
@@ -181,6 +167,21 @@
     margin-top: 5px;
   }
 }
+#links .item{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#links img{
+  margin-right: 0;
+  margin-left: auto;
+}
+@media (max-width: 767px){
+  #links img{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 
 .div_separator{
@@ -284,7 +285,7 @@
 <div class="div_separator"></div>
 
 <div class="row">
-  <div class="col-sm-9">
+  <div class="col-sm-8">
     <!-- news -->
     <a href="<?php echo $base_path; ?>news"><div class="_h3">新着情報</div></a>
    
@@ -300,7 +301,7 @@
     <div class="div_separator"></div>
   </div>
 
-  <div class="col-sm-3" id="links">
+  <div class="col-sm-4" id="links">
 
     <div class="item"><a href="<?php echo $base_path;?>contact_participating"><img class="img-responsive" src="<?php echo $cdn_path;?>images/participation.gif"></a></div>
     <div class="item"><a href="<?php echo $base_path;?>contact"><img class="img-responsive" src="<?php echo $cdn_path;?>images/contact.gif"></a></div>
