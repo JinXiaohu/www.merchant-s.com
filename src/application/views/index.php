@@ -100,41 +100,15 @@
   margin-top: 8px;
   margin-bottom: 8px;
 }
-#cases .item{
-  font-size: 1.3em;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 44.6875%;
-  height: 100px;
+#cases img{
   border-radius: 6px;
   border:solid 1px rgb(150,150,150);
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
 }
-#cases .item:hover{
- box-shadow: 0 15px 30px rgba(0,0,0,0.1);
- transform: translate3d(0, -2px, 0);
+#cases img:hover{
+  box-shadow: inset 0 0 0 1px #2996cc;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transform: translate3d(0, -2px, 0);
 }
-#case1{
-  background-image: url(<?php echo $cdn_path; ?>images/case1.jpg);
-}
-#case2{
-  background-image: url(<?php echo $cdn_path; ?>images/case2.jpg);
-}
-#case3{
-  background-image: url(<?php echo $cdn_path; ?>images/case3.jpg);
-}
-#case4{
-  background-image: url(<?php echo $cdn_path; ?>images/case4.jpg);
-}
-
-
-
-
-
-
 
 
 
@@ -238,25 +212,25 @@
   <div class="_tbody">
     <div class="_tr">
       <div class="_td item">
-          <h4><a href="<?php echo $base_path;?>service/store">早期決済サービス</a></h4>
-          <p>『早期決済サービス』はクレジット加盟店向け決済代行サービスです。業界最速クラスの決済スピードで貴店のキャッシュフローをサポートいたします。
-          </p>
+        <h4><a href="<?php echo $base_path;?>service/store">早期決済サービス</a></h4>
+        <p>『早期決済サービス』はクレジット加盟店向け決済代行サービスです。業界最速クラスの決済スピードで貴店のキャッシュフローをサポートいたします。
+        </p>
       </div>
       
       <div class="_td separator"></div>
 
       <div class="_td item">
-          <h4><a href="<?php echo $base_path;?>service/wechat">WeChat決済</a></h4>
-          <p>WeChat決済は中国人観光客に向けた独自の決済手段で、マーチャント・サポートは日本の公式パートナーとして貴店をお手伝いいたします。
-          </p>
+        <h4><a href="<?php echo $base_path;?>service/wechat">WeChat決済</a></h4>
+        <p>WeChat決済は中国人観光客に向けた独自の決済手段で、マーチャント・サポートは日本の公式パートナーとして貴店をお手伝いいたします。
+        </p>
       </div>
       
       <div class="_td separator"></div>
 
       <div class="_td item">
-          <h4><a href="<?php echo $base_path;?>pos">PAX社独自端末機</a></h4>
-          <p>世界第3位のシェア率を誇るPAX社のクレジット端末機です。独自の仕入れルートを持つマーチャント・サポートは貴店のニーズにお応えいたします。
-          </p>    
+        <h4><a href="<?php echo $base_path;?>pos">PAX社独自端末機</a></h4>
+        <p>世界第3位のシェア率を誇るPAX社のクレジット端末機です。独自の仕入れルートを持つマーチャント・サポートは貴店のニーズにお応えいたします。
+        </p>    
       </div>
 
     </div>
@@ -268,16 +242,16 @@
 <div class="_h3">導入事例</div>
 <div class="row" id="cases">
   <div class="col-sm-6 col-md-4 col">
-    <a href="<?php echo $base_path;?>cases/retail"><div class="item" id="case1"></div></a>
+    <a href="<?php echo $base_path;?>cases/retail"><img class="img-responsive" src="<?php echo $cdn_path;?>images/case1.jpg"></a>
   </div>
   <div class="col-sm-6 col-md-4 col">
-    <a href="<?php echo $base_path;?>cases/catering"><div class="item" id="case2"></div></a>
+    <a href="<?php echo $base_path;?>cases/catering"><img class="img-responsive" src="<?php echo $cdn_path;?>images/case2.jpg"></a>
   </div>
   <div class="col-sm-6 col-md-4 col">
-    <a href="<?php echo $base_path;?>cases/beauty"><div class="item" id="case3"></div></a>
+    <a href="<?php echo $base_path;?>cases/beauty"><img class="img-responsive" src="<?php echo $cdn_path;?>images/case3.jpg"></a>
   </div>
   <div class="col-sm-6 col-md-4 col">
-    <a href="<?php echo $base_path;?>cases/automobile"><div class="item" id="case4"></div></a>
+    <a href="<?php echo $base_path;?>cases/automobile"><img class="img-responsive" src="<?php echo $cdn_path;?>images/case4.jpg"></a>
   </div>
 </div>
 
