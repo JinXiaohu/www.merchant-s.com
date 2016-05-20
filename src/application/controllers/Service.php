@@ -15,7 +15,6 @@ class Service extends BaseController
 	protected function load_pc_template($view_name)
 	{
 		$this->load->view('common/head',   $this->view_data);
-		$this->load->view('common/nav',    $this->view_data);
 		$this->load->view('common/sidebar_start',    $this->view_data);
 		$this->load->view($view_name,      $this->view_data);
 		$this->load->view('common/sidebar_end',    $this->view_data);
@@ -25,7 +24,6 @@ class Service extends BaseController
 	protected function load_mb_template($view_name)
 	{
 		$this->load->view('common/head.mb',	 $this->view_data);
-		$this->load->view('common/nav.mb',    $this->view_data);
 		$this->load->view('common/sidebar.mb', $this->view_data);
 		$this->load->view($view_name. ".mb", $this->view_data);
 		$this->load->view('common/sidebar_end.mb',    $this->view_data);

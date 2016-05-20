@@ -29,11 +29,34 @@
 
 
 #solutions .item {
-  border: solid 1px #ccc;
-  border-radius: 6px;
   padding: 10px 15px;
   margin-bottom: 10px;
+  background-color: #fafafa;
 }
+
+#solutions #s_item1{
+  border-top: solid 1px #3FA3D1;
+}
+#solutions #s_item1 a{
+  color: #3FA3D1;
+}
+
+#solutions #s_item2{
+  border-top: solid 1px #339933;
+}
+#solutions #s_item2 a{
+  color: #339933;
+}
+
+#solutions #s_item3{
+  border-top: solid 1px #6D4780;
+}
+#solutions #s_item3 a{
+  color: #6D4780;
+}
+
+
+
 #solutions .item h4 {
   text-align: center;
   font-size: 1.1em;
@@ -41,19 +64,7 @@
 #solutions .item h4 a {
   font-weight: bold;
 }
-._table{
-  display: table;
-  width: 100%;
-}
-._tbody{
-  display: table-row-group;
-}
-._tr{
-  display: table-row;
-}
-._td{
-  display: table-cell;
-}
+
 #solutions{
   margin-top: 25px;
 }
@@ -71,8 +82,6 @@
     width: 100%;
   }
   #solutions .item{
-    border:none;
-    border-top: solid 1px #ccc;
     border-radius: 0;
     margin-bottom: 0;
   }
@@ -90,9 +99,9 @@
 
 
 
-._h3{
-  color: rgb(120, 120, 120);
-  font-size: 1.2em;
+._h1{
+  color: #333;
+  font-size: 1.3em;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -160,7 +169,6 @@
 
 </style>
 
-<div class="mb_separator div_hidden"></div>
 <!-- slide -->
 <div class="carousel slide" id="carousel-857271">
   <ol class="carousel-indicators syeq">
@@ -197,7 +205,7 @@
 <div class="_table" id="solutions">
   <div class="_tbody">
     <div class="_tr">
-      <div class="_td item">
+      <div class="_td item" id="s_item1">
         <h4><a href="<?php echo $base_path;?>service/store">早期決済サービス</a></h4>
         <p>『早期決済サービス』はクレジット加盟店向け決済代行サービスです。業界最速クラスの決済スピードで貴店のキャッシュフローをサポートいたします。
         </p>
@@ -205,7 +213,7 @@
       
       <div class="_td separator"></div>
 
-      <div class="_td item">
+      <div class="_td item" id="s_item2">
         <h4><a href="<?php echo $base_path;?>service/wechat">WeChat決済</a></h4>
         <p>WeChat決済は中国人観光客に向けた独自の決済手段で、マーチャント・サポートは日本の公式パートナーとして貴店をお手伝いいたします。
         </p>
@@ -213,7 +221,7 @@
       
       <div class="_td separator"></div>
 
-      <div class="_td item">
+      <div class="_td item" id="s_item3">
         <h4><a href="<?php echo $base_path;?>pos">PAX社独自端末機</a></h4>
         <p>世界第3位のシェア率を誇るPAX社のクレジット端末機です。独自の仕入れルートを持つマーチャント・サポートは貴店のニーズにお応えいたします。
         </p>    
@@ -225,7 +233,7 @@
 
 <div class="div_separator mb_separator"></div>
 
-<div class="_h3">導入事例</div>
+<div class="_h1">導入事例</div>
 <div class="row" id="cases">
   <div class="col-sm-6 col-md-4 col">
     <a href="<?php echo $base_path;?>cases/retail"><img class="img-responsive" src="<?php echo $cdn_path;?>images/case1.jpg"></a>
@@ -242,13 +250,12 @@
 </div>
 
 
-<div class="div_separator 
-class="mb_separator"></div>
+<div class="div_separator mb_separator"></div>
 
 <div class="row">
   <div class="col-sm-8">
     <!-- news -->
-    <a href="<?php echo $base_path; ?>news"><div class="_h3">新着情報</div></a>
+    <a href="<?php echo $base_path; ?>news"><div class="_h1">新着情報</div></a>
    
     <?php foreach ($news_data as $news_item):?>  
     <div class="row news_item">
@@ -259,8 +266,7 @@ class="mb_separator"></div>
     </div>
     <?php endforeach;?> 
   
-    <div class="div_hidden 
-class="mb_separator"></div>
+    <div class="div_hidden mb_separator"></div>
   </div>
 
   <div class="col-sm-4" id="links">

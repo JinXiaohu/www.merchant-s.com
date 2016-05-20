@@ -1,7 +1,6 @@
 <div class="row">
   <div class="col-md-12">
     
-<hr class="mb_separator" />
     <h1>免責事項</h1>
     <h2>電子メールの送信に関する免責事項 </h2>
     <p>

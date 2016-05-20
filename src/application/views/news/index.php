@@ -32,7 +32,6 @@
 </style>
 
 
-<hr class="mb_separator" />
 <h1>News</h1>
 <?php foreach ($full_news as $news_item):?>  
 <div class="row news_item">

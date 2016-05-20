@@ -32,7 +32,6 @@
 
 
 
-<hr class="mb_separator" />
 <h1>会社概要</h1>
 
 <table class="table_aboutus">

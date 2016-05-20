@@ -1,16 +1,9 @@
 <style type="text/css">
-._table{
-  display: table;
-  width: 100%;
-}
-._tbody{
-  display: table-row-group;
-}
-._tr{
-  display: table-row;
+hr{
+  border-top: 1px solid #3FA3D1;  margin-top: 0;
+  margin-bottom: 0;
 }
 ._td{
-  display: table-cell;
   vertical-align: middle;
 }
 
@@ -48,27 +41,27 @@ h2{
   padding-left: 0;
 }
 .qa li{
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background-color: rgb(248,248,248);
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .question, .answer{
   padding-left: 8px;
   padding-right: 8px;
   line-height: 1.6;
-  background-color: rgb(245,245,245);
 }
 .question{
-  border-radius: 6px 6px 0 0;
   color: #3FA3D1;
+  color: #287DA4;
   font-weight: bold;
-  padding-top: 10px;
-  padding-bottom: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .answer{
-  border-radius: 0 0 6px 6px;
-  padding-top: 0;
-  padding-bottom: 10px;
   display: none;
+  padding-bottom: 5px;
 }
 </style>
 

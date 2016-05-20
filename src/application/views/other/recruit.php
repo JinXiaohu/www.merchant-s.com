@@ -26,7 +26,6 @@
 </style>
 
 
-<hr class="mb_separator" />
 <h1>採用情報</h1>
 
 <table id="table_recruit">

@@ -9,16 +9,16 @@
 .sidebar{
   border-right: solid 1px #e5e5e5;
 }
-.sidebar a{
-  color: rgb(80, 80, 80);
-}
 .sidebar .level1{
-  padding: 11px 14px;
+  padding: 7px 10px;
   font-weight: bold;
 }
 
 .sidebar .level2{
-  padding: 7px 40px;
+  padding: 7px 30px;
+}
+.sidebar .level2:last-child{
+  margin-bottom: 20px;
 }
 
 .sidebar li:hover{
@@ -41,12 +41,12 @@
 .sidebar li.web.active:hover{
   background-color: #3FA3D1;
 }
+@media (min-width: 767px){
 h1{
   margin-top: 5px;
 }
 </style>
 
-<hr class="mb_separator" />
 <div class="row" id="content">
   <div class="col-sm-4 sidebar">
     <ul>

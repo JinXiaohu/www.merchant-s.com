@@ -107,7 +107,6 @@ function onConfirmClick() {
 
 
 
-<hr class="mb_separator" />
 <h1>Administator Login</h1>
 
 <form method="post" action="" name="form1">

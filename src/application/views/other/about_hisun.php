@@ -1,4 +1,9 @@
 <style type="text/css">
+hr{
+  border-top: 1px solid #6D4780;  
+  margin-top: 0;
+  margin-bottom: 0;
+}
 h1 img{
   vertical-align: middle;
 }
@@ -52,7 +57,6 @@ h1 img{
 
 
 
-<hr class="mb_separator" />
 <h1 class="media">
   <div class="media-left media-middle">
     <img class="hisun_logo" src="<?php echo $cdn_path;?>images/company/hisun_logo.png">

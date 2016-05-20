@@ -15,7 +15,6 @@ img{
 <div class="row">
   <div class="col-md-12">
     
-<hr class="mb_separator" />
     <h1>当サイトへのリンク</h1>
     <h2>バナーの使用上注意 </h2>
     <p>

@@ -1,4 +1,8 @@
 <style type="text/css">
+hr{
+  border-top: 1px solid #3FA3D1;  margin-top: 0;
+  margin-bottom: 0;
+}
 .img_h1{
   margin-bottom: 15px;
 }
@@ -60,19 +64,6 @@ h2{
   background-color: #3FA3D1;
   padding: 4px 9px;
   border-radius: 4px;
-}
-._table{
-  display: table;
-  width: 100%;
-}
-._tbody{
-  display: table-row-group;
-}
-._tr{
-  display: table-row;
-}
-._td{
-  display: table-cell;
 }
 @media (max-width: 320px){
   ._table,._tbody,._tr,._td{

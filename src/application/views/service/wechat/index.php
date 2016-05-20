@@ -38,20 +38,7 @@
   padding: 4px 9px;
   border-radius: 4px;
 }
-._table{
-  display: table;
-  width: 100%;
-}
-._tbody{
-  display: table-row-group;
-}
-._tr{
-  display: table-row;
-}
-._td{
-  display: table-cell;
-}
-@media (max-width: 320px){
+@media (max-width: 450px){
   ._table,._tbody,._tr,._td{
     display: block;
   }

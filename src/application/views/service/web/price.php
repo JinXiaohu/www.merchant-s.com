@@ -1,4 +1,8 @@
 <style type="text/css">
+hr{
+  border-top: 1px solid #3FA3D1;  margin-top: 0;
+  margin-bottom: 0;
+}
 #table_price{
   width:100%;
   margin-bottom: 30px;
