@@ -37,7 +37,7 @@
   border-bottom: solid 1px rgb(225,225,225);
 }
 
-input[type="text"],input[type="password"],input[type="file"], textarea{
+input[type="text"],input[type="password"],input[type="file"], textarea, select{
   width: 100%;
 }
 
@@ -79,8 +79,9 @@ button{
       <div class="td">
         <select name="type" onChange="typeChanged();">
           <option value=""></option>
-          <option value="upload">Upload a pdf file</option>
-          <option value="html">Edit html</option>
+          <option value="upload_pdf">Upload a pdf file</option>
+          <option value="upload_html">Upload a html file</option>
+          <option value="edit_html">Edit html code</option>
         </select>
       </div>
     </div>
@@ -152,12 +153,13 @@ function onConfirmClick() {
 
 function typeChanged()
 {
-  if (document.form1.type.value == 'upload')
+  var value = document.form1.type.value;
+  if (value == 'upload_pdf' || value  == 'upload_html')
   {
     $("#userfile").show();
     $("#content").hide();
   }
-  else if(document.form1.type.value == 'txt' || document.form1.type.value == 'html')
+  else if(value == 'edit_html')
   {
     $("#userfile").hide();
     $("#content").show();

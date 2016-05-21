@@ -164,13 +164,17 @@ class News extends BaseController
 	{
 		$type = $this->input->post("type");
 
-		if($type == "html")
+		if($type == "edit_html")
 		{
 			return $this->create_news_by_edit();
 		}
-		else if($type == "upload")
+		else if($type == "upload_pdf")
 		{
-			return $this->create_news_by_upload();
+			return $this->create_news_by_upload("pdf");
+		} 
+		else if($type == "upload_html")
+		{
+			return $this->create_news_by_upload("html");
 		}
 		else
 		{
@@ -180,12 +184,12 @@ class News extends BaseController
 	
 	//上传pdf文件，然后创建新的news。
 	//返回一个NewsInfo对象。如果创建失败，返回null
-	private function create_news_by_upload()
+	private function create_news_by_upload($file_ext)
 	{
 		$id = date("YmdHis");
 		$config['upload_path']   = APPPATH. '/../uploads/';
 		$config['allowed_types'] = '*';	
-		$config['file_name']     = $id. ".pdf";
+		$config['file_name']     = "$id.$file_ext";
 		
 		$this->load->library('upload', $config);
 		$this->upload->initialize($config);

@@ -5,7 +5,9 @@
   padding: 15px 0 8px 0;
 }
 .media{
-  border-top: solid 1px rgb(225, 225, 225);
+  margin-top: 0;
+  padding-bottom: 20px;
+  border-bottom: solid 1px rgb(225, 225, 225);
 }
 .left_img{
   width: 170px;
@@ -96,7 +98,7 @@
 
 
 <h2>センター</h2> 
-<div>ポイントサービス</div>
-<div>データ還元サービス</div>
-<div>Web明細</div>
-<div>アプリ自動更新</div>
+<p>ポイントサービス</p>
+<p>データ還元サービス</p>
+<p>Web明細</p>
+<p>アプリ自動更新</p>

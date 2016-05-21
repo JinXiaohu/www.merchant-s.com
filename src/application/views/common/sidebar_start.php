@@ -15,10 +15,10 @@
 }
 
 .sidebar .level2{
-  padding: 7px 30px;
+  padding: 7px 20px;
 }
 .sidebar .li_sep{
-  height: 10px;
+  height: 15px;
 }
 
 .sidebar li:hover{

@@ -122,6 +122,11 @@
 
 
 
+
+
+._td{
+  vertical-align: middle;
+}
 .news_item{
   margin-left: 0;
   margin-right: 0;
@@ -138,7 +143,7 @@
   padding-right: 0;
   padding-left: 15px;
   margin-top: 0;
-  color:rgb(120,120,120);
+  color:rgb(150,150,150);
 }
 @media (max-width: 767px){
   .col_title{
@@ -150,21 +155,28 @@
     margin-top: 5px;
   }
 }
+
+
+#links{
+  width: 225px;
+}
 #links .item{
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #links img{
   margin-right: 0;
   margin-left: auto;
 }
 @media (max-width: 767px){
+  #links{
+    width: auto;
+  }
   #links img{
     margin-left: auto;
     margin-right: auto;
   }
 }
-
 
 
 </style>
@@ -252,28 +264,30 @@
 
 <div class="div_separator mb_separator"></div>
 
-<div class="row">
-  <div class="col-sm-8">
-    <!-- news -->
-    <a href="<?php echo $base_path; ?>news"><div class="_h1">新着情報</div></a>
-   
-    <?php foreach ($news_data as $news_item):?>  
-    <div class="row news_item">
-      <div class="col-sm-9 col_title">
-        <a href="<?php echo $base_path;?>news/show?id=<?php echo $news_item->id; ?>" target="_blank"><?php echo $news_item->title; ?></a>
+<div class="_table">
+  <div class="_tbody">
+    <div class="_tr">
+      <div class="_td">
+        <!-- news -->
+        <a href="<?php echo $base_path; ?>news"><div class="_h1">新着情報</div></a>
+       
+        <?php foreach ($news_data as $news_item):?>  
+        <div class="row news_item">
+          <div class="col-sm-9 col_title">
+            <a href="<?php echo $base_path;?>news/show?id=<?php echo $news_item->id; ?>" target="_blank"><?php echo $news_item->title; ?></a>
+          </div>
+          <div class="col-sm-3 col_date"><?php echo $news_item->date; ?></div>
+        </div>
+        <?php endforeach;?>       
+        <div class="div_hidden mb_separator"></div>
       </div>
-      <div class="col-sm-3 col_date"><?php echo $news_item->date; ?></div>
+
+      <div class="_td" id="links">
+        <div class="item"><a href="<?php echo $base_path;?>contact_participating"><img class="img-responsive" src="<?php echo $cdn_path;?>images/participation.gif"></a></div>
+        <div class="item"><a href="<?php echo $base_path;?>contact"><img class="img-responsive" src="<?php echo $cdn_path;?>images/contact.gif"></a></div>
+        <div class="item"><a href="http://www.mscc.co.jp/"><img class="img-responsive" src="<?php echo $cdn_path;?>images/mscc.gif"></a></div>      
+      </div>
     </div>
-    <?php endforeach;?> 
-  
-    <div class="div_hidden mb_separator"></div>
-  </div>
-
-  <div class="col-sm-4" id="links">
-
-    <div class="item"><a href="<?php echo $base_path;?>contact_participating"><img class="img-responsive" src="<?php echo $cdn_path;?>images/participation.gif"></a></div>
-    <div class="item"><a href="<?php echo $base_path;?>contact"><img class="img-responsive" src="<?php echo $cdn_path;?>images/contact.gif"></a></div>
-    <div class="item"><a href="http://www.mscc.co.jp/"><img class="img-responsive" src="<?php echo $cdn_path;?>images/mscc.gif"></a></div>
   </div>
 </div>
 
