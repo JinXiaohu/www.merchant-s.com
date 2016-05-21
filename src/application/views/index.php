@@ -1,4 +1,12 @@
 <style type="text/css">
+.carousel{
+  margin-top: -10px;
+}
+@media (max-width: 767px){
+  .carousel{
+    margin-top: 0;
+  }
+}
 .slide_txt{ 
   width: 100%; 
   float: left; 
@@ -74,6 +82,10 @@
 #solutions .separator{
   width: 2%;
 }
+#solutions .item:hover{
+ box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+ transform: translate3d(0, -2px, 0);
+}
 @media (max-width: 767px){
   ._table,._tbody,._tr,._td{
     display: block;
@@ -86,14 +98,6 @@
     margin-bottom: 0;
   }
 }
-@media (min-width: 768px){
-  #solutions .item:hover{
-   box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-   transform: translate3d(0, -2px, 0);
-  }
-}
-
-
 
 
 

@@ -150,7 +150,6 @@ h2{
     margin-top: 5px;
     margin-bottom: 5px;
     padding-left: 1px;
-    padding-right: 8px;
   }
   #id_navbar li{
     float: left;

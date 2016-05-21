@@ -27,7 +27,7 @@
 h2{
   margin-top: 0 !important;
 }
-.row{
+.row.item{
   margin-bottom: 30px;
 }
 .col_img, .col_txt{
@@ -51,10 +51,12 @@ h2{
   .sidebar ul{
     margin-bottom: 20px;
   }
+  .sidebar{
+    border-right: none;
+  }
 }
 @media (max-width: 420px){
   .sidebar li{
-    display: inline;
     margin-right: 0;
   }
   .col_img, .col_txt{
@@ -63,9 +65,6 @@ h2{
   }
   .col_txt{
     margin-top: 5px;
-  }
-  .sidebar{
-    border-right: none;
   }
 }
 </style>
@@ -88,7 +87,7 @@ h2{
   <div class="col-sm-9">
     <h2>飲食業</h2>
 
-    <div class="row">
+    <div class="row item">
       <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/catering1.jpg">
       </div>
@@ -97,7 +96,7 @@ h2{
       </div>
     </div>
 
-    <div class="row">
+    <div class="row item">
       <div class="col_txt">
         月末は、お客様も多く嬉しい限りですがそれとは逆にレジの中の現金が乏しくなります。。創業時から毎日築地に足を運び活きのいい新鮮な食材をお客様に提供することが当店のモットーですが仕入れは全て現金払いのため、
       </div>
@@ -106,7 +105,7 @@ h2{
       </div>
     </div>
 
-    <div class="row">
+    <div class="row item">
       <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/catering3.jpg">
       </div>

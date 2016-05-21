@@ -27,7 +27,7 @@
 h2{
   margin-top: 0 !important;
 }
-.row{
+.row.item{
   margin-bottom: 30px;
 }
 .col_img, .col_txt{
@@ -51,10 +51,12 @@ h2{
   .sidebar ul{
     margin-bottom: 20px;
   }
+  .sidebar{
+    border-right: none;
+  }
 }
 @media (max-width: 420px){
   .sidebar li{
-    display: inline;
     margin-right: 0;
   }
   .col_img, .col_txt{
@@ -63,9 +65,6 @@ h2{
   }
   .col_txt{
     margin-top: 5px;
-  }
-  .sidebar{
-    border-right: none;
   }
 }
 </style>
@@ -89,7 +88,7 @@ h2{
 
     <h2>自動車関連業</h2>
 
-    <div class="row">
+    <div class="row item">
       <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/automobile1.jpg">
       </div>
@@ -99,7 +98,7 @@ h2{
       </div>
     </div>
 
-    <div class="row">
+    <div class="row item">
       <div class="col_txt">
 
         当社ではメンテナンスが完了するとお客さまのご自宅まで納車に伺うケースが多く、インプリンターで手書き伝票を使用しておりましたがミスも多くお客さまをおませたせることも多かったです。
@@ -109,7 +108,7 @@ h2{
       </div>
     </div>
 
-    <div class="row">
+    <div class="row item">
       <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/automobile3.jpg">
       </div>

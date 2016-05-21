@@ -28,7 +28,7 @@
 h2{
   margin-top: 0 !important;
 }
-.row{
+.row.item{
   margin-bottom: 30px;
 }
 .col_img, .col_txt{
@@ -52,10 +52,12 @@ h2{
   .sidebar ul{
     margin-bottom: 20px;
   }
+  .sidebar{
+    border-right: none;
+  }
 }
 @media (max-width: 420px){
   .sidebar li{
-    display: inline;
     margin-right: 0;
   }
   .col_img, .col_txt{
@@ -64,9 +66,6 @@ h2{
   }
   .col_txt{
     margin-top: 5px;
-  }
-  .sidebar{
-    border-right: none;
   }
 }
 </style>
@@ -88,7 +87,7 @@ h2{
 
   <div class="col-sm-9">
     <h2>小売業</h2>
-    <div class="row">
+    <div class="row item">
       <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/retail1.jpg">
       </div>
@@ -97,7 +96,7 @@ h2{
       </div>
     </div>
 
-    <div class="row">
+    <div class="row item">
       <div class="col_txt">
         セールでは、通常期よりお求めやすい価格になっているため、ご好評をいただいておりますが唯一の悩みがお支払い時のクレジットカード決済です。
       </div>
@@ -106,7 +105,7 @@ h2{
       </div>
     </div>
 
-    <div class="row">
+    <div class="row item">
       <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/retail3.jpg">
       </div>

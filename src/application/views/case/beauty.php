@@ -27,7 +27,7 @@
 h2{
   margin-top: 0 !important;
 }
-.row{
+.row.item{
   margin-bottom: 30px;
 }
 .col_img, .col_txt{
@@ -42,7 +42,6 @@ h2{
 .col_txt{
   width: 29%;
 }
-
 @media (max-width: 767px){
   .sidebar li{
     display: inline;
@@ -51,10 +50,12 @@ h2{
   .sidebar ul{
     margin-bottom: 20px;
   }
+  .sidebar{
+    border-right: none;
+  }
 }
 @media (max-width: 420px){
   .sidebar li{
-    display: inline;
     margin-right: 0;
   }
   .col_img, .col_txt{
@@ -63,9 +64,6 @@ h2{
   }
   .col_txt{
     margin-top: 5px;
-  }
-  .sidebar{
-    border-right: none;
   }
 }
 </style>
@@ -88,7 +86,7 @@ h2{
   <div class="col-sm-9">
     <h2>美容業</h2>
 
-    <div class="row">
+    <div class="row item">
       <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/beauty1.jpg">
       </div>
@@ -97,7 +95,7 @@ h2{
       </div>
     </div>
 
-    <div class="row">
+    <div class="row item">
       <div class="col_txt">
         クレジットカードが使えるようになったことで施術当日に追加でトリートメントやカラーを希望されるお客さまも増え好きなスタイルに合ったご提案できるようになりました。
       </div>
@@ -106,7 +104,7 @@ h2{
       </div>
     </div>
 
-    <div class="row">
+    <div class="row item">
       <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/beauty3.jpg">
       </div>

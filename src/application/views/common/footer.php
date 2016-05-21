@@ -10,6 +10,7 @@
 }
 @media (max-width: 767px){
   .footer{
+    margin-top: 0;
     border-top: 15px solid #f5f5f5;
   }
 }
