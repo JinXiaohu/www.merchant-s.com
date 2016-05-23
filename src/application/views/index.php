@@ -63,8 +63,6 @@
   color: #6D4780;
 }
 
-
-
 #solutions .item h4 {
   text-align: center;
   font-size: 1.1em;
@@ -115,7 +113,7 @@
 }
 #cases img{
   border-radius: 6px;
-  border:solid 1px rgb(150,150,150);
+  border: solid 1px #795548;
 }
 #cases img:hover{
   box-shadow: inset 0 0 0 1px #2996cc;

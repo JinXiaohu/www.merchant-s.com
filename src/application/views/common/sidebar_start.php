@@ -50,6 +50,10 @@
   .rightbar{
     clear: both;
   }
+  .sidebar{
+    padding-left: 0;
+    padding-right: 0;
+  }
   .sidebar ul{
     display: table;
   }
@@ -58,11 +62,11 @@
   }
   .sidebar .level1{
     width: 100%;
-    padding: 5px 5px;
+    padding: 5px 8px;
   }
   .sidebar .level2{
     width: 50%;
-    padding: 5px 5px;
+    padding: 5px 8px;
   }
   .sidebar .li_sep{
     width: 100%;

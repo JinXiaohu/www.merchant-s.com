@@ -1,10 +1,10 @@
 <style type="text/css">
-.outline{
+.green_bg{
   background-color: #E7F6D6;
   padding: 10px;
   margin-bottom: 15px;
 }  
-.outline .header{
+.green_bg .header{
   color: #339933;
   border-bottom-style: solid;
   border-bottom-color: #339933;
@@ -15,28 +15,37 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.outline2{
+.gray_bg{
   background-color: rgb(240,240,240);
   padding: 10px;
   margin-bottom: 15px;
 }
-.outline2 .header{
+.gray_bg .header{
   border-bottom-style: solid;
   border-bottom-color: rgb(225,225,225);
   border-bottom-width: 1px;
   font-weight: bold;
 }
-.outline2 .col-sm-6{
+.gray_bg .col-sm-6{
   margin-bottom: 20px;
 }
 
-.outline2 img{
+.gray_bg img{
   margin-bottom: 10px;
 }
 
-.outline2{
+.gray_bg{
   margin-left: 0;
   margin-right: 0;
+}
+#div_merit03{
+  display: table;
+}
+#div_merit03 img{
+  float: right;
+  border:solid 1px #ccc;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 </style>
 
@@ -49,7 +58,7 @@
 今後、ますます拡大するであろうクレジットカード取引は、他社に差をつけ、ビジネスチャンスを勝ち取るための重要なポイントです。売上計上3日後（銀行営業日）の決済を可能にした早期決済サービスなら、加速するビジネスシーンに素早く対応。スピーディーな決済システムにより、円滑なキャッシュフローをサポートし、限りなく現金決済に近い資金運用を可能にします。
 </p>
 
-<div class="outline">
+<div class="green_bg">
   <p class="header">3日後決済を実現した「早期決済サービス」とは</p>
   <p><strong>カード決済による売上代金を売上計上3日後（銀行営業日）に指定の口座にお振込します。</strong></p>
 </div>
@@ -67,7 +76,7 @@
 </p>
 
 
-<div class="row outline2">
+<div class="row gray_bg">
   <div class="col-sm-12">
     <p><strong>お客様のニーズに合わせたさまざまな決済プランをご用意しています。</strong></p>
     <p>マーチャント・サポートでは「3日後決済」のほか、お客様の幅広いニーズに対応できるようさまざまなプランをご用意。貴社の売上管理状況などに合わせてお選び頂けます。</p>
@@ -94,15 +103,10 @@
 
 
 <h2 id="merit02">特徴2 信頼のVISA、MasterCardに対応</h2>
-<div class="media">
-  <div class="media-body media-middle">
-    <p>
-    インターネットの普及などにより、今後ますます普及率が高まるといわれているクレジットカード。その中でも、世界各国に数千万店の加盟店網を持ち、日本国内での全発行枚数の約7割を占めるVISA、MasterCardに対応。国内外で高い評価を得ているVISA、MasterCardだからこそ、お客様との高い信頼関係が築けると同時に、購買意欲を高め販売チャンスを大幅に広げます。
-    </p>
-  </div>
-
-  <div class="media-right media-middle">
-    <img class="media-object" src="<?php echo $cdn_path;?>images/store/merit/img_merit05.gif">
+<div id="div_merit03">
+  <img src="<?php echo $cdn_path; ?>images/store/merit/img_merit05.gif" alt="VISA・MasterCard">
+  <div>
+  インターネットの普及などにより、今後ますます普及率が高まるといわれているクレジットカード。その中でも、世界各国に数千万店の加盟店網を持ち、日本国内での全発行枚数の約7割を占めるVISA、MasterCardに対応。国内外で高い評価を得ているVISA、MasterCardだからこそ、お客様との高い信頼関係が築けると同時に、購買意欲を高め販売チャンスを大幅に広げます。
   </div>
 </div>
 
@@ -112,7 +116,7 @@
 マーチャン・サポートがVISA、MasterCardのクレジットカードとの加盟店契約の一切を取次ますので、面倒な手続きは一切不要。クレジットカード未導入の店舗様でも、お気軽にお申込ができます。
 </p>
 
-<div class="outline">
+<div class="green_bg">
   <p class="header">煩雑な明細管理をサポートする「明細配信サービス」</p>
   <div class="media">
     <div class="media-body media-middle">

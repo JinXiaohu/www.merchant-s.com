@@ -20,6 +20,11 @@ hr{
 #table_price td{
   text-align: center;
 }
+@media (max-width: 767px){
+  #table_price th, #table_price td{
+    padding: 12px 5px;
+  }
+}
 </style>
 
   

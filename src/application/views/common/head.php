@@ -149,7 +149,7 @@ h2{
   #div_nav{
     margin-top: 5px;
     margin-bottom: 5px;
-    padding-left: 1px;
+    padding-left: 0;
   }
   #id_navbar li{
     float: left;
