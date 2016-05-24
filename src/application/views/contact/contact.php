@@ -10,7 +10,6 @@
 ._td:first-child{
   width: 25%;
 }
-
 .td_label{
   color: white;
   font-weight: bold;
@@ -22,35 +21,15 @@
   border-bottom: solid 1px rgb(240,240,240);
 }
 
-@media (max-width: 767px){
-  ._table,._tbody,._tr,._td{
-    display: block;
-  }
-  ._td{
-    padding: 7px 0;
-  }
-  ._td:first-child{
-    width: 100%;
-  }
-  .td_label{
-    color: #339933;
-    background-color: white;
-    border: none;
-    margin-top: 15px;
-  }
-  .td_input{
-    background-color: white;
-    padding-bottom: 15px;
-    border: none;
-  }
-}
 
 input[type="text"], textarea{
   width: 100%;
+  border:solid 1px #aaa;
+  border-radius: 0;
 }
 
 input[type="text"]{
-  height: 30px;
+  height: 32px;
 }
 
 input[type="radio"], input[type="checkbox"]{
@@ -81,6 +60,33 @@ button{
   font-weight: bold;
 }
 
+@media (max-width: 767px){
+  ._table,._tbody,._tr,._td{
+    display: block;
+  }
+  ._td{
+    padding: 0;
+  }
+  ._td:first-child{
+    width: 100%;
+  }
+  .td_label{
+    color: #339933;
+    background-color: white;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+  .td_input{
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border: none;
+  }
+  input[type="text"]{
+    height: 34px;
+  }
+}
 </style>
 
 <script type="text/javascript">
