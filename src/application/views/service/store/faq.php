@@ -17,7 +17,7 @@
   background-color: #339933;
   color: white;
   font-size: 0.9em;
-  padding: 8px 15px;
+  padding: 4px 15px;
   border-radius: 4px;
   border:solid 1px #267326;
   cursor: default;

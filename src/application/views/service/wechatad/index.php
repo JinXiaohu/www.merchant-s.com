@@ -52,7 +52,7 @@
 </style>
 
 <div class="img_h1">
-  <img class="img-responsive center-block"  src="<?php echo $cdn_path; ?>images/bg1.jpg">
+  <img class="img-responsive center-block"  src="<?php echo $cdn_path; ?>images/bg2.jpg">
 </div>
 
 <div>

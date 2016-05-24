@@ -1,45 +1,48 @@
 <style type="text/css">
-.table{
-  display: table;
+._table{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-.tr{
-  display: table-row;
-  vertical-align: middle;
-}
-
-.th, .th_nobg, .td, .td_nobg{
-  display: table-cell;
-  vertical-align: middle;
+._td{  
   padding: 12px 12px;
+  vertical-align: middle;
 }
-
-.th, .th_nobg{
+._td:first-child{
   width: 25%;
 }
 
-.th{
+.td_label{
   color: white;
   font-weight: bold;
   background-color: #339933;
-  border-bottom: solid 1px rgb(225,225,225);
+  border-bottom: solid 1px rgb(240,240,240);
 }
-
-.td, .td_nobg{
-  width: 75%;
-}
-
-
-.td{
+.td_input{
   background-color: rgb(252,252,252);
-  border-bottom: solid 1px rgb(225,225,225);
+  border-bottom: solid 1px rgb(240,240,240);
 }
 
-
-.required{
-  color:red;
+@media (max-width: 767px){
+  ._table,._tbody,._tr,._td{
+    display: block;
+  }
+  ._td{
+    padding: 7px 0;
+  }
+  ._td:first-child{
+    width: 100%;
+  }
+  .td_label{
+    color: #339933;
+    background-color: white;
+    border: none;
+    margin-top: 15px;
+  }
+  .td_input{
+    background-color: white;
+    padding-bottom: 15px;
+    border: none;
+  }
 }
 
 input[type="text"], textarea{
@@ -66,10 +69,6 @@ button{
   border-width: 0;
 }
 
-.tips{
-  color: #777777;
-}
-
 .pbold{
  font-weight: bold;
  margin-top: 30px;
@@ -81,6 +80,7 @@ button{
   color: red;
   font-weight: bold;
 }
+
 </style>
 
 <script type="text/javascript">
@@ -120,74 +120,57 @@ function onConfirmClick() {
 <h1>お問い合わせ</h1>
 
 <form method="post" action="" name="form1">
-  <div>
-    <span class="required">（※）</span>印は入力必須項目です。
-  </div>
+  <p>（※）印は入力必須項目です。</p>
 
-  <div class="table">
-    <div class="tr">
-      <div class="th"><span class="required">（※）</span>[1]氏名</div>
-      <div class="td">
-        <div class="row">
-          <div class="col-md-8"><input type="text" id="name_mei" name="name_mei"></div>
-          <div class="col-md-4 tips">法人様の場合、担当者ご氏名</div>
-        </div>
+  <div class="_table">
+    <div class="_tr">
+      <div class="_td td_label">（※）[1]氏名</div>
+      <div class="_td td_input"> 
+        <input type="text" id="name_mei" name="name_mei" placeholder="法人様の場合、担当者ご氏名">
       </div>
     </div>
 
-    <div class="tr">
-      <div class="th"><span class="required">（※）</span>[2]会社名</div>
-      <div class="td">
-        <div class="row">
-          <div class="col-md-8"><input type="text" id="shop_name" name="shop_name"></div>
-          <div class="col-md-4 tips">法人様の場合必須</div>
-        </div>
+    <div class="_tr">
+      <div class="_td td_label">（※）[2]会社名</div>
+      <div class="_td td_input">
+        <input type="text" id="shop_name" name="shop_name" placeholder="法人様の場合必須">
       </div>
     </div>
 
-    <div class="tr">
-      <div class="th"><span class="required">（※）</span>[3]TEL</div>
-      <div class="td">
-        <div class="row">
-          <div class="col-md-8"><input type="text" id="tel" name="tel" maxlength="12"></div>
-          <div class="col-md-4"></div>
-        </div>
+    <div class="_tr">
+      <div class="_td td_label">（※）[3]TEL</div>
+      <div class="_td td_input">
+        <input type="text" id="tel" name="tel" maxlength="12">
       </div>
     </div>
 
-    <div class="tr">
-      <div class="th">[4]メールアドレス</div>
-      <div class="td">
-        <div class="row">
-          <div class="col-md-8"><input type="text" id="reply_email" name="reply_email"></div>
-          <div class="col-md-4"></div>
-        </div>
+    <div class="_tr">
+      <div class="_td td_label">[4]メールアドレス</div>
+      <div class="_td td_input">
+        <input type="text" id="reply_email" name="reply_email">
       </div>
     </div>
 
-    <div class="tr">
-      <div class="th">[5]お問い合わせ内容</div>
-      <div class="td">
-        <div class="row">
-          <div class="col-md-8"><textarea rows="10" id="content" name="content"></textarea></div>
-          <div class="col-md-4"></div>
-        </div>
+    <div class="_tr">
+      <div class="_td td_label">[5]お問い合わせ内容</div>
+      <div class="_td td_input">
+        <textarea rows="10" id="content" name="content"></textarea>
       </div>
     </div>
 
     <?php if(isset($error)): ?>
-    <div class="tr">
-      <div class="th_nobg"></div>
-      <div class="td_nobg">
+    <div class="_tr">
+      <div class="_td tdleft"></div>
+      <div class="_td error">
         <?php echo $error; ?>
       </div>
     </div>
     <?php endif; ?> 
 
 
-    <div class="tr">
-      <div class="th_nobg"></div>
-      <div class="td_nobg">
+    <div class="_tr">
+      <div class="_td tdleft"></div>
+      <div class="_td">
       <button type="submit" onclick="if(!onConfirmClick()) return false;">確 認</button>
       </div>
     </div>

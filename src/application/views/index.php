@@ -44,9 +44,12 @@
 
 #solutions #s_item1{
   border-top: solid 1px #3FA3D1;
+  border-top: solid 1px #5E8A8B;
 }
 #solutions #s_item1 a{
   color: #3FA3D1;
+  color: #5E8A8B;
+
 }
 
 #solutions #s_item2{
@@ -58,9 +61,12 @@
 
 #solutions #s_item3{
   border-top: solid 1px #6D4780;
+  border-top: solid 1px #4A748A;
 }
 #solutions #s_item3 a{
   color: #6D4780;
+  color: #4A748A;
+
 }
 
 #solutions .item h4 {
@@ -193,11 +199,11 @@
 
   <div class="carousel-inner">
     <div class="item active">
-      <a href="<?php echo $base_path;?>service/wechat"><img src="<?php echo $cdn_path;?>images/bg1.jpg"></a>
+      <a href="<?php echo $base_path;?>service/store"><img src="<?php echo $cdn_path;?>images/bg1.jpg"></a>
     </div>
 
     <div class="item">
-      <a href="<?php echo $base_path;?>service/store"><img src="<?php echo $cdn_path;?>images/bg2.jpg"></a>
+      <a href="<?php echo $base_path;?>service/wechat"><img src="<?php echo $cdn_path;?>images/bg2.jpg"></a>
     </div>
 
     <div class="item">
@@ -249,16 +255,16 @@
 
 <div class="_h1">導入事例</div>
 <div class="row" id="cases">
-  <div class="col-sm-6 col-md-4 col">
+  <div class="col-xs-6 col-md-4 col">
     <a href="<?php echo $base_path;?>cases/retail"><img class="img-responsive" src="<?php echo $cdn_path;?>images/case1.jpg"></a>
   </div>
-  <div class="col-sm-6 col-md-4 col">
+  <div class="col-xs-6 col-md-4 col">
     <a href="<?php echo $base_path;?>cases/catering"><img class="img-responsive" src="<?php echo $cdn_path;?>images/case2.jpg"></a>
   </div>
-  <div class="col-sm-6 col-md-4 col">
+  <div class="col-xs-6 col-md-4 col">
     <a href="<?php echo $base_path;?>cases/beauty"><img class="img-responsive" src="<?php echo $cdn_path;?>images/case3.jpg"></a>
   </div>
-  <div class="col-sm-6 col-md-4 col">
+  <div class="col-xs-6 col-md-4 col">
     <a href="<?php echo $base_path;?>cases/automobile"><img class="img-responsive" src="<?php echo $cdn_path;?>images/case4.jpg"></a>
   </div>
 </div>

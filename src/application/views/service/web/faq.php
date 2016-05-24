@@ -21,7 +21,7 @@ hr{
   background-color: #3FA3D1;
   color: white;
   font-size: 0.9em;
-  padding: 8px 15px;
+  padding: 4px 15px;
   border-radius: 4px;
   border:solid 1px #287DA4;
   cursor: default;

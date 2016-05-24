@@ -233,27 +233,27 @@ hr{
 
   <div id="div_nav">
     <ul class="nav navbar-nav" id="id_navbar">
-      <li id="nav-home1">
+      <li id="nav-home1" >
         <a href="<?php echo $base_path;?>" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">HOME</a>
       </li>
       
-      <li id="nav-news">
+      <li<?php if(isset($nav_id) && $nav_id=="nav-news"):?> class="active"<?php endif;?>>
         <a href="<?php echo $base_path;?>news" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">NEWS</a>
       </li>
 
-      <li id="nav-service">
+      <li<?php if(isset($nav_id) && $nav_id=="nav-service"):?> class="active"<?php endif;?>>
         <a href="<?php echo $base_path;?>service" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">サービス</a>
       </li>
 
-      <li id="nav-pos">
+      <li<?php if(isset($nav_id) && $nav_id=="nav-pos"):?> class="active"<?php endif;?>>
         <a href="<?php echo $base_path;?>pos" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">決済端末</a>
       </li>
 
-      <li id="nav-aboutus">
+      <li<?php if(isset($nav_id) && $nav_id=="nav-aboutus"):?> class="active"<?php endif;?>>
         <a href="<?php echo $base_path;?>aboutus" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">会社概要</a>
       </li>
 
-      <li id="nav-contact">
+      <li<?php if(isset($nav_id) && $nav_id=="nav-contact"):?> class="active"<?php endif;?>>
         <a href="<?php echo $base_path;?>contact" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">お問い合わせ</a>
       </li>
     </ul>
