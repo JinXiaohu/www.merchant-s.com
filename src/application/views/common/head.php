@@ -114,6 +114,7 @@ h2{
   margin-top: 5px;
   margin-bottom: 18px;
 }
+
 #id_navbar{
   float: none;
 }

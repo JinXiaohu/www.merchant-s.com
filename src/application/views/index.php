@@ -7,31 +7,34 @@
     margin-top: 0;
   }
 }
-.slide_txt{ 
-  width: 100%; 
-  float: left; 
-  background: #0d132d;
+.carousel-indicators {
+    bottom: 10%;
 }
-.slide_txt span { 
-  float: left; 
-  margin-top: 25px; 
-  font-size: 24px;
-  width: 100%; 
-  text-align: center; 
-  display: block;
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
 }
-.slide_txt p{ 
-  margin-bottom: 20px; 
-  float: left; 
-  margin-top: 20px; 
-  width: 80%; 
-  text-align: left; 
-  display: block;
-  line-height: 30px; 
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
 }
-
-
-
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
 
 
 
@@ -166,19 +169,13 @@
 
 
 #links{
-  width: 225px;
-}
-#links .item{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#links img{
-  margin-right: 0;
-  margin-left: auto;
+  width:340px;
+  padding-left: 18px;
 }
 @media (max-width: 767px){
   #links{
-    width: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   #links img{
     margin-left: auto;
@@ -186,41 +183,75 @@
   }
 }
 
+.link{
+  margin-bottom: 10px;
+}
+.link:hover{
+  box-shadow: inset 0 0 0 1px #2996cc;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transform: translate3d(0, -2px, 0);
+}
+.link a:hover, .link a:focus{
+  text-decoration: none;
+}
 
+.link .media{
+  border: solid 1px #795548;
+  border-radius: 8px;
+  background-color: #EFEFEF;
+}
+.link .media .media-left{
+  padding-right: 0;
+  border-right: solid 1px #795548;
+}
+.link .media .media-body{
+  padding: 5px 13px;
+}
+.link .title{
+  font-size: 1em;
+  font-weight: bold;
+  color:black;
+  padding-bottom: 5px;
+}
+.link .vtitle{
+  font-size: 0.9em;
+  color:#666666;
+  text-align: right;
+}
 </style>
 
-<!-- slide -->
-<div class="carousel slide" id="carousel-857271">
+<div id="carousel-id" class="carousel slide carousel-fade" data-ride="carousel">
   <ol class="carousel-indicators syeq">
-    <li class="active" data-target="#carousel-857271" data-slide-to="0"></li>
-    <li data-target="#carousel-857271" data-slide-to="1"></li>
-    <li data-target="#carousel-857271" data-slide-to="2"></li>
+    <li class="active" data-target="#carousel-id" data-slide-to="0"></li>
+    <li data-target="#carousel-id" data-slide-to="1"></li>
+    <li data-target="#carousel-id" data-slide-to="2"></li>
   </ol>
 
   <div class="carousel-inner">
     <div class="item active">
-      <a href="<?php echo $base_path;?>service/store"><img src="<?php echo $cdn_path;?>images/bg1.jpg"></a>
+      <a href="<?php echo $base_path;?>service/store"><img src="<?php echo $cdn_path;?>images/banner1.jpg"></a>
     </div>
 
     <div class="item">
-      <a href="<?php echo $base_path;?>service/wechat"><img src="<?php echo $cdn_path;?>images/bg2.jpg"></a>
+      <a href="<?php echo $base_path;?>service/wechat"><img src="<?php echo $cdn_path;?>images/banner2.jpg"></a>
     </div>
 
     <div class="item">
-      <a href="<?php echo $base_path;?>pos"><img src="<?php echo $cdn_path;?>images/bg3.jpg"></a>
+      <a href="<?php echo $base_path;?>pos"><img src="<?php echo $cdn_path;?>images/banner3.jpg"></a>
     </div>
 
   </div>
 
-  <a class="left carousel-control sysx" href="#carousel-857271" data-slide="prev">
+  <a class="left carousel-control sysx" href="#carousel-id" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
 
-  <a class="right carousel-control  sysx" href="#carousel-857271" data-slide="next">
+  <a class="right carousel-control  sysx" href="#carousel-id" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 
 </div>
+
 
 <div class="_table" id="solutions">
   <div class="_tbody">
@@ -290,14 +321,57 @@
         <div class="div_hidden mb_separator"></div>
       </div>
 
+
       <div class="_td" id="links">
-        <div class="item"><a href="<?php echo $base_path;?>contact_participating"><img class="img-responsive" src="<?php echo $cdn_path;?>images/participation.gif"></a></div>
-        <div class="item"><a href="<?php echo $base_path;?>contact"><img class="img-responsive" src="<?php echo $cdn_path;?>images/contact.gif"></a></div>
-        <div class="item"><a href="http://www.mscc.co.jp/"><img class="img-responsive" src="<?php echo $cdn_path;?>images/mscc.gif"></a></div>      
+        <div class="link">
+          <a href="<?php echo $base_path;?>contact_participating">
+            <div class="media">
+              <div class="media-left media-middle">
+                <img class="hisun_logo" src="<?php echo $cdn_path;?>images/icon1.jpg">
+              </div>
+              <div class="media-body media-middle">
+                <div class="title">加盟店のみなさまへ</div>
+                <div class="vtitle">各種変更手続き</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="link">
+          <a href="<?php echo $base_path;?>contact">
+            <div class="media">
+              <div class="media-left media-middle">
+                <img class="hisun_logo" src="<?php echo $cdn_path;?>images/icon2.jpg">
+              </div>
+              <div class="media-body media-middle">
+                <div class="title">資料を請求する</div>
+                <div class="vtitle">資料のご請求はこちらから</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="link">
+          <a href="http://www.mscc.co.jp">
+            <div class="media">
+              <div class="media-left media-middle">
+                <img class="hisun_logo" src="<?php echo $cdn_path;?>images/icon3.jpg">
+              </div>
+              <div class="media-body media-middle">
+                <div class="title">MSカークレジット株式会社</div>
+                <div class="vtitle">自動車整備業界決済代行サービス</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
       </div>
+
     </div>
   </div>
 </div>
+
+
 
 
 <script type="text/javascript">

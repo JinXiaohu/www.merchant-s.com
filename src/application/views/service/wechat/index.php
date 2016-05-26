@@ -53,7 +53,7 @@
 </style>
 
 <div class="img_h1">
-  <img class="img-responsive center-block"  src="<?php echo $cdn_path; ?>images/bg2.jpg">
+  <img class="img-responsive center-block"  src="<?php echo $cdn_path; ?>images/wechat/wechat.jpg">
 </div>
 
 <div>
