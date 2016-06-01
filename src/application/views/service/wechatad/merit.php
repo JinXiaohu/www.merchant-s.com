@@ -18,7 +18,7 @@
 </div>
 
 <div>
-  <img class="img-responsive" src="<?php echo $cdn_path;?>images/wechatad/merit1.jpg">
+  <img class="img-responsive center-block" src="<?php echo $cdn_path;?>images/wechatad/merit1.png">
 </div>
 
 

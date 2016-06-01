@@ -3,11 +3,6 @@
 #content{
   margin-top: 20px;
 }
-#p_h1{
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
 @media (max-width: 350px){
   ._table,._tbody,._tr,._td{
     display: block;
@@ -40,9 +35,10 @@
     </ul>
   </div>
 
-  <div class="col-sm-9">
-    <img class="img-responsive center-block" src="<?php echo $cdn_path;?>images/banner3.jpg">
-    <p id="p_h1">当社の系列会社であるPAXGlobal社は、クレジットカード読み取り端末の世界3位のメーカーで世界約40カ国に向けて累計150万台以上の販売実績を達成しました。</p>
+  <div class="col-sm-9 rightbar">
+    <div class="mb_separator div_hidden"></div>
+    <h1><img src="<?php echo $cdn_path;?>images/banner3.jpg"></h1>
+    <p><strong>当社の系列会社であるPAXGlobal社は、クレジットカード読み取り端末の世界3位のメーカーで世界約40カ国に向けて累計150万台以上の販売実績を達成しました。</strong></p>
 
     <h2>サービスの特徴</h2>
 

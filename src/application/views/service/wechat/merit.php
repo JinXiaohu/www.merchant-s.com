@@ -176,7 +176,7 @@
           <img class="center-block" src="<?php echo $cdn_path;?>images/wechat/merit1.jpg">
         </div>
         <div>
-          <div>【店舗】</div>
+          <div><strong>【店舗】</strong></div>
           <div>決済アプリを起動し、取引金額を入力</div>
         </div>
       </div>
@@ -191,7 +191,7 @@
           <img class="center-block" src="<?php echo $cdn_path;?>images/wechat/merit2.jpg">
         </div>
         <div>
-          <div>【お客様】</div>
+          <div><strong>【お客様】</strong></div>
           <div>金額確認後、スマホにて、自身専用のWeChat決済の「QRコード」を表示</div>
         </div>
       </div>
@@ -207,7 +207,7 @@
           <img class="center-block" src="<?php echo $cdn_path;?>images/wechat/merit3.jpg">
         </div>
         <div>
-          <div>【店舗】</div>
+          <div><strong>【店舗】</strong></div>
           <div>お客様のQRコードをスキャンし決済完了。WeChat→決済代行会社を通じて、資金回収</div>
         </div>
       </div>

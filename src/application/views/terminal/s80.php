@@ -3,9 +3,6 @@
 #content{
   margin-top: 20px;
 }
-#img_banner{
-  margin-bottom: 20px;
-}
 #img_comment{
   color: #339933;
   font-weight: bold;
@@ -40,8 +37,9 @@
     </ul>
   </div>
 
-  <div class="col-sm-9">
-    <img id="img_banner" class="img-responsive center-block" src="<?php echo $cdn_path;?>images/terminal/s80_1.jpg">
+  <div class="col-sm-9 rightbar">
+    <div class="mb_separator div_hidden"></div>
+    <h1><img src="<?php echo $cdn_path;?>images/terminal/s80_1.jpg"></h1>
     <div class="media" id="img_comment">
       <div class="media-left media-middle">S80</div>
       <div class="media-body media-middle">

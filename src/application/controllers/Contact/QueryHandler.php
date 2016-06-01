@@ -52,7 +52,7 @@ class QueryHandler extends ContactHandler
 
 		return 
 			"【氏名】\t$name_mei\r\n".
-			"【会社名】\t$shop_name\r\n".
+			"【会社名】\t$company_name\r\n".
 			"【電話番号】\t$tel\r\n".
 			"【加盟店番号】\t$merc_id\r\n".
 			"【店舗名】\t$shop_name\r\n".

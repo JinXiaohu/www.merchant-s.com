@@ -22,8 +22,8 @@ class OrderHandler extends ContactHandler
 		$merc_id   = $this->get_field('merc_id');
 		$term_id   = $this->get_field('term_id');
 		$shop_name = $this->get_field('shop_name');
-		$s80       = $this->get_field('s80');
-		$s90       = $this->get_field('s90');
+		$s80       = $this->get_field('s80'). "個";
+		$s90       = $this->get_field('s90'). "個";
 		$addr      = $this->get_addr();
 		$addr_txt  = $this->get_field('addr_txt');
 		$remark    = $this->get_field('remark');
