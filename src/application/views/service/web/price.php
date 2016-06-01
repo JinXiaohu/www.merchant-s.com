@@ -1,8 +1,4 @@
 <style type="text/css">
-hr{
-  border-top: 1px solid #3FA3D1;  margin-top: 0;
-  margin-bottom: 0;
-}
 #table_price{
   width:100%;
   margin-bottom: 30px;
@@ -29,7 +25,7 @@ hr{
 
   
 
-<h1>Eコマース向け早期決済サービス｜料金表</h1>
+<h1><span class="vtitle">Eコマース向け早期決済サービス</span><span>料金表</span></h1>
 
 <div>
   <table id="table_price">
@@ -71,7 +67,7 @@ hr{
 </div>
 
 <p>
-※データ通信料に応じた3つのプランを用意致しました。<br>
+※データ通信料に応じた3つのプランを用意致しました。<br />
 現状の使用頻度に合わせたプランをお選びください。
 </p>
 

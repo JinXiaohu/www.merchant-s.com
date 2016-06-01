@@ -131,6 +131,29 @@ class Service extends BaseController
 		$this->load_view('service/wechat/merit');
 	}
 	
+	public function wechat_service()
+	{
+		$this->set_view_data('title',   "サービスの仕組み | ". $this->config->item('site_name'));
+		$this->set_view_data('side_menu_id',  "wechat_service");
+		$this->load_view('service/wechat/service');
+	}
+	
+	public function wechat_flow()
+	{
+		$this->set_view_data('title',   "導入までの流れ | ". $this->config->item('site_name'));
+		$this->set_view_data('side_menu_id',  "wechat_flow");
+		$this->load_view('service/wechat/flow');
+	}
+	
+	public function wechat_faq()
+	{
+		$this->set_view_data('title',   "FAQ | ". $this->config->item('site_name'));
+		$this->set_view_data('side_menu_id',  "wechat_faq");
+		$this->load_view('service/wechat/faq');
+	}
+
+	//////////////////////////////////////////////////////////////////////////
+	
 	public function wechatad()
 	{
 		$this->set_view_data('title',   "WeChat決済サービス | ". $this->config->item('site_name'));
@@ -145,5 +168,25 @@ class Service extends BaseController
 		$this->load_view('service/wechatad/merit');
 	}
 	
+	public function wechatad_service()
+	{
+		$this->set_view_data('title',   "サービスの仕組み | ". $this->config->item('site_name'));
+		$this->set_view_data('side_menu_id',  "wechatad_service");
+		$this->load_view('service/wechatad/service');
+	}
 	
+	public function wechatad_flow()
+	{
+		$this->set_view_data('title',   "導入までの流れ | ". $this->config->item('site_name'));
+		$this->set_view_data('side_menu_id',  "wechatad_flow");
+		$this->load_view('service/wechatad/flow');
+	}
+	
+	public function wechatad_faq()
+	{
+		$this->set_view_data('title',   "FAQ | ". $this->config->item('site_name'));
+		$this->set_view_data('side_menu_id',  "wechatad_faq");
+		$this->load_view('service/wechatad/faq');
+	}
+
 }

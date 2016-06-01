@@ -1,60 +1,14 @@
 <style type="text/css">
-.img_h1{
-  margin-bottom: 15px;
-}
-
-.col-md-4{
-  margin-bottom: 15px;
-}
-.example_col{
-  padding: 20px 0;
-}
-.example_col a{
-  font-weight: bold;
-}
-
-.item{
-  margin-bottom: 25px;
-}
-.item_header{
-  border-bottom: dotted 1px rgb(180,180,180);
-  margin-bottom: 10px;
-  padding: 5px 0;
-}
-.item_header .text{
-  color: #339933;
-  font-weight: bold;
-}
-.item_header .details{
-  text-align: right;
-  width: 100px;
-  margin-left: 5px;
-}
-.item_header .details a{
-  color: white;
-  font-size: 0.9em;
-  background-color: #339933;
-  background: linear-gradient(to top, #339933 0%,#66CC66 100%);
-  padding: 4px 9px;
-  border-radius: 4px;
-}
-@media (max-width: 320px){
+@media (max-width: 350px){
   ._table,._tbody,._tr,._td{
     display: block;
   }
- .item_header .details{
-    text-align: left;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 0;
-  } 
 }
-
 </style>
 
-<div class="img_h1">
-  <img class="img-responsive center-block"  src="<?php echo $cdn_path; ?>images/store/visual_store01.jpg" alt="店舗向け早期決済サービス｜最短3日で売上代金お振込" />
-</div>
+<h1>
+  <img src="<?php echo $cdn_path; ?>images/store/visual_store01.jpg" alt="店舗向け早期決済サービス｜最短3日で売上代金お振込" />
+</h1>
 
 <div>
   <p>業界最速の3日後決済を実現したクレジットカード決済サービスです。全世界で高い信頼を持つVISA、MasterCardに対応。安全で確実なクレジットカード決済システムにより、理想的なキャッシュフローをご提供。ビジネスチャンスを逃しません。</p>
@@ -62,8 +16,8 @@
 
 
 <h2>サービスの特徴</h2>
-<div class="item">
-  <div class="item_header _table">
+<div class="service_feature">
+  <div class="title _table">
     <div class="_tbody">
       <div class="_tr">
         <div class="text _td">その1．業界最速の3日後決済を実現</div>
@@ -78,8 +32,8 @@
 </div>
 
 
-<div class="item">
-  <div class="item_header _table">
+<div class="service_feature">
+  <div class="title _table">
     <div class="_tbody">
       <div class="_tr">
         <div class="text _td">その2．信頼のVISA、MasterCardに対応</div>
@@ -95,8 +49,8 @@
 
 
 
-<div class="item">
-  <div class="item_header _table">
+<div class="service_feature">
+  <div class="title _table">
     <div class="_tbody">
       <div class="_tr">
         <div class="text _td">その3．簡単手続きで手軽に導入</div>

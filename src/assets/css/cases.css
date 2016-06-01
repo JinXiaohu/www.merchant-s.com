@@ -1,0 +1,32 @@
+
+#cases{
+  margin-top: 20px;
+}
+h2{
+  margin-top: 0 !important;
+}
+.row.item{
+  margin-bottom: 30px;
+}
+.col_img, .col_txt{
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.col_img{
+  width: 70%;
+}
+.col_txt{
+  width: 29%;
+}
+
+@media (max-width: 420px){
+  .col_img, .col_txt{
+    display: block;
+    width: 100%;
+  }
+  .col_txt{
+    margin-top: 5px;
+  }
+}

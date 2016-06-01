@@ -1,34 +1,21 @@
 <style type="text/css">
-.outline{
-  background-color: #E7F6D6;
-  padding: 10px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.outline .header{
-  color: #339933;
-  font-size: 1.2em;
-  border-bottom-style: solid;
-  border-bottom-color: #339933;
-  border-bottom-width: 1px;
-}
-
 dt{
-  border-bottom-style: solid;
-  border-bottom-color: rgb(225,225,225);
-  border-bottom-width: 1px;
+  border-bottom: solid 1px rgb(225,225,225);
   margin: 10px 0;
   padding: 5px 0;
 }
-
+.arrow{
+  background: url(<?php echo $cdn_path;?>images/arrow2.jpg) no-repeat center;
+  height: 30px;
+  margin-top: 40px;
+}
 </style>
 
 
 
-<h1>店舗向け早期決済サービス｜導入までの流れ</h1>
+<h1><span class="vtitle">店舗向け早期決済サービス</span><span>導入までの流れ</span></h1>
 
-<div class="outline">
+<div class="green_bg">
   <p class="header">むずかしい手続きは一切不要</p>
   <p>簡単お申込で、お支払はスピーディ</p>
 </div>
@@ -56,6 +43,7 @@ dt{
   </dl>
 </div>
 
+<div class="arrow"></div>
 
 <h2>2審査</h2>
 <div>
@@ -63,10 +51,12 @@ dt{
 </div>
 
 
+<div class="arrow"></div>
+
 <h2>3早期決済サービス開始</h2>
 <div>
   <p>
-    CAT端末設置後、早期決済サービスがご利用頂けます。CAT端末を通してマーチャント・サポートに売上データが転送。3日後（3銀行営業日以内）に貴社指定の銀行口座に代金が振込まれます。<br><br>
+    CAT端末設置後、早期決済サービスがご利用頂けます。CAT端末を通してマーチャント・サポートに売上データが転送。3日後（3銀行営業日以内）に貴社指定の銀行口座に代金が振込まれます。<br /><br />
     <span class="smallText">※CAT端末はお申込いただいてから設置までに約2ヵ月かかります。</span>
   </p>
 </div>

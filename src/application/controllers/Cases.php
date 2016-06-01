@@ -11,12 +11,7 @@ class Cases extends BaseController
 		parent::__construct();
 		$this->set_view_data('title',   "導入事例 | ". $this->config->item('site_name'));
 	}
-
-	//
-	public function test()
-	{
-		$this->load_view('case/test');
-	}
+	
 
 	//零售业
 	public function retail()
@@ -40,6 +35,10 @@ class Cases extends BaseController
 	public function automobile()
 	{
 		$this->load_view('case/automobile');
+	}
+	public function wechatpay()
+	{
+		$this->load_view('case/wechatpay');
 	}
 
 }

@@ -1,72 +1,6 @@
-<style type="text/css">
-#cases{
-  margin-top: 20px;
-}
-.sidebar{
-  border-right: solid 1px #e5e5e5;
-}
-.sidebar ul{
-  list-style: none;
-  padding-left: 0;
-}
-.sidebar li{
-  padding: 11px 14px;
-}
-.sidebar li:hover{
-  background-color: #f8f8f8;
-}
-.sidebar li.active{
-  background-color: #339933;
-}
-.sidebar .active:hover{
-  background-color: #339933;
-}
-.sidebar .active a{
-  color: white;
-}
-h2{
-  margin-top: 0 !important;
-}
-.row.item{
-  margin-bottom: 30px;
-}
-.col_img, .col_txt{
-  display: inline-block;
-  vertical-align: middle;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-.col_img{
-  width: 70%;
-}
-.col_txt{
-  width: 29%;
-}
-@media (max-width: 767px){
-  .sidebar li{
-    display: inline;
-    margin-right: 10px;
-  }
-  .sidebar ul{
-    margin-bottom: 20px;
-  }
-  .sidebar{
-    border-right: none;
-  }
-}
-@media (max-width: 420px){
-  .sidebar li{
-    margin-right: 0;
-  }
-  .col_img, .col_txt{
-    display: block;
-    width: 100%;
-  }
-  .col_txt{
-    margin-top: 5px;
-  }
-}
-</style>
+
+<link href="<?php echo $cdn_path;?>css/cases.css" rel="stylesheet">
+
 <h1>導入事例</h1>
 <p>
 今日、さまざまなシチュエーションでクレジットカードは利用できるようになってきました。クレジットカードの利用率は10年前と比べ、2倍に増えているものの民間最終消費支出の20％にも満たない数字です。<br/>
@@ -74,12 +8,13 @@ h2{
 </p>
 
 <div class="row" id="cases">
-  <div class="col-sm-3 sidebar">
+  <div class="col-sm-3 sidebar sidebar-mb-float">
     <ul>
       <li><a href="<?php echo $base_path;?>cases/retail"><strong>小売</strong></a></li>
       <li><a href="<?php echo $base_path;?>cases/catering"><strong>飲食</strong></a></li>
       <li class="active"><a href="<?php echo $base_path;?>cases/beauty"><strong>美容</strong></a></li>
       <li><a href="<?php echo $base_path;?>cases/automobile"><strong>自動車関連</strong></a></li>
+      <li><a href="<?php echo $base_path;?>cases/wechatpay"><strong>Wechat Pay</strong></a></li>
     </ul>
   </div>
 

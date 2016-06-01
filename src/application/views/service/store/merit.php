@@ -1,42 +1,25 @@
 <style type="text/css">
-.green_bg{
-  background-color: #E7F6D6;
-  padding: 10px;
-  margin-bottom: 15px;
-}  
-.green_bg .header{
-  color: #339933;
-  border-bottom-style: solid;
-  border-bottom-color: #339933;
-  border-bottom-width: 1px;
-  font-weight: bold;
-}
+
 .largeimg{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.gray_bg{
-  background-color: rgb(240,240,240);
-  padding: 10px;
-  margin-bottom: 15px;
+#merit01-graybg .text{
+  min-height: 60px;
 }
-.gray_bg .header{
-  border-bottom-style: solid;
-  border-bottom-color: rgb(225,225,225);
-  border-bottom-width: 1px;
-  font-weight: bold;
-}
-.gray_bg .col-sm-6{
-  margin-bottom: 20px;
+@media(max-width: 767px){
+  #merit01-graybg .col-sm-6{
+    margin-top: 25px;
+  }  
+  #merit01-graybg .text{
+    min-height: inherit;
+  }
 }
 
-.gray_bg img{
-  margin-bottom: 10px;
-}
-
-.gray_bg{
-  margin-left: 0;
-  margin-right: 0;
+.orange{
+  color: orange;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 #div_merit03{
   display: table;
@@ -50,8 +33,8 @@
 </style>
 
   
+<h1><span class="vtitle">店舗向け早期決済サービス</span><span>特徴・メリット</span></h1>
 
-<h1>店舗向け早期決済サービス｜特徴・メリット</h1>
 
 <h2 id="merit01">特徴1  業界最速の3日後決済を実現</h2>
 <p>
@@ -60,7 +43,7 @@
 
 <div class="green_bg">
   <p class="header">3日後決済を実現した「早期決済サービス」とは</p>
-  <p><strong>カード決済による売上代金を売上計上3日後（銀行営業日）に指定の口座にお振込します。</strong></p>
+  <p><strong>カード決済による売上代金を売上計上<span class="orange">3日後</span>（銀行営業日）に指定の口座にお振込します。</strong></p>
 </div>
 
 
@@ -75,30 +58,28 @@
 ※クレジット端末からの売上データは、毎日伝送頂く必要があります。クレジット端末からの売上伝送（日計処理）を忘れた場合、深夜0：00分を超え、翌日に送信した場合などは3日後にお支払できない場合があります。
 </p>
 
-
-<div class="row gray_bg">
-  <div class="col-sm-12">
+<div class="gray_bg" id="merit01-graybg">
+  <div>
     <p><strong>お客様のニーズに合わせたさまざまな決済プランをご用意しています。</strong></p>
     <p>マーチャント・サポートでは「3日後決済」のほか、お客様の幅広いニーズに対応できるようさまざまなプランをご用意。貴社の売上管理状況などに合わせてお選び頂けます。</p>
   </div>
 
-  <div class="col-sm-6">
-    <p class="header">週2回決済</p>
-    <p>毎週火曜日と金曜日が締日となります。売上金は、それぞれ翌週の火曜日と金曜日に指定口座にお振込致します。</p>
-    <div>
-      <img class="img-responsive center-block" src="<?php echo $cdn_path; ?>images/store/merit/img_merit09.gif" alt="支払週間予定表">
+  <div class="row">
+    <div class="col-sm-6">
+      <p class="header">週2回決済</p>
+      <p class="text">毎週火曜日と金曜日が締日となります。売上金は、それぞれ翌週の火曜日と金曜日に指定口座にお振込致します。</p>
+      <p><img class="img-responsive center-block" src="<?php echo $cdn_path; ?>images/store/merit/img_merit09.gif" alt="支払週間予定表"></p>
+      <p>※お振込は、最短5営業日後・最長8営業日後</p>
     </div>
-    <div>※お振込は、最短5営業日後・最長8営業日後</div>
+
+    <div class="col-sm-6">
+      <p class="header">週1回決済</p>
+      <p class="text">毎週金曜日が締日となり、売上金は翌週の金曜日に指定口座にお振込致します。</p>
+      <p><img class="img-responsive center-block" src="<?php echo $cdn_path; ?>images/store/merit/img_merit08.gif" alt="支払週間予定表"></p>
+      <p>※お振込は、最短5営業日後・最長10営業日後</p>
+    </div>
   </div>
 
-  <div class="col-sm-6">
-    <p class="header">週1回決済</p>
-    <p>毎週金曜日が締日となり、売上金は翌週の金曜日に指定口座にお振込致します。</p>
-    <div>
-      <img class="img-responsive center-block" src="<?php echo $cdn_path; ?>images/store/merit/img_merit08.gif" alt="支払週間予定表">
-    </div>
-    <div>※お振込は、最短5営業日後・最長10営業日後</div>
-  </div>
 </div>
 
 

@@ -13,7 +13,7 @@ pre{
 <h1>当サイトへのリンク</h1>
 <h2>バナーの使用上注意 </h2>
 <p>
-当サイトへリンクを張る際は必ずトップページ（<a href="http://www.merchant-s.com/">http://www.merchant-s.com/</a>）へ行うようお願いします。<br>
+当サイトへリンクを張る際は必ずトップページ（<a href="http://www.merchant-s.com/">http://www.merchant-s.com/</a>）へ行うようお願いします。<br />
 その他のページへの直接的なリンクはご遠慮ください。
 </p>
 

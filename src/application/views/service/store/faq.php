@@ -59,11 +59,13 @@
 <div class="_table">
   <div class="_tbody">
     <div class="_tr">
-      <h1 class="_td">店舗向け早期決済サービス｜FAQ</h1>
+      <h1 class="_td"><span class="vtitle">店舗向け早期決済サービス</span><span>FAQ</span></h1>
       <div class="_td" id="toggle">toggle</div>
     </div>
   </div>
 </div>
+
+
 
 <h2>クレジットカード基礎</h2>
 <ul class="qa">

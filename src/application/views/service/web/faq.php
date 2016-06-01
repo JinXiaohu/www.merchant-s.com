@@ -1,8 +1,4 @@
 <style type="text/css">
-hr{
-  border-top: 1px solid #3FA3D1;  margin-top: 0;
-  margin-bottom: 0;
-}
 ._td{
   vertical-align: middle;
 }
@@ -69,7 +65,7 @@ h2{
 <div class="_table">
   <div class="_tbody">
     <div class="_tr">
-      <h1 class="_td">Eコマース向け早期決済サービス｜FAQ</h1>
+      <h1 class="_td"><span class="vtitle">Eコマース向け早期決済サービス</span><span>FAQ</span></h1>
       <div class="_td" id="toggle">toggle</div>
     </div>
   </div>

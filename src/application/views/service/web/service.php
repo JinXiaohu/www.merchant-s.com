@@ -1,8 +1,4 @@
-<style type="text/css">  
-hr{
-  border-top: 1px solid #3FA3D1;  margin-top: 0;
-  margin-bottom: 0;
-}
+<style type="text/css"> 
 h2{
   border-color: #3FA3D1;
 }
@@ -17,6 +13,7 @@ h2{
   padding-top: 10px;
   padding-bottom: 10px;
   max-width: 536px;
+  margin-top: 30px;
 }
 .linkimgbule a{
   color: white;
@@ -24,14 +21,14 @@ h2{
 </style>
 
 
-<h1>Eコマース向け早期決済サービス｜サービスの仕組み</h1>
+<h1><span class="vtitle">Eコマース向け早期決済サービス</span><span>サービスの仕組み</span></h1>
 
 <h2>安心・確実、そして業界最速のスピードを実現したEコマース向け早期決済サービス</h2>
 <p>大手決済代行会社との提携により、 業界最速の7日後決済を可能にしたマーチャント・サポートのEコマース向け早期決済サービス。大手決済代行会社のASPサービスを活用することで、安全・確実な決済システムを低コストでご導入頂けます。オンラインでのクレジットカード決済システムの活用により、インターネットビジネスの可能性が、さらに大きく広がります。
 </p>
 
 <p>
-  <img class="img-responsive center-block" src="<?php echo $cdn_path; ?>images/ecommerce/service/img_service01.gif">
+  <img class="img-responsive center-block" src="<?php echo $cdn_path; ?>images/web/service/img_service01.gif">
 </p>
 
 <p class="linkimgbule center-block">
@@ -47,7 +44,7 @@ h2{
 </p>
 
 <p>
-  <img class="img-responsive center-block" src="<?php echo $cdn_path; ?>images/ecommerce/service/img_service02.gif">
+  <img class="img-responsive center-block" src="<?php echo $cdn_path; ?>images/web/service/img_service02.gif">
 </p>
 
 <p>

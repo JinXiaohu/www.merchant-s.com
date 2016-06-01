@@ -10,166 +10,114 @@ class Contact extends BaseController
 	{
 		parent::__construct();
 		$this->set_view_data('nav_id',  "nav-contact");
-	}
-
-	public function thanks()
-	{
 		$this->set_view_data('title',   "お問い合わせ | ". $this->config->item('site_name'));
-		$this->load_view("contact/contact_thanks");
 	}
-
+	
 
 	public function index()
 	{
-		$this->set_view_data('title',   "お問い合わせ | ". $this->config->item('site_name'));
+		$this->load_view('contact/index');
+	}
+
+
+	//申请加盟
+	public function join()
+	{
+		$this->set_view_data("h1", "新規加盟をご検討のお客様");
+		$this->set_view_data("active", "join");
 		if($this->is_post_method())
 		{
-			$this->index_POST();
+			$this->POST("JoinHandler", "contact/thanks", "contact/join");
 		}
 		else
 		{
-			$this->index_GET();
+		  $this->load_view('contact/join');
 		}
 	}
 
-	private function index_GET()
-	{
-		$this->load_view('contact/contact');
-	}
 
-
-	private function index_POST()
-	{
-		$this->validate();
-    $this->send_mail();
-	}
-
-	private function validate()
-	{
-		$name_mei  = trim(htmlspecialchars($this->input->post('name_mei'), ENT_QUOTES));
-		$shop_name = trim(htmlspecialchars($this->input->post('shop_name'), ENT_QUOTES));
-		$tel       = trim(htmlspecialchars($this->input->post('tel'), ENT_QUOTES));
-
-		if(!$name_mei)
+  //申请变更信息
+  public function info_changing()
+  {
+		$this->set_view_data("h1", "各種変更手続きフォーム");
+		$this->set_view_data("active", "info_changing");
+		if($this->is_post_method())
 		{
-			$this->set_view_data("error", "Please write your name.");
-			$this->load_view('contact/contact');
+			$this->POST("InfoChangingHandler", "contact/thanks", "contact/info_changing");
+		}
+		else
+		{
+		  $this->load_view('contact/info_changing');
+		}
+  }
+
+  //卷纸订单
+	public function order()
+	{
+		$this->set_view_data("h1", "ロール紙発注フォーム");
+		$this->set_view_data("active", "order");
+		if($this->is_post_method())
+		{
+			$this->POST("OrderHandler", "contact/thanks", "contact/order");
+		}
+		else
+		{
+		  $this->load_view('contact/order');
+		}
+	}
+
+  //其他查询
+	public function query()
+	{
+		$this->set_view_data("h1", "お問い合わせフォーム");
+		$this->set_view_data("active", "query");
+		if($this->is_post_method())
+		{
+			$this->POST("QueryHandler", "contact/thanks", "contact/query");
+		}
+		else
+		{
+		  $this->load_view('contact/query');
+		}
+	}
+
+
+	private function POST($class_handler, $thanks_page, $fail_page)
+	{
+    $handler = $this->create_mail_sender($class_handler);
+
+    //如果验证输入不合格
+    $msg = $handler->validate();
+    if($msg != true)
+    {
+			$this->set_view_data("error", $msg);
+			$this->load_view($fail_page);
 			exit;
-		}
-		if(!$shop_name)
-		{
-			$this->set_view_data("error", "Please write your shop's name.");
-			$this->load_view('contact/contact');
-			exit;
-		}
-		if(!$tel)
-		{
-			$this->set_view_data("error", "Please write your telephone.");
-			$this->load_view('contact/contact');
-			exit;
-		}
-	}
+    }
 
-
-	private function send_mail()
-	{
-		if($this->send_using_jphpmailer())
+    //发信成功，显示thanks页面
+   	if($handler->send_using_jphpmailer())
 		{
-			$this->load->helper('url');
-			redirect($this->base_path. "contact/thanks");
+		  $this->load_view($thanks_page);
 		}
+		//发信失败，显示原来的表单页面
 		else
 		{
 			$this->set_view_data("error", "oops, send mail failed.");
-			$this->load_view('contact/contact');
+			$this->load_view($fail_page);
 		}
 	}
 
 
-	private function send_using_jphpmailer()
+	private function create_mail_sender($class_handler)
 	{
-		require_once(APPPATH. "libraries/jphpmailer.php");
-		require_once(APPPATH. "config/mail.php");
-		$jmailer = new JPHPMailer();
-		$jmailer->in_enc = 'utf-8';
-		
-		$jmailer->IsSMTP();
-		$jmailer->Host     = $cfg_mail['smtp_host'];
-		$jmailer->Port     = $cfg_mail['smtp_port'];
-		$jmailer->SMTPAuth = $cfg_mail['SMTPAuth'];
-		if($jmailer->SMTPAuth)
-		{
-			$jmailer->Username = $cfg_mail['smtp_user'];
-			$jmailer->Password = $cfg_mail['smtp_pass'];
-		}
-
-		$mailto = $cfg_mail['contact_emal'];
-
-		$jmailer->addTo($mailto);
-		$jmailer->_setFrom($mailto, $this->get_from_name());
-		$jmailer->setSubject("お問い合わせ");
-		$jmailer->setBody($this->get_mail_body());
- 		
-		return $jmailer->send();
+		require_once("Contact/$class_handler.php");
+		$handler = new $class_handler();
+		$handler->input = $this->input;
+		return $handler;
 	}
 
 
-/*
-	private function send_using_phpmailer()
-	{
-		require_once(APPPATH. "libraries/class.phpmailer.php");
-		$mailer = new PHPMailer();
-
-		require_once(APPPATH. "config/mail.php");
-  	$mailer->CharSet = 'utf-8';
-		$mailer->IsSMTP();
-		$mailer->Host = $cfg_mail['smtp_host'];
-		$mailer->Port = $cfg_mail['smtp_port'];
-		$mailer->SMTPAuth = $cfg_mail['SMTPAuth'];
-		if($mailer->SMTPAuth)
-		{
-			$mailer->Username = $cfg_mail['smtp_user'];
-			$mailer->Password = $cfg_mail['smtp_pass'];
-		}
-
-	  $mailto = $cfg_mail['contact_emal'];
-
-		$mailer->AddAddress($mailto);
-		$mailer->SetFrom($mailto, $this->get_from_name());
-		$mailer->Subject = "お問い合わせ";
-		$mailer->Body = $this->get_mail_body();
- 		
-		return $mailer->send();
-	}
-*/
-
-	private function get_from_name()
-	{
-		$name_mei = htmlspecialchars($this->input->post('name_mei'), ENT_QUOTES);
-		return $name_mei. "様";
-	}
-
-	private function get_mail_body()
-	{
-		$name_mei    = $this->get_field('name_mei');
-		$shop_name   = $this->get_field('shop_name');
-		$tel         = $this->get_field('tel');
-		$reply_email = $this->get_field('reply_email');
-		$content     = $this->get_field('content');
-
-		return 
-			"氏名:\t$name_mei\r\n".
-			"会社名:\t$shop_name\r\n".
-			"TEL:\t$tel\r\n".
-			"メールアドレス:\t$reply_email\r\n".
-			"お問い合わせ内容:\t$content \r\n";
-	}
-
-	private function get_field($field_name)
-	{
-		return htmlspecialchars($this->input->post($field_name), ENT_QUOTES);
-	}
-	
 }
 
 ?>

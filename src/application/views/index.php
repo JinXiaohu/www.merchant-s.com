@@ -1,3 +1,5 @@
+
+<script src="<?php echo $cdn_path;?>js/bootstrap.min.js"></script>
 <style type="text/css">
 .carousel{
   margin-top: -10px;
@@ -94,7 +96,7 @@
  transform: translate3d(0, -2px, 0);
 }
 @media (max-width: 767px){
-  ._table,._tbody,._tr,._td{
+  #solutions ._table, #solutions ._tbody, #solutions ._tr, #solutions ._td{
     display: block;
   }
   #solutions .item, #solutions .separator{
@@ -105,10 +107,6 @@
     margin-bottom: 0;
   }
 }
-
-
-
-
 
 ._h1{
   color: #333;
@@ -168,18 +166,22 @@
 }
 
 
+
+
 #links{
   width:340px;
   padding-left: 18px;
 }
 @media (max-width: 767px){
-  #links{
-    margin-left: auto;
-    margin-right: auto;
+  #news_links ._table, #news_links ._tbody, #news_links ._tr, #news_links ._td{
+    display: block;
   }
-  #links img{
+  #links{
+    padding-left: 0;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    max-width: 340px;
   }
 }
 
@@ -196,13 +198,13 @@
 }
 
 .link .media{
-  border: solid 1px #795548;
+  border: solid 1px rgb(180,180,180);
   border-radius: 8px;
   background-color: #EFEFEF;
 }
 .link .media .media-left{
   padding-right: 0;
-  border-right: solid 1px #795548;
+  border-right: solid 1px rgb(180,180,180);
 }
 .link .media .media-body{
   padding: 5px 13px;
@@ -237,7 +239,7 @@
     </div>
 
     <div class="item">
-      <a href="<?php echo $base_path;?>pos"><img src="<?php echo $cdn_path;?>images/banner3.jpg"></a>
+      <a href="<?php echo $base_path;?>terminal"><img src="<?php echo $cdn_path;?>images/banner3.jpg"></a>
     </div>
 
   </div>
@@ -273,7 +275,7 @@
       <div class="_td separator"></div>
 
       <div class="_td item" id="s_item3">
-        <h4><a href="<?php echo $base_path;?>pos">PAX社独自端末機</a></h4>
+        <h4><a href="<?php echo $base_path;?>terminal">PAX社独自端末機</a></h4>
         <p>世界第3位のシェア率を誇るPAX社のクレジット端末機です。独自の仕入れルートを持つマーチャント・サポートは貴店のニーズにお応えいたします。
         </p>    
       </div>
@@ -303,7 +305,7 @@
 
 <div class="div_separator mb_separator"></div>
 
-<div class="_table">
+<div class="_table" id="news_links">
   <div class="_tbody">
     <div class="_tr">
       <div class="_td">
@@ -324,7 +326,7 @@
 
       <div class="_td" id="links">
         <div class="link">
-          <a href="<?php echo $base_path;?>contact_participating">
+          <a href="<?php echo $base_path;?>contact/info_changing">
             <div class="media">
               <div class="media-left media-middle">
                 <img class="hisun_logo" src="<?php echo $cdn_path;?>images/icon1.jpg">

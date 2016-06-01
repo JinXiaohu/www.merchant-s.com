@@ -1,83 +1,21 @@
+
 <style type="text/css">
-#content{
-  margin-top: 10px;
+.sidebar-level li a{
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-.sidebar ul{
-  list-style: none;
-  padding-left: 0;
-}
-.sidebar{
-  border-right: solid 1px #e5e5e5;
-}
-.sidebar .level1{
-  padding: 7px 10px;
-  font-weight: bold;
-}
-
-.sidebar .level2{
-  padding: 7px 20px;
-}
-.sidebar .li_sep{
-  height: 15px;
-}
-
-.sidebar li:hover{
-  background-color: #f8f8f8;
-}
-
-.sidebar li.active a{
-  color: white;
-}
-.sidebar li.active{
-  background-color: #339933;
-}
-.sidebar .active:hover{
-  background-color: #339933;
-}
-
-.sidebar li.web.active{
+.sidebar-level li.web.active{
   background-color: #3FA3D1;
 }
-.sidebar li.web.active:hover{
+.sidebar-level li.web.active:hover{
   background-color: #3FA3D1;
-}
-@media (min-width: 768px){
-  h1{
-    margin-top: 5px;
-  }
-}
-@media (max-width: 767px){
-  .rightbar{
-    clear: both;
-  }
-  .sidebar{
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .sidebar ul{
-    display: table;
-  }
-  .sidebar .level1, .sidebar .level2, .sidebar .li_sep{
-    float: left;
-  }
-  .sidebar .level1{
-    width: 100%;
-    padding: 5px 8px;
-  }
-  .sidebar .level2{
-    width: 50%;
-    padding: 5px 8px;
-  }
-  .sidebar .li_sep{
-    width: 100%;
-  }
 }
 </style>
 
 <div class="row" id="content">
-  <div class="col-sm-4 sidebar">
+  <div class="col-sm-3 sidebar sidebar-level">
     <ul>
-      <li id="store" class="level1"><a href="<?php echo $base_path;?>service/store">クレジットカード決済（早期）＜店舗＞</a></li>
+      <li id="store" class="level1"><a href="<?php echo $base_path;?>service/store">クレジットカード決済<span class="vtitle">（早期）＜店舗＞</span></a></li>
       <li id="store_merit" class="level2"><a href="<?php echo $base_path;?>service/store_merit">特徴・メリット</a></li>
       <li id="store_service" class="level2"><a href="<?php echo $base_path;?>service/store_service">サービスの仕組み</a></li>
       <li id="store_flow" class="level2"><a href="<?php echo $base_path;?>service/store_flow">導入までの流れ</a></li>
@@ -87,28 +25,33 @@
       <div class="li_sep"></div>
       
 
-      <li id="web" class="web level1"><a href="<?php echo $base_path;?>service/web">クレジットカード決済（早期）＜WEB＞</a></li>
+      <li id="web" class="web level1"><a href="<?php echo $base_path;?>service/web">クレジットカード決済<span class="vtitle">（早期）＜WEB＞</span></a></li>
       <li id="web_merit" class="web level2"><a href="<?php echo $base_path;?>service/web_merit">特徴・メリット</a></li>
       <li id="web_service" class="web level2"><a href="<?php echo $base_path;?>service/web_service">サービスの仕組み</a></li>
       <li id="web_flow" class="web level2"><a href="<?php echo $base_path;?>service/web_flow">導入までの流れ</a></li>
-      <li id="web_price" class="web level2"><a href="<?php echo $base_path;?>service/web_price">料金表</a></li>
       <li id="web_faq" class="web level2"><a href="<?php echo $base_path;?>service/web_faq">FAQ</a></li>    
 
 
       <div class="li_sep"></div> 
 
 
-      <li id="wechat" class="level1"><a href="<?php echo $base_path;?>service/wechat">WeChat決済</a></li>
+      <li id="wechat" class="level1"><a href="<?php echo $base_path;?>service/wechat">WeChat Pay</a></li>
       <li id="wechat_merit" class="level2"><a href="<?php echo $base_path;?>service/wechat_merit">特徴・メリット</a></li> 
+      <li id="wechat_service" class="level2"><a href="<?php echo $base_path;?>service/wechat_service">サービスの仕組み</a></li>
+      <li id="wechat_flow" class="level2"><a href="<?php echo $base_path;?>service/wechat_flow">導入までの流れ</a></li>
+      <li id="wechat_faq" class="level2"><a href="<?php echo $base_path;?>service/wechat_faq">FAQ</a></li>    
 
 
       <div class="li_sep"></div>
 
 
-      <li id="wechatad" class="level1"><a href="<?php echo $base_path;?>service/wechatad">WeChat広告 プロモーション (公式アカウント作成)</a></li>
+      <li id="wechatad" class="level1"><a href="<?php echo $base_path;?>service/wechatad">WeChat広告  プロモーション <span class="vtitle">(公式アカウント作成)</span></a></li>
       <li id="wechatad_merit" class="level2"><a href="<?php echo $base_path;?>service/wechatad_merit">特徴・メリット</a></li>
+      <li id="wechatad_service" class="level2"><a href="<?php echo $base_path;?>service/wechatad_service">サービスの仕組み</a></li>
+      <li id="wechatad_flow" class="level2"><a href="<?php echo $base_path;?>service/wechatad_flow">導入までの流れ</a></li>
+      <li id="wechatad_faq" class="level2"><a href="<?php echo $base_path;?>service/wechatad_faq">FAQ</a></li>    
     </ul>
   </div>
 
-  <div class="col-sm-8 rightbar">
+  <div class="col-sm-9 rightbar">
     <div class="mb_separator div_hidden"></div>

@@ -40,7 +40,7 @@ class BaseController extends CI_Controller
 	}
 
 
-	protected function load_view($view_name)
+	public function load_view($view_name)
 	{
 		if($_SERVER['HTTP_HOST'] == $this->config->item('mb_host') && !$this->config->item('enable_reponsive_design'))
 		{

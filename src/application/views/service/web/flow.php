@@ -1,23 +1,21 @@
 <style type="text/css">
-hr{
-  border-top: 1px solid #3FA3D1;  margin-top: 0;
-  margin-bottom: 0;
-}
 h2{
   border-color: #3FA3D1;
 }
 .header{
   font-weight: bold;
-  border-bottom-style: solid;
-  border-bottom-color: rgb(225,225,225);
-  border-bottom-width: 1px;
+  border-bottom: solid 1px rgb(225,225,225);
   margin: 10px 0;
   padding: 5px 0;
 }
+.arrow{
+  background: url(<?php echo $cdn_path;?>images/arrow_blue2.jpg) no-repeat center;
+  height: 30px;
+  margin-top: 40px;
+}
 </style>
 
-
-<h1>Eコマース向け早期決済サービス｜導入までの流れ</h1>
+<h1><span class="vtitle">Eコマース向け早期決済サービス</span><span>導入までの流れ</span></h1>
 
 <h2>1お申込</h2>
 <div>
@@ -31,11 +29,14 @@ h2{
 </div>
 
 
+<div class="arrow"></div>
+
 <h2>2審査</h2>
 <div>
   <p>審査には約10日かかります。</p>
 </div>
 
+<div class="arrow"></div>
 
 <h2>3カード決済用ASPサービス導入</h2>
 <div>
@@ -43,12 +44,16 @@ h2{
   <p class="alignRight">※詳しくはお問い合わせください。</p>
 </div>
 
+<div class="arrow"></div>
+
 
 <h2>4初期費用お支払</h2>
 <div>
   <p>マーチャント･サポート発行の請求書をお送りさせて頂いております。　当社指定の口座にお振込ください。</p>
 </div>
 
+
+<div class="arrow"></div>
 
 <h2>5早期決済サービス開始</h2>
 <div>

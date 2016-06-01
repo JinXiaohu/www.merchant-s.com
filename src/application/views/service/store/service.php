@@ -3,14 +3,13 @@
   margin-left: 0;
   margin-right: 0;
 }
-.img-responsive{
+#img_row img{
   margin-top: 20px;
   margin-bottom: 20px;
 }
 </style>
 
-  
-<h1>店舗向け早期決済サービス｜サービスの仕組み</h1>
+<h1><span class="vtitle">店舗向け早期決済サービス</span><span>サービスの仕組み</span></h1>
 
 <h2>決済スピード短縮を実現した安心・安全の決済システム</h2>
 
