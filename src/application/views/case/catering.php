@@ -2,13 +2,12 @@
 <link href="<?php echo $cdn_path;?>css/cases.css" rel="stylesheet">
 
 <h1>導入事例</h1>
-<p>
-今日、さまざまなシチュエーションでクレジットカードは利用できるようになってきました。クレジットカードの利用率は10年前と比べ、2倍に増えているものの民間最終消費支出の20％にも満たない数字です。<br/>
-クレジットカードの利用シーンが多様化し、消費者にとって利用しやすい環境を整えることが今後のテーマとなっております。
-</p>
+<p>今日、さまざまなシチュエーションでクレジットカードは利用できるようになってきました。クレジットカードの利用率は10年前と比べ、2倍に増えているものの民間最終消費支出の20％にも満たない数字です。</p>
+
+<p>クレジットカードの利用シーンが多様化し、消費者にとって利用しやすい環境を整えることが今後のテーマとなっております。</p>
 
 <div id="main">
-  <div class="sidebar sidebar-mb-float">
+  <div class="sidebar sidebar-mb-float sidebar-lg">
     <ul>
       <li><a href="<?php echo $base_path;?>cases/retail"><strong>小売</strong></a></li>
       <li class="active"><a href="<?php echo $base_path;?>cases/catering"><strong>飲食</strong></a></li>

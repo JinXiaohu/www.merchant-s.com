@@ -300,6 +300,9 @@
   <div class="col-xs-6 col-md-4 col">
     <a href="<?php echo $base_path;?>cases/automobile"><img class="img-responsive" src="<?php echo $cdn_path;?>images/case4.jpg"></a>
   </div>
+  <div class="col-xs-6 col-md-4 col">
+    <a href="<?php echo $base_path;?>cases/automobile"><img class="img-responsive" src="<?php echo $cdn_path;?>images/case5.jpg"></a>
+  </div>
 </div>
 
 

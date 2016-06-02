@@ -1,29 +1,5 @@
 
 <style type="text/css">
-#main{
-  margin-top: 20px;
-}
-#img_comment{
-  color: #339933;
-  font-weight: bold;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-}
-#img_comment .left{
-  font-size: 36px;
-  text-align: right;
-  width: 48%;
-  vertical-align: middle;
-  padding-right: 5px;
-}
-#img_comment .right{
-  font-size: 18px;
-  text-align: left;
-  vertical-align: middle;
-  padding-left: 5px;
-}
 .ul_feature{
   padding-left: 20px;
 }
@@ -35,11 +11,15 @@
 <h1>決済端末種別 - PAX-S90</h1>
 
 <div id="main">
-  <div class="sidebar sidebar-mb-float">
+  <div class="sidebar sidebar-level sidebar-lg">
     <ul>
       <li class="level1"><a href="<?php echo $base_path;?>terminal">クレジットカード端末</a></li>
       <li class="level2"><a href="<?php echo $base_path;?>terminal/s80">PAX　S80</a></li>
       <li class="level2 active"><a href="<?php echo $base_path;?>terminal/s90">PAX　S90</a></li>
+         
+      <div class="li_sep"></div>   
+
+      <li class="level1"><a href="<?php echo $base_path;?>terminal/business_center">センター事業</a></li>
     </ul>
   </div>
 
@@ -47,14 +27,6 @@
     <div class="mb_separator div_hidden"></div>
     <h1><img src="<?php echo $cdn_path;?>images/terminal/s90_1.jpg"></h1>
 
-    <table id="img_comment">
-      <td class="left">S90</td>
-      <td class="right">
-        <div class="m_header">Mobile</div>
-        <div class="m_text">Payment Terminal</div>
-      </td>
-    </table>
-       
     <h2>スペック＆特徴</h2>
     <ul class="ul_feature">
       <li>高速通信のモバイル（無線）端末</li>

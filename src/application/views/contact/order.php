@@ -2,12 +2,14 @@
 <link href="<?php echo $cdn_path;?>css/form.css" rel="stylesheet">
 
 <style type="text/css">
-#tr-addr-txt{
-  display: none;
-}  
+.help_text{
+  font-size: 0.9em;
+  color: rgb(140,140,140);
+  padding-top:5px;
+}
 </style>
 <div id="main">
-  <div class="sidebar sidebar-level">
+  <div class="sidebar sidebar-level sidebar-lg">
     <ul>
       <li class="level1"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
@@ -22,28 +24,33 @@
 
   <div class="rightbar">
     <div class="mb_separator div_hidden"></div>
-    <h1>ロール紙発注フォーム</h1>
+
+    <h1><span class="vtitle">PAX端末　ご利用加盟店様</span><span>ロール紙発注フォーム</span></h1>
 
     <p class="smallText">
-    下記のフォームより、お問い合わせ内容をご入力の上、お問い合わせいただきますようお願い致します。
+    下記のフォームより、必要事項をご入力の上、ご希望のロール紙個数を注文いただきますようお願い致します。
     </p>
     <p class="smallText">
     万が一のため、弊社でメール受信後に自動返信をさせていただいておりますが、返信メールが翌日にもない場合には、お電話にてお問い合わせ下さいますよう、宜しくお願い申し上げます。
     </p>
 
+    <p class="smallText text-gray">
+    ※PAX端末以外（INFOX/CARDNET）のロール紙の注文はお受付できません
+    </p>
+
     <form method="post" action="" name="form1">
       <div class="_table">
         <div class="_tr">
-          <div class="_td td_label">[1]加盟店番号（6桁）<span class="required">（必須）</span></div>
+          <div class="_td td_label">[1]加盟店ID（6桁）</div>
           <div class="_td td_input"> 
-            <input type="text" id="merc_id" name="merc_id">
+            <input type="text" id="merc_id" name="merc_id" placeholder="不明の場合、未入力で結構です">
           </div>
         </div>
 
         <div class="_tr">
           <div class="_td td_label">[2]端末番号<span class="required">（必須）</span></div>
           <div class="_td td_input">
-            <input type="text" id="term_id" name="term_id">
+            <input type="text" id="term_id" name="term_id" placeholder="端末の裏に記載がございます">
           </div>
         </div>
 
@@ -68,6 +75,7 @@
                 <input type="radio" name="s80" value="20"><span> 20個</span>
               </div>
             </div>
+            <div class="help_text">※端末液晶画面の右下に記載されております </div>
           </div>
         </div>
 
@@ -85,6 +93,7 @@
                 <input type="radio" name="s90" value="50"><span> 50個</span>
               </div>
             </div>
+            <div class="help_text">※端末液晶画面の右下に記載されております </div>
           </div>
         </div>
 
@@ -100,7 +109,7 @@
                 <input type="radio" name="addr" id="addr_store" value="addr_store"><span> 店舗</span>
               </div>
               <div class="col-xs-4">
-                <input type="radio" name="addr" id="addr_other" value="addr_other"><span> その他住所</span>
+                <input type="radio" name="addr" id="addr_other" value="addr_other" checked="checked"><span> その他住所</span>
               </div>
             </div>
           </div>
@@ -136,7 +145,7 @@
         <div class="_tr">
           <div class="_td tdleft"></div>
           <div class="_td">
-          <input type="submit" id="submit_btn" class="ms-button" value="確 認" onclick="if(!onConfirmClick()) return false;">
+          <input type="submit" id="submit_btn" class="ms-button" value="内容を確認する" onclick="if(!onConfirmClick()) return false;">
           </div>
         </div>
 
@@ -170,10 +179,6 @@ String.prototype.trim = function()
 
 function onConfirmClick() {
   var message = "";
-  if (document.form1.merc_id.value.trim() == '')
-  {
-    message += "加盟店番号を入力してください。\n";
-  } 
   if (document.form1.term_id.value.trim()  == '')
   {
     message += "端末番号を入力してください。\n";

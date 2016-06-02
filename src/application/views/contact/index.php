@@ -1,8 +1,5 @@
 
 <style type="text/css">
-#main{
-  margin-top: 20px;
-}
 #items{
   width: 100%;
   border-collapse: collapse;
@@ -47,7 +44,7 @@
 </style>
 
 <div id="main">
-  <div class="sidebar sidebar-level">
+  <div class="sidebar sidebar-level sidebar-lg">
     <ul>
       <li class="active level1"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>

@@ -1,8 +1,5 @@
 
 <style type="text/css">
-#main{
-  margin-top: 20px;
-}
 @media (max-width: 350px){
   ._table,._tbody,._tr,._td{
     display: block;
@@ -21,16 +18,23 @@
     margin-bottom: 30px;
   }
 }
+.service_feature .title .details {
+  width: 130px;
+}
 </style>
 
 <h1>PAX Global社製端末</h1>
 
 <div id="main">
-  <div class="sidebar sidebar-mb-float">
+  <div class="sidebar sidebar-level sidebar-lg">
     <ul>
-      <li class="active level1"><a href="<?php echo $base_path;?>terminal">クレジットカード端末</a></li>
+      <li class="level1 active"><a href="<?php echo $base_path;?>terminal">クレジットカード端末</a></li>
       <li class="level2"><a href="<?php echo $base_path;?>terminal/s80">PAX　S80</a></li>
       <li class="level2"><a href="<?php echo $base_path;?>terminal/s90">PAX　S90</a></li>
+         
+      <div class="li_sep"></div>   
+
+      <li class="level1"><a href="<?php echo $base_path;?>terminal/business_center">センター事業</a></li>
     </ul>
   </div>
 
@@ -47,13 +51,13 @@
         <div class="_tbody">
           <div class="_tr">
             <div class="text _td">その1．業界最低水準の手数料を実現</div>
-            <div class="details _td"><a href="<?php echo $base_path;?>terminal/s80">詳細はこちら</a></div>
+            <div class="details _td"><a href="<?php echo $base_path;?>terminal/s80">詳細はこちら（S80）</a></div>
           </div>
         </div>
       </div>
 
       <div>
-      累計150万代以上の販売実績を背景に大量生産により低コスト化を実現しているため、加盟店様がご負担される手数料に還元し業界最低水準の手数料でご利用いただくことで店舗のスマート経営をお手伝いしております。
+      累計150万台以上の販売実績を背景に大量生産により低コスト化を実現しているため、加盟店様がご負担される手数料に還元し業界最低水準の手数料でご利用いただくことで店舗のスマート経営をお手伝いしております。
       </div>
     </div>
 
@@ -62,7 +66,7 @@
         <div class="_tbody">
           <div class="_tr">
             <div class="text _td">その2．スピーディーな保守対応</div>
-            <div class="details _td"><a href="<?php echo $base_path;?>terminal/s90">詳細はこちら</a></div>
+            <div class="details _td"><a href="<?php echo $base_path;?>terminal/s90">詳細はこちら（S90）</a></div>
           </div>
         </div>
       </div>

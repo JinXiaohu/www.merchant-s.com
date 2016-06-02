@@ -37,9 +37,7 @@ input[type="radio"], input[type="checkbox"]{
   padding-bottom: 10px;
 }
 
-.ms-button{
-  width: 80px;
-}
+
 .required{
   color: orange;
 }

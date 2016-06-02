@@ -1,10 +1,5 @@
 
 <style type="text/css">
-
-.sidebar-level li a{
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
 .sidebar-level li.web.active{
   background-color: #3FA3D1;
 }

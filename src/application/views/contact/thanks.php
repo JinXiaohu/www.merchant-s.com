@@ -26,7 +26,7 @@
 </style>
 
 <div id="main">
-  <div class="sidebar sidebar-level">
+  <div class="sidebar sidebar-level sidebar-lg">
     <ul>
       <li class="level1<?php if(isset($active) && $active=="index"):?> active<?php endif;?>"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2<?php if(isset($active) && $active=="info_changing"):?> active<?php endif;?>"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>

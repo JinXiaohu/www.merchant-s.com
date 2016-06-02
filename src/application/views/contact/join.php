@@ -2,7 +2,7 @@
 <link href="<?php echo $cdn_path;?>css/form.css" rel="stylesheet">
 
 <div id="main">
-  <div class="sidebar sidebar-level">
+  <div class="sidebar sidebar-level sidebar-lg">
     <ul>
       <li class="level1"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
@@ -17,10 +17,11 @@
 
   <div class="rightbar">
     <div class="mb_separator div_hidden"></div>
-    <h1>新規加盟をご検討のお客様</h1>
 
+    <h1><span class="vtitle">新規のお客様</span><span>新規加盟をご検討のお客様</span></h1>
+    
     <p class="smallText">
-    下記のフォームより、お問い合わせ内容をご入力の上、お問い合わせいただきますようお願い致します。
+    下記のフォームより、必要事項をご入力の上、ご希望のロール紙個数を注文いただきますようお願い致します。
     </p>
     <p class="smallText">
     万が一のため、弊社でメール受信後に自動返信をさせていただいておりますが、返信メールが翌日にもない場合には、お電話にてお問い合わせ下さいますよう、宜しくお願い申し上げます。
@@ -37,7 +38,7 @@
         </div>
 
         <div class="_tr">
-          <div class="_td td_label">[2]会社名<span class="required">（必須）</span></div>
+          <div class="_td td_label">[2]会社名または店舗名<span class="required">（必須）</span></div>
           <div class="_td td_input">
             <input type="text" id="shop_name" name="shop_name" placeholder="法人様の場合必須">
           </div>
@@ -60,7 +61,14 @@
         <div class="_tr">
           <div class="_td td_label">[5]資料請求</div>
           <div class="_td td_input">
-            <input type="text" id="request" name="request">
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="radio" name="request" value="request_yes"><span>必要</span>
+              </div>
+              <div class="col-sm-6">
+                <input type="radio" name="request" value="request_no" checked="checked"><span> 不要</span>
+              </div>
+          </div>
           </div>
         </div>
 
@@ -68,13 +76,13 @@
           <div class="_td td_label">[6]ご希望の連絡方法<span class="required">（必須）</span></div>
           <div class="_td td_input">
             <div class="row">
-              <div class="col-sm-4">
-                <input type="checkbox" value="con_by_tel" name="con_by_tel" id="con_by_tel"><span>電話連絡希望</span>
+              <div class="col-sm-3">
+                <input type="checkbox" value="con_by_tel" name="con_by_tel" id="con_by_tel"><span>電話</span>
               </div>
-              <div class="col-sm-4">
-                <input type="checkbox" value="con_by_email" name="con_by_email" id="con_by_email"><span>Eメール連絡希望</span>
+              <div class="col-sm-3">
+                <input type="checkbox" value="con_by_email" name="con_by_email" id="con_by_email"><span>Eメール</span>
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-3">
                 <input type="checkbox" value="no_con" name="no_con" id="no_con"><span>連絡不要</span>
               </div>
             </div>
@@ -83,14 +91,14 @@
 
 
         <div class="_tr">
-          <div class="_td td_label">[7]資料請求</div>
+          <div class="_td td_label">[7]資料の送付方法</div>
           <div class="_td td_input">
             <div class="row">
               <div class="col-sm-6">
-                <input type="checkbox" value="send_by_mail" name="send_by_mail" id="send_by_mail"><span>資料送付希望（ご郵送）</span>
+                <input type="checkbox" value="send_by_mail" name="send_by_mail" id="send_by_mail"><span>ご郵送</span>
               </div>
               <div class="col-sm-6">
-                <input type="checkbox" value="send_by_email" name="send_by_email" id="send_by_email"><span>資料送付希望（Eメール）</span>
+                <input type="checkbox" value="send_by_email" name="send_by_email" id="send_by_email"><span>Eメール</span>
               </div>
             </div>
           </div>
@@ -117,7 +125,7 @@
         <div class="_tr">
           <div class="_td tdleft"></div>
           <div class="_td">
-          <input type="submit" id="submit_btn" class="ms-button" value="確 認" onclick="if(!onConfirmClick()) return false;">
+          <input type="submit" id="submit_btn" class="ms-button" value="内容を確認する" onclick="if(!onConfirmClick()) return false;">
           </div>
         </div>
 

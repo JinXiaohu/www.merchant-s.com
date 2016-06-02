@@ -3,7 +3,7 @@
 
 
 <div id="main">
-  <div class="sidebar sidebar-level">
+  <div class="sidebar sidebar-level sidebar-lg">
     <ul>
       <li class="level1"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
@@ -18,10 +18,11 @@
 
   <div class="rightbar">
     <div class="mb_separator div_hidden"></div>
-    <h1>お問い合わせフォーム</h1>
+
+    <h1><span class="vtitle">ご利用加盟店様</span><span>お問い合わせフォーム</span></h1>
 
     <p class="smallText">
-    下記のフォームより、お問い合わせ内容をご入力の上、お問い合わせいただきますようお願い致します。
+    下記のフォームより、必要事項をご入力の上、ご希望のロール紙個数を注文いただきますようお願い致します。
     </p>
     <p class="smallText">
     万が一のため、弊社でメール受信後に自動返信をさせていただいておりますが、返信メールが翌日にもない場合には、お電話にてお問い合わせ下さいますよう、宜しくお願い申し上げます。
@@ -37,7 +38,7 @@
         </div>
 
         <div class="_tr">
-          <div class="_td td_label">[2]会社名<span class="required">（必須）</span></div>
+          <div class="_td td_label">[2]会社名または店舗名<span class="required">（必須）</span></div>
           <div class="_td td_input">
             <input type="text" id="company_name" name="company_name">
           </div>
@@ -51,7 +52,7 @@
         </div>
 
         <div class="_tr">
-          <div class="_td td_label">[4]加盟店番号</span></div>
+          <div class="_td td_label">[4]加盟店ID</span></div>
           <div class="_td td_input">
             <input type="text" id="merc_id" name="merc_id">
           </div>
@@ -91,7 +92,7 @@
         <div class="_tr">
           <div class="_td tdleft"></div>
           <div class="_td">
-          <input type="submit" id="submit_btn" class="ms-button" value="確 認" onclick="if(!onConfirmClick()) return false;">
+          <input type="submit" id="submit_btn" class="ms-button" value="内容を確認する" onclick="if(!onConfirmClick()) return false;">
           </div>
         </div>
 

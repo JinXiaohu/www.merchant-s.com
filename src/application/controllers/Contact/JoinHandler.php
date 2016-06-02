@@ -52,7 +52,7 @@ class JoinHandler extends ContactHandler
 		$shop_name   = $this->get_field('shop_name');
 		$tel         = $this->get_field('tel');
 		$reply_email = $this->get_field('reply_email');
-		$request     = $this->get_field('request');
+		$request     = $this->get_request();
 
 		$communication = 
 			$this->get_checkbox_str("con_by_tel", "電話連絡希望").
@@ -67,7 +67,7 @@ class JoinHandler extends ContactHandler
 
 		return 
 			"【氏名】\t$name_mei\r\n".
-			"【会社名】\t$shop_name\r\n".
+			"【会社名または店舗名】\t$shop_name\r\n".
 			"【電話番号】\t$tel\r\n".
 			"【メールアドレス】\t$reply_email\r\n".
 			"【資料請求】\t$request\r\n".
@@ -76,6 +76,17 @@ class JoinHandler extends ContactHandler
 			"【お問い合わせ内容】\t$content \r\n";
 	}
 
+	private function get_request()
+	{
+		switch($this->input->post('request')){
+			case "request_yes":
+				return "必要";
+			case "request_no":
+				return "不要";
+			default:
+				return "?";
+		}
+	}
 }
 
 ?>

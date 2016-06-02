@@ -2,7 +2,7 @@
 <link href="<?php echo $cdn_path;?>css/form.css" rel="stylesheet">
 
 <div id="main">
-  <div class="sidebar sidebar-level">
+  <div class="sidebar sidebar-level sidebar-lg">
     <ul>
       <li class="level1"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2 active"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
@@ -18,9 +18,12 @@
   <div class="rightbar">
     <div class="mb_separator div_hidden"></div>
 
-    <h1>店舗情報変更に関するお手続き</h1>
+    <h1><span class="vtitle">ご利用加盟店様</span><span>各種変更手続きフォーム</span></h1>
+    
     <p class="smallText">
-    必要情報をご記入のうえ、送信ください。必要書類一式をご送付いたします。<br />
+    必要情報をご記入のうえ、送信ください。各種お手続きには、お届け用紙のご記入・捺印が必要となります。必要書類を送付させていただきますので、お受取り先住所のご入力をお願します。※当フォームでは変更完了となりません。
+    </p>
+    <p class="smallText">
     なお、変更手続きの内容によっては、<strong>「営業許可証」</strong>や<strong>「契約者身分証明書」</strong>のご提示をいただく場合がございますので、あらかじめご了承ください。
     </p>
     <p class="smallText">
@@ -280,7 +283,7 @@
       <div class="_tr">
         <div class="_td tdleft"></div>
         <div class="_td">
-          <input type="submit" id="submit_btn" class="ms-button" value="確 認" onclick="if(!onConfirmClick()) return false;">
+          <input type="submit" id="submit_btn" class="ms-button" value="内容を確認する" onclick="if(!onConfirmClick()) return false;">
         </div>
       </div>
     </div>

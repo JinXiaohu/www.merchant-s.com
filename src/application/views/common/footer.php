@@ -9,7 +9,8 @@
     </div>
     <div class="block-sm">
       <span class="flink"><a href="<?php echo $base_path;?>disclaimer">免責事項</a></span>
-      <span class="flink"><a href="<?php echo $base_path;?>link">当サイトへのリンク</a></span>
+      <span class="flink"><a href="<?php echo $base_path;?>aboutus">会社概要</a></span>
+      <span class="flink"><a href="<?php echo $base_path;?>contact">お問い合わせ</a></span>
     </div>
   </div>
   <div id="copyright">Copyright (C) 2007-2016 MERCHANT SUPPORT. All Rights Reserved.</div>

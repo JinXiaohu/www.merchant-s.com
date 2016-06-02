@@ -227,7 +227,7 @@ hr{
 }
 .sidebar li a{
   display: block;  
-  padding: 11px 14px;
+  padding: 5px 10px;
 }
 .sidebar li:hover{
   background-color: #f8f8f8;
@@ -255,6 +255,12 @@ hr{
     margin-right: 10px;
     float: left;
     margin-right: 1%;
+  }
+}
+@media (min-width: 768px){
+  .sidebar.sidebar-lg li a{
+    padding-top: 9px;
+    padding-bottom: 9px;
   }
 }
 
@@ -399,7 +405,7 @@ hr{
 }
 .ms-table-responsive th{
   color: white;
-  width: 20%;
+  width: 35%;
   font-weight: bold;
 }
 .ms-table-responsive th, .ms-table-responsive td{
@@ -413,11 +419,6 @@ hr{
 .ms-table-responsive td li{
   margin-top: 10px;
   margin-bottom: 10px;
-}
-@media (max-width: 767px){
-  .ms-table-responsive th{
-    width: 35%;
-  }
 }
 
 /*Other*/

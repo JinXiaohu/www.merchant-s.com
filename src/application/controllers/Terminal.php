@@ -28,5 +28,11 @@ class Terminal extends BaseController
 	}
 
 
+	public function business_center()
+	{
+		$this->set_view_data('title',   "決済端末 - センター事業 | ". $this->config->item('site_name'));
+		$this->set_view_data('nav_id',  "nav-terminal");
+		$this->load_view('terminal/business_center');
+	}
 
 }
