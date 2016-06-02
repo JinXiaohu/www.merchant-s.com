@@ -1,34 +1,15 @@
 <style type="text/css">
-#table_recruit{
-  width:100%;
+.ms-table-responsive{
   margin-bottom: 30px;
 }
-#table_recruit th{
+.ms-table-responsive th{
   background-color: #339933;
-  color: white;
-  width: 20%;
-  font-weight: bold;
-}
-#table_recruit th, #table_recruit td{
-  padding-left: 15px;
-  padding-right: 15px;
-  border-bottom-color: #cccccc;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-@media (max-width: 767px){
-  #table_recruit th{
-    width: 30%;
-  }
 }
 </style>
 
-
 <h1>採用情報</h1>
 
-<table id="table_recruit">
+<table class="ms-table-responsive">
 <tbody>
 <tr>
   <th>募集職種</th>

@@ -39,7 +39,6 @@ input[type="radio"], input[type="checkbox"]{
 
 .ms-button{
   width: 80px;
-  padding: 8px 15px;
 }
 .required{
   color: orange;
@@ -75,17 +74,27 @@ input[type="radio"], input[type="checkbox"]{
     color: #339933;
     background-color: white;
     border: none;
-    padding-top: 15px;
-    padding-bottom: 5px;
+    padding-top: 25px;
+    padding-bottom: 3px;
   }
   .td_input{
     background-color: white;
-    padding-top: 5px;
-    padding-bottom: 15px;
+    padding-top: 3px;
+    padding-bottom: 5px;
     border: none;
   }
   input[type="text"]{
     height: 34px;
+  }
+  .ms-button{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px){
+  .ms-button{
+    padding: 8px 15px;
   }
 }
 
@@ -110,8 +119,6 @@ input[type="radio"], input[type="checkbox"]{
 }
 #policy table{
   width: 100%;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 #policy td{
   vertical-align: middle;

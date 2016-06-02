@@ -1,8 +1,8 @@
 
 <link href="<?php echo $cdn_path;?>css/form.css" rel="stylesheet">
 
-<div class="row" id="content">
-  <div class="col-sm-3 sidebar sidebar-level">
+<div id="main">
+  <div class="sidebar sidebar-level">
     <ul>
       <li class="level1"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2 active"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
@@ -15,7 +15,7 @@
     </ul>
   </div>
 
-  <div class="col-sm-9 rightbar">
+  <div class="rightbar">
     <div class="mb_separator div_hidden"></div>
 
     <h1>店舗情報変更に関するお手続き</h1>
@@ -276,7 +276,7 @@
     </div>
 
 
-    <div class="_table" id="table3">  
+    <div class="_table" id="table4">  
       <div class="_tr">
         <div class="_td tdleft"></div>
         <div class="_td">
@@ -301,7 +301,6 @@
       </table>
     </div>
 　　
-
   </div>
 </div>
 

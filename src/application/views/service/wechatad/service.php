@@ -2,6 +2,8 @@
 #div_img img{
   margin-top: 30px;
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 560px;
 }
 </style>
 
@@ -16,5 +18,5 @@ SNSサイトの利点の拡散力を活かすことで集客を増やすこと�
 </p>
 
 <div id="div_img">
-  <img class="img-responsive center-block" src="<?php echo $cdn_path; ?>images/wechatad/service.png">
+  <img class="center-block" src="<?php echo $cdn_path; ?>images/wechatad/service.png">
 </div>

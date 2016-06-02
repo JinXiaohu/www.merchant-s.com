@@ -1,48 +1,18 @@
 <style type="text/css">
-hr{
-  border-top: 1px solid #6D4780;  
-  margin-top: 0;
-  margin-bottom: 0;
-}
-h1 img{
-  vertical-align: middle;
-}
 .hisun_logo{
   height: 32px;
+  width: auto;
 }
-.summary{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#table_hisun{
-  width:100%;
+.ms-table-responsive{
   margin-top:20px;
   margin-bottom: 30px;
 }
-#table_hisun th{
+.ms-table-responsive th{
   background-color: #6D4780;
-  color: white;
-  width: 20%;
-  font-weight: bold;
-}
-#table_hisun th, #table_hisun td{
-  padding: 12px 15px;
-  border-bottom: 1px solid #cccccc;
-}
-#table_hisun td ul{
-  list-style: none;
-  padding-left: 0;
-}
-#table_hisun td li{
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 @media (max-width: 767px){
   .hisun_logo{
     height: 48px;
-  }
-  #table_hisun th{
-    width: 35%;
   }
 }
 
@@ -55,8 +25,6 @@ h1 img{
 }
 </style>
 
-
-
 <h1 class="media">
   <div class="media-left media-middle">
     <img class="hisun_logo" src="<?php echo $cdn_path;?>images/company/hisun_logo.png">
@@ -66,9 +34,9 @@ h1 img{
   </div>
 </h1>
 
-<div class="summary">マーチャント・サポート社はHi Sun Technology(China)社のグループ企業です。</div>
+<p>マーチャント・サポート社はHi Sun Technology(China)社のグループ企業です。</p>
 
-<table id="table_hisun">
+<table class="ms-table-responsive">
 <tbody>
 
 <tr>

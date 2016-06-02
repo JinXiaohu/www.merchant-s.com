@@ -1,6 +1,6 @@
 
 <style type="text/css">
-#content{
+#main{
   margin-top: 20px;
 }
 @media (max-width: 350px){
@@ -8,7 +8,7 @@
     display: block;
   }
 }
-#item2 .img_header{
+#item2 .img_title{
   color: #339933;
   font-size: 1.3em;
   font-weight: bold;
@@ -20,14 +20,13 @@
   #item2 .col-sm-6{
     margin-bottom: 30px;
   }
-
 }
 </style>
 
 <h1>PAX Global社製端末</h1>
 
-<div class="row" id="content">
-  <div class="col-sm-3 sidebar sidebar-level">
+<div id="main">
+  <div class="sidebar sidebar-mb-float">
     <ul>
       <li class="active level1"><a href="<?php echo $base_path;?>terminal">クレジットカード端末</a></li>
       <li class="level2"><a href="<?php echo $base_path;?>terminal/s80">PAX　S80</a></li>
@@ -35,7 +34,7 @@
     </ul>
   </div>
 
-  <div class="col-sm-9 rightbar">
+  <div class="rightbar">
     <div class="mb_separator div_hidden"></div>
     <h1><img src="<?php echo $cdn_path;?>images/banner3.jpg"></h1>
     <p><strong>当社の系列会社であるPAXGlobal社は、クレジットカード読み取り端末の世界3位のメーカーで世界約40カ国に向けて累計150万台以上の販売実績を達成しました。</strong></p>
@@ -72,12 +71,12 @@
 
       <div class="row">
         <div class="col-sm-6">
-          <div class="img_header">S80 CounterTop</div>
+          <div class="img_title">S80 CounterTop</div>
           <img class="img-responsive center-block" src="<?php echo $cdn_path;?>images/terminal/index1.jpg">
         </div>
 
         <div class="col-sm-6">
-          <div class="img_header">S90 Mobile</div>
+          <div class="img_title">S90 Mobile</div>
           <img class="img-responsive center-block" src="<?php echo $cdn_path;?>images/terminal/index2.jpg">
         </div>
 

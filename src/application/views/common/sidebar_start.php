@@ -1,5 +1,6 @@
 
 <style type="text/css">
+
 .sidebar-level li a{
   padding-top: 5px;
   padding-bottom: 5px;
@@ -12,8 +13,8 @@
 }
 </style>
 
-<div class="row" id="content">
-  <div class="col-sm-3 sidebar sidebar-level">
+<div id="main">
+  <div class="sidebar sidebar-level">
     <ul>
       <li id="store" class="level1"><a href="<?php echo $base_path;?>service/store">クレジットカード決済<span class="vtitle">（早期）＜店舗＞</span></a></li>
       <li id="store_merit" class="level2"><a href="<?php echo $base_path;?>service/store_merit">特徴・メリット</a></li>
@@ -53,5 +54,5 @@
     </ul>
   </div>
 
-  <div class="col-sm-9 rightbar">
+  <div class="rightbar">
     <div class="mb_separator div_hidden"></div>

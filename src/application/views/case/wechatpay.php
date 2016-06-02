@@ -7,8 +7,8 @@
 クレジットカードの利用シーンが多様化し、消費者にとって利用しやすい環境を整えることが今後のテーマとなっております。
 </p>
 
-<div class="row" id="cases">
-  <div class="col-sm-3 sidebar sidebar-mb-float">
+<div id="main">
+  <div class="sidebar sidebar-mb-float">
     <ul>
       <li><a href="<?php echo $base_path;?>cases/retail"><strong>小売</strong></a></li>
       <li><a href="<?php echo $base_path;?>cases/catering"><strong>飲食</strong></a></li>
@@ -18,7 +18,7 @@
     </ul>
   </div>
 
-  <div class="col-sm-9">
+  <div class="rightbar">
     <h2>小売業</h2>
     <div class="row item">
       <div class="col_img">

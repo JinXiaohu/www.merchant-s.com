@@ -1,26 +1,18 @@
 <style type="text/css">
-._td{
+h1 table{
+  width: 100%;
+}
+h1 td{
   vertical-align: middle;
 }
-
-@media (max-width: 400px){
-  ._table,._tbody,._tr,._td{
-    display: block;
-  }
+#td_toggle{
+  width: 80px;
 }
-
 #toggle{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 65px;
-  text-align: center;
+  padding: 7px 10px;
+  font-size: 14px;
   background-color: #3FA3D1;
-  color: white;
-  font-size: 0.9em;
-  padding: 4px 15px;
-  border-radius: 4px;
   border:solid 1px #287DA4;
-  cursor: default;
 }
 #toggle:hover{
   background-color: #2A83AC;
@@ -28,52 +20,25 @@
 #toggle:active{
   background-color: #287DA4;
 }
-
 h2{
   border-color: #3FA3D1;
 }
-.qa{
-  list-style: none;
-  padding-left: 0;
-}
-.qa li{
-  background-color: rgb(248,248,248);
-  border-radius: 6px;
-  margin-bottom: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.question, .answer{
-  padding-left: 8px;
-  padding-right: 8px;
-  line-height: 1.6;
-}
-.question{
-  color: #3FA3D1;
+.ul-faq .question{
   color: #287DA4;
-  font-weight: bold;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.answer{
-  display: none;
-  padding-bottom: 5px;
 }
 </style>
 
-
-<div class="_table">
-  <div class="_tbody">
-    <div class="_tr">
-      <h1 class="_td"><span class="vtitle">Eコマース向け早期決済サービス</span><span>FAQ</span></h1>
-      <div class="_td" id="toggle">toggle</div>
-    </div>
-  </div>
-</div>
+<h1>
+  <div class="vtitle">Eコマース向け早期決済サービス</div>
+  <table>
+    <td>FAQ</td>
+    <td id="td_toggle"><div id="toggle" class="ms-button">toggle</div></td>
+  </table>
+</h1>
 
 <h2>Web上のクレジットカード決済について</h2>
 
-<ul class="qa">
+<ul class="ul-faq">
   <li>
   <div class="question">
   Q1：Web上で、クレジットカードを取扱いたいのですが、どうすればいいでしょうか？
@@ -168,7 +133,7 @@ h2{
 
 
 <h2>早期決済サービスについて</h2>
-<ul class="qa">
+<ul class="ul-faq">
   <li>
   <div class="question">
   Q11：全てのクレジットカードが早期決済サービスの対象となるのですか？

@@ -1,8 +1,8 @@
 
 <link href="<?php echo $cdn_path;?>css/form.css" rel="stylesheet">
 
-<div class="row" id="content">
-  <div class="col-sm-3 sidebar sidebar-level">
+<div id="main">
+  <div class="sidebar sidebar-level">
     <ul>
       <li class="level1"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
@@ -15,7 +15,7 @@
     </ul>
   </div>
 
-  <div class="col-sm-9 rightbar">
+  <div class="rightbar">
     <div class="mb_separator div_hidden"></div>
     <h1>新規加盟をご検討のお客様</h1>
 

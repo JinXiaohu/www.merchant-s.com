@@ -186,7 +186,7 @@
 }
 
 .link{
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .link:hover{
   box-shadow: inset 0 0 0 1px #2996cc;

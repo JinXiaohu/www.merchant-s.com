@@ -1,74 +1,29 @@
 <style type="text/css">
-._td{
+h1 table{
+  width: 100%;
+}
+h1 td{
   vertical-align: middle;
 }
-
-@media (max-width: 370px){
-  ._table,._tbody,._tr,._td{
-    display: block;
-  }
+#td_toggle{
+  width: 80px;
 }
-
 #toggle{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 65px;
-  text-align: center;
-  background-color: #339933;
-  color: white;
-  font-size: 0.9em;
-  padding: 4px 15px;
-  border-radius: 4px;
-  border:solid 1px #267326;
-  cursor: default;
-}
-#toggle:hover{
-  background-color: #2D862D;
-}
-#toggle:active{
-  background-color: #267326;
-}
-.qa{
-  list-style: none;
-  padding-left: 0;
-}
-.qa li{
-  background-color: rgb(248,248,248);
-  border-radius: 6px;
-  margin-bottom: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.question, .answer{
-  padding-left: 8px;
-  padding-right: 8px;
-  line-height: 1.6;
-}
-.question{
-  color: #339933;
-  font-weight: bold;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.answer{
-  display: none;
-  padding-bottom: 5px;
+  padding: 7px 10px;
+  font-size: 14px;
 }
 </style>
 
-<div class="_table">
-  <div class="_tbody">
-    <div class="_tr">
-      <h1 class="_td"><span class="vtitle">店舗向け早期決済サービス</span><span>FAQ</span></h1>
-      <div class="_td" id="toggle">toggle</div>
-    </div>
-  </div>
-</div>
-
-
+<h1>
+  <div class="vtitle">店舗向け早期決済サービス</div>
+  <table>
+    <td>FAQ</td>
+    <td id="td_toggle"><div id="toggle" class="ms-button">toggle</div></td>
+  </table>
+</h1>
 
 <h2>クレジットカード基礎</h2>
-<ul class="qa">
+<ul class="ul-faq">
   <li>
     <div class="question">
     Q1： 加盟店とは何ですか？
@@ -192,7 +147,7 @@
 
 
 <h2>早期決済サービスについて</h2>
-<ul class="qa">
+<ul class="ul-faq">
   <li>
     <div class="question">
     Q14： 全てのクレジットカードが、早期決済サービスの対象となるのですか？

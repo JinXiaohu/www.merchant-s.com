@@ -1,22 +1,28 @@
 
 <style type="text/css">
-#content{
+#main{
   margin-top: 20px;
 }
 #img_comment{
   color: #339933;
   font-weight: bold;
   width: 100%;
-  max-width: 250px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 }
-#img_comment .media-left{
+#img_comment .left{
   font-size: 36px;
+  text-align: right;
+  width: 48%;
+  vertical-align: middle;
+  padding-right: 5px;
 }
-#img_comment .media-body{
+#img_comment .right{
   font-size: 18px;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 5px;
 }
 .ul_feature{
   padding-left: 20px;
@@ -28,8 +34,8 @@
 
 <h1>決済端末種別 - PAX-S80</h1>
 
-<div class="row" id="content">
-  <div class="col-sm-3 sidebar sidebar-level">
+<div id="main">
+  <div class="sidebar sidebar-mb-float">
     <ul>
       <li class="level1"><a href="<?php echo $base_path;?>terminal">クレジットカード端末</a></li>
       <li class="level2 active"><a href="<?php echo $base_path;?>terminal/s80">PAX　S80</a></li>
@@ -37,16 +43,17 @@
     </ul>
   </div>
 
-  <div class="col-sm-9 rightbar">
+  <div class="rightbar">
     <div class="mb_separator div_hidden"></div>
     <h1><img src="<?php echo $cdn_path;?>images/terminal/s80_1.jpg"></h1>
-    <div class="media" id="img_comment">
-      <div class="media-left media-middle">S80</div>
-      <div class="media-body media-middle">
+
+    <table id="img_comment">
+      <td class="left">S80</td>
+      <td class="right">
         <div class="m_header">Countertop</div>
         <div class="m_text">Payment Terminal</div>
-      </div>
-    </div>
+      </td>
+    </table>
 
     <h2>スペック＆特徴</h2>
     <ul class="ul_feature">

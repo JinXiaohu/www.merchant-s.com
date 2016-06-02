@@ -1,40 +1,21 @@
 <style type="text/css">
-.table_aboutus{
-  width:100%;
-  margin-bottom: 30px;
+#table1{
+  margin-bottom: 25px;
 }
-.table_aboutus th{
+.ms-table-responsive th{
   background-color: #339933;
-  color: white;
-  width: 20%;
-  font-weight: bold;
 }
-.table_aboutus th, .table_aboutus td{
-  padding-left: 15px;
-  padding-right: 15px;
-  border-bottom-color: #cccccc;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
 #a_hisun{
   color: #6D4780;
 }
 
-@media (max-width: 767px){
-  .table_aboutus th{
-    width: 35%;
-  }
-}
 </style>
 
 
 
 <h1>会社概要</h1>
 
-<table class="table_aboutus">
+<table class="ms-table-responsive" id="table1">
 <tbody>
   <tr>
     <th class="first_th">会社名</th>
@@ -75,16 +56,24 @@
 
   <tr>
     <th>主要取引カード会社</th>
-    <td>株式会社東京クレジットサービス<br />
-    トヨタファイナンス株式会社<br />
-    楽天カード株式会社</td>
+    <td>
+      <ul>
+        <li>株式会社東京クレジットサービス</li>
+        <li>トヨタファイナンス株式会社</li>
+        <li>楽天カード株式会社</li>
+      </ul>
+    </td>
   </tr>
 
   <tr>
     <th>主要取引先</th>
-    <td>GMOペイメントゲートウェイ株式会社<br />
-    株式会社NTTデータ<br />
-    MSカ―クレジット株式会社（100%出資子会社）</td>
+    <td>
+      <ul>
+        <li>GMOペイメントゲートウェイ株式会社</li>
+        <li>株式会社NTTデータ</li>
+        <li>MSカ―クレジット株式会社（100%出資子会社）</li>
+      </ul>
+    </td>
   </tr>
 
   <tr>
@@ -111,7 +100,7 @@
 <hr class="mb_separator" />
 <h1>沿革</h1>
 
-<table class="table_aboutus">
+<table class="ms-table-responsive">
 <tbody>
   <tr>
     <th>2004年　4月</th>
@@ -141,9 +130,13 @@
 
   <tr>
     <th>2006年　12月</th>
-    <td>日本カードネットワークからのデータ取得開始<br />
-      トヨタファイナンス(株)との加盟店募集代行契約締結<br />
-      本店事務所を港区六本木6-10-1六本木ヒルズへ移転</td>
+    <td>
+      <ul>
+        <li>日本カードネットワークからのデータ取得開始</li>
+        <li>トヨタファイナンス(株)との加盟店募集代行契約締結</li>
+        <li>本店事務所を港区六本木6-10-1六本木ヒルズへ移転</li>
+      </ul>
+    </td>
   </tr>
 
   <tr>

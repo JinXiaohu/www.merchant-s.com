@@ -2,6 +2,8 @@
 #div_img img{
   margin-top: 30px;
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 550px;
 }
 </style>
 <h1><span class="vtitle">Wechat Pay</span><span>サービスの仕組み</span></h1>
@@ -18,6 +20,6 @@ WeChat本体が許可した日本での代理店を経由する必要があり�
 </p>
 
 <div id="div_img">
-  <img class="img-responsive center-block" src="<?php echo $cdn_path; ?>images/wechat/service.png">
+  <img class="center-block" src="<?php echo $cdn_path; ?>images/wechat/service.png">
 </div>
 
