@@ -1,4 +1,9 @@
-
+body{
+  font-family: Helvetica, Arial, "MS PGothic", "Hiragino Kaku Gothic Pro", "Meiryo", serif !important;
+}
+.SansSerif, h1{
+  font-family: "Hiragino Kaku Gothic Pro", "Meiryo", "MS PGothic", Helvetica, Arial, sans-serif !important;
+}
 .container{
   max-width: 865px;
 }
@@ -113,8 +118,6 @@ h2{
 }
 #id_navbar li:hover, #id_navbar li a:hover{
   background-color: #f8f8f8;
-}
-#id_navbar li:hover{
   border-radius: 5px;
 }
 #id_navbar a{
@@ -191,6 +194,10 @@ hr{
 
 
 /*侧边栏*/
+#main{
+  width: 100%;
+  display: table;
+}
 .sidebar{
   display: table-cell;
   vertical-align: top;
@@ -205,6 +212,9 @@ hr{
   margin-top:0;
 }
 @media (max-width: 767px){
+  #main{
+    display: block;
+  }
   .sidebar{
     display: block;
     width: 100%;
@@ -428,11 +438,14 @@ hr{
   font-weight: bold;
   margin-bottom: 15px;
 }
-.green_bg .header{
+.green_bg .green_text{
   color: #339933;
   font-size: 1.2em;
+}
+.green_bg .green_border{
   border-bottom: solid 1px #339933;
 }
+
 .gray_bg{
   background-color: rgb(240,240,240);
   padding: 20px;

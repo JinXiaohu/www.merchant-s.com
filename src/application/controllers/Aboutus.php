@@ -36,4 +36,11 @@ class Aboutus extends BaseController
 		$this->set_view_data('title',   "会社概要 | ". $this->config->item('site_name'));
 		$this->load_view('aboutus/hisun');
 	}
+
+	public function recruit()
+	{
+		$this->set_view_data('title',   "採用情報 | ". $this->config->item('site_name'));
+		$this->load_view('aboutus/recruit');
+	}
+
 }

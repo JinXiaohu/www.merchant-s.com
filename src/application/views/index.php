@@ -40,7 +40,13 @@
 
 
 
+._td{
+  vertical-align: middle;
+}
 
+#solutions ._td {
+  vertical-align: top;
+}
 #solutions .item {
   padding: 10px 15px;
   margin-bottom: 10px;
@@ -133,9 +139,6 @@
 
 
 
-._td{
-  vertical-align: middle;
-}
 .news_item{
   margin-left: 0;
   margin-right: 0;
@@ -301,7 +304,7 @@
     <a href="<?php echo $base_path;?>cases/automobile"><img class="img-responsive" src="<?php echo $cdn_path;?>images/case4.jpg"></a>
   </div>
   <div class="col-xs-6 col-md-4 col">
-    <a href="<?php echo $base_path;?>cases/automobile"><img class="img-responsive" src="<?php echo $cdn_path;?>images/case5.jpg"></a>
+    <a href="<?php echo $base_path;?>cases/wechatpay"><img class="img-responsive" src="<?php echo $cdn_path;?>images/case5.jpg"></a>
   </div>
 </div>
 

@@ -17,8 +17,6 @@ li{
 <ul>
   <li><a href="<?php echo $base_path;?>">HOME</a></li>
   <li><a href="<?php echo $base_path;?>news">NEWS</a></li>
-  <li><a href="<?php echo $base_path;?>aboutus">会社概要</a></li>
-  <li><a href="<?php echo $base_path;?>about_hisun">会社概要 - Hisun</a></li>
 
   <br/>
 
@@ -27,7 +25,6 @@ li{
   <li><a href="<?php echo $base_path;?>policy">個人情報保護方針</a></li>
   <li><a href="<?php echo $base_path;?>disclaimer">免責事項</a></li>
   <li><a href="<?php echo $base_path;?>link">当サイトへのリンク</a></li>
-  <li><a href="<?php echo $base_path;?>recruit">採用情報</a></li>
 
 </ul>
 
@@ -76,18 +73,26 @@ li{
 
 <h2>決済端末</h2>
 <ul>
-  <li><a href="<?php echo $base_path;?>terminal">PAX Global社製端末</a></li>
+  <li><a href="<?php echo $base_path;?>terminal"><strong>PAX Global社製端末</strong></a></li>
   <li><a href="<?php echo $base_path;?>terminal/s80">決済端末種別 - PAX-S80</a></li>
   <li><a href="<?php echo $base_path;?>terminal/s90">決済端末種別 - PAX-S90</a></li>
 </ul>
 
+<h2>会社概要</h2>
+<ul>
+  <li><a href="<?php echo $base_path;?>aboutus"><strong>コーポレートメッセージ</strong></a></li>
+  <li><a href="<?php echo $base_path;?>aboutus/introduction">会社概要</a></li>
+  <li><a href="<?php echo $base_path;?>aboutus/history">沿革</a></li>
+  <li><a href="<?php echo $base_path;?>aboutus/hisun"> Hi Sun Technology (China) Limited 会社概要</a></li>
+  <li><a href="<?php echo $base_path;?>aboutus/recruit">採用情報</a></li>
+</ul>
 
 
 <h2>お問い合わせ</h2>
 <ul>
-  <li><a href="<?php echo $base_path;?>contact">加盟店様向けのご案内</a></li>
+  <li><a href="<?php echo $base_path;?>contact"><strong>加盟店様向けのご案内</strong></a></li>
   <li><a href="<?php echo $base_path;?>contact/join">新規加盟をご検討のお客様</a></li>
-  <li><a href="<?php echo $base_path;?>contact/info_changing">店舗情報変更に関するお手続き</a></li>
+  <li><a href="<?php echo $base_path;?>contact/info_changing">各種変更手続きフォーム</a></li>
   <li><a href="<?php echo $base_path;?>contact/order">ロール紙発注フォーム</a></li>
   <li><a href="<?php echo $base_path;?>contact/query">お問い合わせフォーム</a></li>
 </ul>

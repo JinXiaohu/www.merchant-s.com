@@ -2,7 +2,9 @@
 .sidebar li.active {
   background-color: #6D4780;
 }
-
+.sidebar .active:hover{
+  background-color: #6D4780;
+}
 .hisun_logo{
   height: 32px;
   width: auto;

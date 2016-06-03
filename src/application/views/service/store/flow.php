@@ -16,7 +16,7 @@ dt{
 <h1><span class="vtitle">店舗向け早期決済サービス</span><span>導入までの流れ</span></h1>
 
 <div class="green_bg">
-  <p class="header">むずかしい手続きは一切不要</p>
+  <p class="green_text green_border">むずかしい手続きは一切不要</p>
   <p>簡単お申込で、お支払はスピーディ</p>
 </div>
 

@@ -55,7 +55,7 @@
 
   <div class="mb_separator div_hidden"></div>
 
-  <div id="div_nav">
+  <div id="div_nav" class="SansSerif">
     <ul class="nav navbar-nav" id="id_navbar">
       <li id="nav-home1" >
         <a href="<?php echo $base_path;?>" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', ''])">HOME</a>

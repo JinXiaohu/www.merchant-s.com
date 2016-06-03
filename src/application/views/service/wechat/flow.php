@@ -10,7 +10,7 @@
 <h1><span class="vtitle">Wechat Pay</span><span>導入までの流れ</span></h1>
 
 <div class="green_bg">
-  <div class="header">むずかしい手続きは一切不要</div>
+  <div class="green_text">むずかしい手続きは一切不要</div>
 </div>
 
 <p>WeChat Payを導入するためには、WeChat本体から認可を受けている代理店を通すしか方法はございません。</p>

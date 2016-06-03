@@ -9,7 +9,7 @@
 <h1><span class="vtitle">公式アカウント</span><span>導入までの流れ</span></h1>
 
 <div class="green_bg">
-  <div class="header">むずかしい手続きは一切不要。手続きは当社がワンストップで行います。</div>
+  <div class="green_text">むずかしい手続きは一切不要。手続きは当社がワンストップで行います。</div>
 </div>
 
 

@@ -52,7 +52,10 @@
 
     <div id="sep"></div>
 
-    <div class="green_bg">お問い合わせ有難うございます。</div>
+    <div class="green_bg">
+      <div class="green_text">お問い合わせ有難うございます。</div>
+    </div>
+    
     <div id="msg">送信完了いたしました。</div>
 
     <p>

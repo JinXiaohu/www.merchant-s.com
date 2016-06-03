@@ -18,7 +18,7 @@
   </div>
 
   <div class="rightbar">
-    <h2>小売業</h2>
+    <h2>WeChat Pay</h2>
     <div class="row item">
       <div class="col_img">
         <img class="media-object img-responsive" src="<?php echo $cdn_path;?>images/cases/wechat1.jpg">

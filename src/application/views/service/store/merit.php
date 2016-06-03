@@ -42,7 +42,7 @@
 </p>
 
 <div class="green_bg">
-  <p class="header">3日後決済を実現した「早期決済サービス」とは</p>
+  <p class="green_text green_border">3日後決済を実現した「早期決済サービス」とは</p>
   <p><strong>カード決済による売上代金を売上計上<span class="orange">3日後</span>（銀行営業日）に指定の口座にお振込します。</strong></p>
 </div>
 
@@ -98,7 +98,7 @@
 </p>
 
 <div class="green_bg">
-  <p class="header">煩雑な明細管理をサポートする「明細配信サービス」</p>
+  <p class="green_text green_border">煩雑な明細管理をサポートする「明細配信サービス」</p>
   <div class="media">
     <div class="media-body media-middle">
       <p>
