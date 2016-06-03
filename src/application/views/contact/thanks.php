@@ -26,16 +26,16 @@
 </style>
 
 <div id="main">
-  <div class="sidebar sidebar-level sidebar-lg">
+  <div class="sidebar sidebar-lg">
     <ul>
-      <li class="level1<?php if(isset($active) && $active=="index"):?> active<?php endif;?>"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
-      <li class="level2<?php if(isset($active) && $active=="info_changing"):?> active<?php endif;?>"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
-      <li class="level2<?php if(isset($active) && $active=="order"):?> active<?php endif;?>"><a href="<?php echo $base_path;?>contact/order">ロール紙発注</a></li>
-      <li class="level2<?php if(isset($active) && $active=="query"):?> active<?php endif;?>"><a href="<?php echo $base_path;?>contact/query">お問い合わせ</a></li>
+      <li class="level1 grid-12<?php if(isset($active) && $active=="index"):?> active<?php endif;?>"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
+      <li class="level2 grid-4<?php if(isset($active) && $active=="info_changing"):?> active<?php endif;?>"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
+      <li class="level2 grid-4<?php if(isset($active) && $active=="order"):?> active<?php endif;?>"><a href="<?php echo $base_path;?>contact/order">ロール紙発注</a></li>
+      <li class="level2 grid-4<?php if(isset($active) && $active=="query"):?> active<?php endif;?>"><a href="<?php echo $base_path;?>contact/query">お問い合わせ</a></li>
 
       <div class="li_sep"></div>   
 
-      <li class="level1<?php if(isset($active) && $active=="join"):?> active<?php endif;?>"><a href="<?php echo $base_path;?>contact/join">新規のお客様</a></li>
+      <li class="level1 grid-12<?php if(isset($active) && $active=="join"):?> active<?php endif;?>"><a href="<?php echo $base_path;?>contact/join">新規のお客様</a></li>
     </ul>
   </div>
 

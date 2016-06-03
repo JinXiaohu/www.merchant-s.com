@@ -7,17 +7,18 @@
 <p>クレジットカードの利用シーンが多様化し、消費者にとって利用しやすい環境を整えることが今後のテーマとなっております。</p>
 
 <div id="main">
-  <div class="sidebar sidebar-mb-float sidebar-lg">
+  <div class="sidebar sidebar-lg">
     <ul>
-      <li class="active"><a href="<?php echo $base_path;?>cases/retail"><strong>小売</strong></a></li>
-      <li><a href="<?php echo $base_path;?>cases/catering"><strong>飲食</strong></a></li>
-      <li><a href="<?php echo $base_path;?>cases/beauty"><strong>美容</strong></a></li>
-      <li><a href="<?php echo $base_path;?>cases/automobile"><strong>自動車関連</strong></a></li>
-      <li><a href="<?php echo $base_path;?>cases/wechatpay"><strong>Wechat Pay</strong></a></li>
+      <li class="level1 grid-4 active"><a href="<?php echo $base_path;?>cases/retail">小売</a></li>
+      <li class="level1 grid-4"><a href="<?php echo $base_path;?>cases/catering">飲食</a></li>
+      <li class="level1 grid-4"><a href="<?php echo $base_path;?>cases/beauty">美容</a></li>
+      <li class="level1 grid-4"><a href="<?php echo $base_path;?>cases/automobile">自動車関連</a></li>
+      <li class="level1 grid-4"><a href="<?php echo $base_path;?>cases/wechatpay">Wechat Pay</a></li>
     </ul>
   </div>
 
   <div class="rightbar">
+    <div class="mb_separator div_hidden"></div>
     <h2>小売業</h2>
     <div class="row item">
       <div class="col_img">

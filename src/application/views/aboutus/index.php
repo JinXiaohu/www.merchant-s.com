@@ -10,12 +10,12 @@
 
 
 <div id="main">
-  <div class="sidebar sidebar-level sidebar-lg">
+  <div class="sidebar sidebar-lg">
     <ul>
-      <li class="level1 active"><a href="<?php echo $base_path;?>aboutus">コーポレートメッセージ</a></li>
-      <li class="level2"><a href="<?php echo $base_path;?>aboutus/introduction">会社概要</a></li>
-      <li class="level2"><a href="<?php echo $base_path;?>aboutus/history">沿革</a></li>
-      <li class="level2"><a href="<?php echo $base_path;?>aboutus/hisun">Hi Sun Technology Limited</a></li>
+      <li class="level1 grid-12 active"><a href="<?php echo $base_path;?>aboutus">コーポレートメッセージ</a></li>
+      <li class="level2 grid-4"><a href="<?php echo $base_path;?>aboutus/introduction">会社概要</a></li>
+      <li class="level2 grid-4"><a href="<?php echo $base_path;?>aboutus/history">沿革</a></li>
+      <li class="level2 grid-4"><a href="<?php echo $base_path;?>aboutus/hisun">Hi Sun</a></li>
     </ul>
   </div>
 

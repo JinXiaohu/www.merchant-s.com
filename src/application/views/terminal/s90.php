@@ -8,24 +8,24 @@
 }
 </style>
 
-<h1>決済端末種別 - PAX-S90</h1>
 
 <div id="main">
-  <div class="sidebar sidebar-level sidebar-lg">
+  <div class="sidebar sidebar-lg">
     <ul>
-      <li class="level1"><a href="<?php echo $base_path;?>terminal">クレジットカード端末</a></li>
-      <li class="level2"><a href="<?php echo $base_path;?>terminal/s80">PAX　S80</a></li>
-      <li class="level2 active"><a href="<?php echo $base_path;?>terminal/s90">PAX　S90</a></li>
+      <li class="level1 grid-12"><a href="<?php echo $base_path;?>terminal">クレジットカード端末</a></li>
+      <li class="level2 grid-6"><a href="<?php echo $base_path;?>terminal/s80">PAX S80</a></li>
+      <li class="level2 grid-6 active"><a href="<?php echo $base_path;?>terminal/s90">PAX S90</a></li>
          
       <div class="li_sep"></div>   
 
-      <li class="level1"><a href="<?php echo $base_path;?>terminal/business_center">センター事業</a></li>
+      <li class="level1 grid-12"><a href="<?php echo $base_path;?>terminal/business_center">センター事業</a></li>
     </ul>
   </div>
 
   <div class="rightbar">
     <div class="mb_separator div_hidden"></div>
     <h1><img src="<?php echo $cdn_path;?>images/terminal/s90_1.jpg"></h1>
+    <h1>決済端末種別 - PAX S90</h1>
 
     <h2>スペック＆特徴</h2>
     <ul class="ul_feature">

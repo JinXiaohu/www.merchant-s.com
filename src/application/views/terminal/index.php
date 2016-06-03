@@ -23,25 +23,26 @@
 }
 </style>
 
-<h1>PAX Global社製端末</h1>
 
 <div id="main">
-  <div class="sidebar sidebar-level sidebar-lg">
+  <div class="sidebar sidebar-lg">
     <ul>
-      <li class="level1 active"><a href="<?php echo $base_path;?>terminal">クレジットカード端末</a></li>
-      <li class="level2"><a href="<?php echo $base_path;?>terminal/s80">PAX　S80</a></li>
-      <li class="level2"><a href="<?php echo $base_path;?>terminal/s90">PAX　S90</a></li>
+      <li class="level1 grid-12 active"><a href="<?php echo $base_path;?>terminal">クレジットカード端末</a></li>
+      <li class="level2 grid-6"><a href="<?php echo $base_path;?>terminal/s80">PAX S80</a></li>
+      <li class="level2 grid-6"><a href="<?php echo $base_path;?>terminal/s90">PAX S90</a></li>
          
       <div class="li_sep"></div>   
 
-      <li class="level1"><a href="<?php echo $base_path;?>terminal/business_center">センター事業</a></li>
+      <li class="level1 grid-12"><a href="<?php echo $base_path;?>terminal/business_center">センター事業</a></li>
     </ul>
   </div>
 
   <div class="rightbar">
     <div class="mb_separator div_hidden"></div>
     <h1><img src="<?php echo $cdn_path;?>images/banner3.jpg"></h1>
-    <p><strong>当社の系列会社であるPAXGlobal社は、クレジットカード読み取り端末の世界3位のメーカーで世界約40カ国に向けて累計150万台以上の販売実績を達成しました。</strong></p>
+    <h1>PAX Global社製端末</h1>
+    
+    <p>当社の系列会社であるPAXGlobal社は、クレジットカード読み取り端末の世界3位のメーカーで世界約40カ国に向けて累計150万台以上の販売実績を達成しました。</p>
 
     <h2>サービスの特徴</h2>
 

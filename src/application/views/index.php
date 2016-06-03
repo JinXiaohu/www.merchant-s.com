@@ -203,7 +203,7 @@
 .link .media{
   border: solid 1px rgb(180,180,180);
   border-radius: 8px;
-  background-color: #EFEFEF;
+  background-color: #fafafa;
 }
 .link .media .media-left{
   padding-right: 0;
