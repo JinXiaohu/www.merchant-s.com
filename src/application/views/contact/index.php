@@ -52,7 +52,7 @@
     <ul>
       <li class="active level1 grid-12"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
-      <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/order">ロール紙発注</a></li>
+      <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/order">ロール紙発注<span class="vtitle">（PAX社製端末）</span></a></li>
       <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/query">お問い合わせ</a></li>
 
       <div class="li_sep"></div>   
@@ -70,7 +70,7 @@
       <tr>
         <td>
           <div class="td-title"><a href="<?php echo $base_path;?>contact/info_changing">店舗情報変更に関するお手続き</a></div>
-          <div>移転に店舗情報の変更や振り込み口座の変更等を当HPにて承ります。</div>
+          <div>移転、店舗情報の変更、振り込み口座の変更等をご依頼いただけます。</div>
         </td>
         <td>
           <div class="td-title"><a href="<?php echo $base_path;?>contact/order">ロール紙発注フォーム</a></div>
@@ -79,37 +79,12 @@
       </tr>
 
       <tr>
-        <td>
+        <td class="last-td">
           <div class="td-title"><a href="<?php echo $base_path;?>contact/query">お問い合わせフォーム</a></div>
           <div>マーチャント・サポート加盟店様専用のお問い合わせ窓口です。</div>
         </td>
-        <td>
-          <div class="td-title"><a href="#">早期決済規約</a></div>
-          <div>準備中</div>
-        </td>
       </tr>
 
-      <tr>
-        <td>
-          <div class="td-title"><a href="#">PAX社製端末　操作マニュアル</a></div>
-          <div>準備中</div>
-        </td>
-        <td>
-          <div class="td-title"><a href="#">クレジット売上（取消）依頼票</a></div>
-          <div>準備中</div>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="td-title"><a href="#">WeChatPay　操作マニュアル</a></div>
-          <div>準備中</div>
-        </td>
-        <td class="last-td">
-          <div class="td-title"><a href="#">WeChatPay規約</a></div>
-          <div>準備中</div>
-        </td>
-      </tr>
     </tbody>
     </table> 
     

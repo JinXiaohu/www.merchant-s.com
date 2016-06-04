@@ -1,5 +1,11 @@
 
 <style type="text/css">
+.sidebar .level1a{
+  color: #333;
+}
+.sidebar .level2 a{
+  color: #777;
+}
 .sidebar li.web.active{
   background-color: #3FA3D1;
 }
@@ -45,7 +51,6 @@
       <li id="wechatad_merit" class="level2 grid-6"><a href="<?php echo $base_path;?>service/wechatad_merit">特徴・メリット</a></li>
       <li id="wechatad_service" class="level2 grid-6"><a href="<?php echo $base_path;?>service/wechatad_service">サービスの仕組み</a></li>
       <li id="wechatad_flow" class="level2 grid-6"><a href="<?php echo $base_path;?>service/wechatad_flow">導入までの流れ</a></li>
-      <li id="wechatad_faq" class="level2 grid-6"><a href="<?php echo $base_path;?>service/wechatad_faq">FAQ</a></li>    
     </ul>
   </div>
 

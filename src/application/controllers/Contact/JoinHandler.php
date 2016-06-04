@@ -54,15 +54,15 @@ class JoinHandler extends ContactHandler
 		$reply_email = $this->get_field('reply_email');
 		$request     = $this->get_request();
 
-		$communication = 
-			$this->get_checkbox_str("con_by_tel", "電話連絡希望").
-			$this->get_checkbox_str("con_by_email", "Eメール連絡希望").
-			$this->get_checkbox_str("no_con", "連絡不要");
-
 		$send = 
 			$this->get_checkbox_str("send_by_mail", "資料送付希望（ご郵送）").
 			$this->get_checkbox_str("send_by_email", "資料送付希望（Eメール）");
 
+		$communication = 
+			$this->get_checkbox_str("con_by_tel", "電話連絡希望").
+			$this->get_checkbox_str("con_by_email", "Eメール連絡希望").
+			$this->get_checkbox_str("no_con", "連絡不要");
+			
 		$content     = $this->get_field('content');
 
 		return 
@@ -71,8 +71,8 @@ class JoinHandler extends ContactHandler
 			"【電話番号】\t$tel\r\n".
 			"【メールアドレス】\t$reply_email\r\n".
 			"【資料請求】\t$request\r\n".
+			"【資料の送付方法】\t$send\r\n".
 			"【ご希望の連絡方法】\t$communication\r\n".
-			"【資料請求】\t$send\r\n".
 			"【お問い合わせ内容】\t$content \r\n";
 	}
 

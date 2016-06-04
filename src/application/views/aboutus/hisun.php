@@ -1,9 +1,9 @@
 <style type="text/css">
 .sidebar li.active {
-  background-color: #6D4780;
+  background-color: #1A55C5;
 }
 .sidebar .active:hover{
-  background-color: #6D4780;
+  background-color: #1A55C5;
 }
 .hisun_logo{
   height: 32px;
@@ -14,7 +14,7 @@
   margin-bottom: 30px;
 }
 .ms-table-responsive th{
-  background-color: #6D4780;
+  background-color: #1A55C5;
 }
 @media (max-width: 767px){
   .hisun_logo{

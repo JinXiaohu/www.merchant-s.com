@@ -20,6 +20,27 @@ class Contact extends BaseController
 	}
 
 
+	public function order_thanks()
+	{
+		$this->load_view('contact/order_thanks');
+	}
+
+	public function join_thanks()
+	{
+		$this->load_view('contact/join_thanks');
+	}
+
+	public function query_thanks()
+	{
+		$this->load_view('contact/query_thanks');
+	}
+
+	public function info_changing_thanks()
+	{
+		$this->load_view('contact/info_changing_thanks');
+	}
+
+
 	//申请加盟
 	public function join()
 	{
@@ -39,11 +60,9 @@ class Contact extends BaseController
   //申请变更信息
   public function info_changing()
   {
-		$this->set_view_data("h1", "各種変更手続きフォーム");
-		$this->set_view_data("active", "info_changing");
 		if($this->is_post_method())
 		{
-			$this->POST("InfoChangingHandler", "contact/thanks", "contact/info_changing");
+			$this->POST("InfoChangingHandler", "contact/info_changing_thanks", "contact/info_changing");
 		}
 		else
 		{

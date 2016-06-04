@@ -3,7 +3,7 @@
   background-color: #339933;
 }
 #a_hisun{
-  color: #6D4780;
+  color: #1A55C5;
 }
 </style>
 
@@ -20,7 +20,7 @@
 
   <div class="rightbar">
     <div class="mb_separator div_hidden"></div>
-    <h1><img src="<?php echo $cdn_path; ?>images/aboutus/ms.png"/></h1>
+    <h1><img src="<?php echo $cdn_path; ?>images/aboutus/ms.jpg"/></h1>
     <h1>会社概要</h1>
 
     <table class="ms-table-responsive">

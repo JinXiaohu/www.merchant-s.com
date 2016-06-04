@@ -98,9 +98,10 @@ input[type="radio"], input[type="checkbox"]{
 
 #policy{
   border: solid 1px #ccc;
-  padding: 15px;
+  padding: 13px;
   margin-top: 20px;
   border-radius: 5px;
+  font-size: 12px;
 }
 #policy .pl_title{
   font-weight: bold;

@@ -43,18 +43,20 @@ class QueryHandler extends ContactHandler
 	protected function get_mail_body()
 	{
 		$name_mei     = $this->get_field('name_mei');
+		$name2        = $this->get_field('name2');
 		$company_name = $this->get_field('company_name');
 		$tel          = $this->get_field('tel');
-		$merc_id          = $this->get_field('merc_id');
+		$merc_id      = $this->get_field('merc_id');
 		$shop_name    = $this->get_field('shop_name');
 		$email        = $this->get_field('email');
 		$content      = $this->get_field('content');
 
 		return 
 			"【氏名】\t$name_mei\r\n".
+			"【氏名カナ】\t$name2\r\n".
 			"【会社名】\t$company_name\r\n".
 			"【電話番号】\t$tel\r\n".
-			"【加盟店番号】\t$merc_id\r\n".
+			"【加盟店ID】\t$merc_id\r\n".
 			"【店舗名】\t$shop_name\r\n".
 			"【メールアドレス】\t$email\r\n".
 			"【お問い合わせ内容】\t$content \r\n";

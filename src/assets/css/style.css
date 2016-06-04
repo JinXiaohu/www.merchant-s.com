@@ -1,8 +1,11 @@
+html{
+  background-color: #fafafa;
+}
 body{
   font-family: Helvetica, Arial, "MS PGothic", "Hiragino Kaku Gothic Pro", "Meiryo", serif !important;
 }
 .SansSerif, h1{
-  font-family: "Hiragino Kaku Gothic Pro", "Meiryo", "MS PGothic", Helvetica, Arial, sans-serif !important;
+  font-family: Helvetica, Arial, "Hiragino Kaku Gothic Pro", "Meiryo", "MS PGothic", sans-serif !important;
 }
 .container{
   max-width: 865px;
@@ -205,6 +208,7 @@ hr{
 #main{
   width: 100%;
   display: table;
+  table-layout: fixed;
 }
 .sidebar{
   display: table-cell;
@@ -294,10 +298,8 @@ hr{
 .sidebar .level1{
   font-weight: bold;
 }
-.sidebar .level2{
-}
 .sidebar .li_sep{
-  height: 15px;
+  height: 25px;
 }
 .sidebar li .vtitle{
   font-size: 0.8em;
@@ -306,6 +308,9 @@ hr{
 @media (max-width: 767px){
   .sidebar .level1, .sidebar .level2, .sidebar .li_sep{
     float: left;
+  }
+  .sidebar .li_sep{
+    height: 5px;
   }
   .sidebar .grid-12{
     width: 100%;

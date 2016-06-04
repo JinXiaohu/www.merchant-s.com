@@ -30,9 +30,9 @@
       <li class="level2 grid-6"><a href="<?php echo $base_path;?>terminal/s80">PAX S80</a></li>
       <li class="level2 grid-6"><a href="<?php echo $base_path;?>terminal/s90">PAX S90</a></li>
          
-      <div class="li_sep"></div>   
+      <div class="li_sep hidden"></div>   
 
-      <li class="level1 grid-12 active"><a href="<?php echo $base_path;?>terminal/business_center">センター事業</a></li>
+      <li class="level1 grid-12 hidden active"><a href="<?php echo $base_path;?>terminal/business_center">センター事業</a></li>
     </ul>
   </div>
 

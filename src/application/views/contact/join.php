@@ -6,7 +6,7 @@
     <ul>
       <li class="level1 grid-12"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
-      <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/order">ロール紙発注</a></li>
+      <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/order">ロール紙発注<span class="vtitle">（PAX社製端末）</span></a></li>
       <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/query">お問い合わせ</a></li>
 
       <div class="li_sep"></div>   
@@ -21,8 +21,9 @@
     <h1><span class="vtitle">新規のお客様</span><span>新規加盟をご検討のお客様</span></h1>
     
     <p class="smallText">
-    下記のフォームより、必要事項をご入力の上、ご希望のロール紙個数を注文いただきますようお願い致します。
+    下記フォームより、必要情報をご入力の上、お問い合わせいただきますようお願い致します。
     </p>
+    
     <p class="smallText">
     万が一のため、弊社でメール受信後に自動返信をさせていただいておりますが、返信メールが翌日にもない場合には、お電話にてお問い合わせ下さいますよう、宜しくお願い申し上げます。
     </p>
@@ -52,7 +53,7 @@
         </div>
 
         <div class="_tr">
-          <div class="_td td_label">[4]メールアドレス</div>
+          <div class="_td td_label">[4]メールアドレス<span class="required">（必須）</span></div>
           <div class="_td td_input">
             <input type="text" id="reply_email" name="reply_email">
           </div>
@@ -121,15 +122,32 @@
         </div>
         <?php endif; ?> 
 
+      </div>
 
+
+      <div id="policy">
+        <div class="pl_title">個人情報の取り扱いについて<span class="pl_required">必須</span></div>
+        <div>
+          <p>詳細については<a href="<?php echo $base_path;?>policy">「個人情報の取り扱いについて」</a>をご覧ください。</p>
+          <p>
+          上記「個人情報の取扱いについて」に同意いただける場合は、「同意する」にチェックした上で「内容確認ボタン」を押して下さい。
+          </p>
+        </div>
+
+        <table>
+          <tr><td><input type="checkbox" id="agree_policy"></td> <td>上記「個人情報の取扱いについて」に同意する</td></tr>
+        </table>
+      </div>
+
+      <div class="_table" id="table4">  
         <div class="_tr">
           <div class="_td tdleft"></div>
           <div class="_td">
-          <input type="submit" id="submit_btn" class="ms-button" value="内容を確認する" onclick="if(!onConfirmClick()) return false;">
+            <input type="submit" id="submit_btn" class="ms-button" disabled="disabled" value="内容を確認する" onclick="if(!onConfirmClick()) return false;">
           </div>
         </div>
-
       </div>
+
     </form>
 
     <div class="tail">
@@ -137,22 +155,7 @@
       <p>マーチャント・サポート　9：00AM～17：00PM（土・日・祝・年末年始休）</p>
       <p class="tel">03-6279-0521</p>
     </div>
-
-
-    <div id="policy">
-      <div class="pl_title">個人情報の取り扱いについて<span class="pl_required">必須</span></div>
-      <div>
-        <p>詳細については<a href="<?php echo $base_path;?>policy">「個人情報の取り扱いについて」</a>をご覧ください。</p>
-        <p>
-        上記「個人情報の取扱いについて」に同意いただける場合は、「同意する」にチェックした上で「内容確認ボタン」を押して下さい。
-        </p>
-      </div>
-
-      <table>
-        <tr><td><input type="checkbox" id="agree_policy" checked="checked"></td> <td>上記「個人情報の取扱いについて」に同意する</td></tr>
-      </table>
-    </div>
-
+   
   </div>
 
 </div>
@@ -177,6 +180,10 @@ function onConfirmClick() {
   if (document.form1.tel.value.trim()  == '')
   {
     message += "電話番号を入力してください。\n";
+  }
+  if (document.form1.reply_email.value.trim()  == '')
+  {
+    message += "メールアドレスを入力してください。\n";
   }
   if(document.form1.con_by_tel.checked == false 
       && document.form1.con_by_email.checked == false

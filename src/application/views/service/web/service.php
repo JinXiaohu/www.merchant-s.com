@@ -6,18 +6,6 @@ h2{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.linkimgbule{
-  background-color: #3FA3D1;
-  border-radius: 8px;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  max-width: 536px;
-  margin-top: 30px;
-}
-.linkimgbule a{
-  color: white;
-}
 </style>
 
 
@@ -30,13 +18,6 @@ h2{
 <p>
   <img class="img-responsive center-block" src="<?php echo $cdn_path; ?>images/web/service/img_service01.gif">
 </p>
-
-<p class="linkimgbule center-block">
-  <a href="http://www.gmo-pg.com/service/product/gds_internet.php" target="_blank">
-  <strong>ASPサービスの仕組みとセキュリティについての詳細はこちらをご覧ください。</strong>
-  </a>
-</p>
-
 
 <h2>5大クレジットカードすべての取扱ができる契約プランをご用意</h2>
 <p>

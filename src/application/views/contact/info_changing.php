@@ -6,7 +6,7 @@
     <ul>
       <li class="level1 grid-12"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2 grid-4 active"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
-      <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/order">ロール紙発注</a></li>
+      <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/order">ロール紙発注<span class="vtitle">（PAX社製端末）</span></a></li>
       <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/query">お問い合わせ</a></li>
 
       <div class="li_sep"></div>   
@@ -18,16 +18,27 @@
   <div class="rightbar">
     <div class="mb_separator div_hidden"></div>
 
-    <h1><span class="vtitle">ご利用加盟店様</span><span>各種変更手続きフォーム</span></h1>
+    <h1><span class="vtitle">ご利用加盟店様</span><span>各種変更・解約手続き依頼フォーム</span></h1>
     
-    <p class="smallText">
-    必要情報をご記入のうえ、送信ください。各種お手続きには、お届け用紙のご記入・捺印が必要となります。必要書類を送付させていただきますので、お受取り先住所のご入力をお願します。※当フォームでは変更完了となりません。
+    <p>
+    必要情報をご入力のうえ、送信ください。各種お手続きには、お届け用紙のご記入・ご捺印が必要となります。必要書類を送付させていただきますので、お受取り先住所のご入力をお願いいたします。書類の返送をいただき次第、弊社にて対応いたします。
     </p>
+
     <p class="smallText">
+    ※当フォームでは変更完了となりません
+    </p>
+
+    <p>
     なお、変更手続きの内容によっては、<strong>「営業許可証」</strong>や<strong>「契約者身分証明書」</strong>のご提示をいただく場合がございますので、あらかじめご了承ください。
     </p>
-    <p class="smallText">
+
+    <p>
     万が一のため、弊社でメール受信後に自動返信をさせていただいておりますが、返信メールが翌日にもない場合には、お電話にてお問い合わせ下さいますよう、宜しくお願い申し上げます。
+    </p>
+
+    <p class="smallText">
+    <br /><br />
+    ※下記フォームへは変更前の情報を入力してください
     </p>
 
     <form method="post" action="" name="form1">
@@ -35,7 +46,7 @@
     <div class="_table" id="table1">
 
       <div class="_tr">
-        <div class="_td td_label">[1]手続き内容を選択してください</div>
+        <div class="_td td_label">[1]手続き内容を選択 <span class="required">（必須） </span></div>
         <div class="_td td_input"> 
           <div class="row">
             <div class="col-sm-6">
@@ -54,72 +65,100 @@
       </div>
 
       <div class="_tr">
-        <div class="_td td_label">[2]契約形態</div>
+        <div class="_td td_label">手続き内容詳細</div>
         <div class="_td td_input">
-          <div class="row">
-            <div class="col-xs-6">
-              <input type="radio" id="contract_type" name="contract_type" value="contract_personal"><span>個人</span>
-            </div>
-            <div class="col-xs-6">
-              <input type="radio" id="contract_type2" name="contract_type" value="contract_legal"><span>法人</span>
-            </div>
-          </div>
+          <input type="text" name="detail" id="detail" placeholder="例）振込口座変更、店舗名変更etc">
         </div>
       </div>
 
       <div class="_tr">
-        <div class="_td td_label">[3]加盟店番号</div>
+        <div class="_td td_label">[2]加盟店ID<span class="required">（6桁）</span></div>
         <div class="_td td_input">
           <input type="text" name="branch_number" id="branch_number">
         </div>
       </div>
 
       <div class="_tr">
-        <div class="_td td_label">[4]法人名<span class="required">（法人の場合必須）</span></div>
+        <div class="_td td_label">[3]法人名<span class="required">（法人の場合必須）</span></div>
         <div class="_td td_input">
           <input type="text" name="company_name" id="company_name">
         </div>
       </div>
 
       <div class="_tr">
-        <div class="_td td_label">[5]店舗名</div>
+        <div class="_td td_label">[4]店舗名 <span class="required">（必須） </span></div>
         <div class="_td td_input">
           <input type="text" name="shop_name" id="shop_name">
         </div>
       </div>
 
       <div class="_tr">
-        <div class="_td td_label">[6]代表者名</div>
+        <div class="_td td_label">[5]代表者名 <span class="required">（必須） </span></div>
         <div class="_td td_input">
           <input type="text" name="represent_name" id="represent_name">
         </div>
       </div>
 
       <div class="_tr">
-        <div class="_td td_label">[7]代表者フリガナ</div>
+        <div class="_td td_label">[6]代表者フリガナ <span class="required">（必須） </span></div>
         <div class="_td td_input">
           <input type="text" name="represent_name_furigana" id="represent_name_furigana" >
         </div>
       </div>
 
       <div class="_tr">
-        <div class="_td td_label">[8]ご担当者名</div>
+        <div class="_td td_label">[7]ご担当者名</div>
         <div class="_td td_input">
           <input type="text" name="contact_name" id="contact_name" >
         </div>
       </div>
 
       <div class="_tr">
-        <div class="_td td_label">[9]連絡先電話番号</div>
+        <div class="_td td_label">[8]連絡先電話番号 <span class="required">（必須） </span></div>
         <div class="_td td_input">
           <input type="text" name="tel" id="tel">
         </div>
       </div>
 
       <div class="_tr">
-        <div class="_td td_label">[10]その他追加情報</div>
+        <div class="_td td_label">[9]メールアドレス <span class="required">（必須） </span></div>
         <div class="_td td_input">
-          <textarea name="textarea" id="textarea" rows="10" placeholder="例）
+          <input type="text" name="email" id="email">
+        </div>
+      </div>
+
+
+      <div class="_tr">
+        <div class="_td td_label">[10]送付先住所 <span class="required">（必須） </span></div>
+        <div class="_td td_input"> 
+          <div class="row">
+            <div class="col-sm-6">
+              <input type="radio" id="addr_legal" name="send_addr" value="addr_legal"><span> 法人</span>
+            </div>
+            <div class="col-sm-6">
+              <input type="radio" id="addr_shop" name="send_addr" value="addr_shop"><span> 店舗</span>
+            </div>
+            <div class="col-sm-6">
+              <input type="radio" id="addr_represent" name="send_addr" value="addr_represent"><span> 代表者住所</span>
+            </div>
+            <div class="col-sm-6">
+              <input type="radio" id="addr_other" name="send_addr" value="addr_other" checked="checked"><span> その他住所</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="_tr">
+        <div class="_td td_label">その他住所</div>
+        <div class="_td td_input">
+          <textarea name="addr_other_text" rows="5" placeholder="※その他住所にチェックされた方は、必ずご入力ください"></textarea>
+        </div>
+      </div>
+
+      <div class="_tr">
+        <div class="_td td_label">[11]その他追加情報</div>
+        <div class="_td td_input">
+          <textarea name="textarea" id="textarea" rows="8" placeholder="例）
 連絡希望：午前中
 携帯090-1234-5678"></textarea>
         </div>
@@ -279,16 +318,6 @@
     </div>
 
 
-    <div class="_table" id="table4">  
-      <div class="_tr">
-        <div class="_td tdleft"></div>
-        <div class="_td">
-          <input type="submit" id="submit_btn" class="ms-button" value="内容を確認する" onclick="if(!onConfirmClick()) return false;">
-        </div>
-      </div>
-    </div>
-
-    </form>
 
     <div id="policy">
       <div class="pl_title">個人情報の取り扱いについて<span class="pl_required">必須</span></div>
@@ -300,10 +329,21 @@
       </div>
 
       <table>
-        <tr><td><input type="checkbox" id="agree_policy" checked="checked"></td> <td>上記「個人情報の取扱いについて」に同意する</td></tr>
+        <tr><td><input type="checkbox" id="agree_policy"></td> <td>上記「個人情報の取扱いについて」に同意する</td></tr>
       </table>
     </div>
 　　
+    <div class="_table" id="table4">  
+      <div class="_tr">
+        <div class="_td tdleft"></div>
+        <div class="_td">
+          <input type="submit" id="submit_btn" class="ms-button" disabled="disabled" value="内容を確認する" onclick="if(!onConfirmClick()) return false;">
+        </div>
+      </div>
+    </div>
+
+    </form>
+
   </div>
 </div>
 

@@ -22,20 +22,22 @@ class OrderHandler extends ContactHandler
 		$merc_id   = $this->get_field('merc_id');
 		$term_id   = $this->get_field('term_id');
 		$shop_name = $this->get_field('shop_name');
-		$s80       = $this->get_field('s80'). "個";
-		$s90       = $this->get_field('s90'). "個";
+		$email     = $this->get_field('email');
 		$addr      = $this->get_addr();
 		$addr_txt  = $this->get_field('addr_txt');
+		$s80       = $this->get_field('s80'). "個";
+		$s90       = $this->get_field('s90'). "個";
 		$remark    = $this->get_field('remark');
 
 		return 
 			"【加盟店番号】\t$merc_id\r\n".
 			"【端末番号】\t$term_id\r\n".
 			"【店舗名】\t$shop_name\r\n".
-			"【S80（58mmx48Φ）】\t$s80\r\n".
-			"【S90（58mmx30Φ）】\t$s90\r\n".
+			"【メールアドレス】\t$email\r\n".
 			"【送付先住所】\t$addr\r\n".
 			"【その他住所】\t$addr_txt\r\n".
+			"【S80（58mmx48Φ）】\t$s80\r\n".
+			"【S90（58mmx30Φ）】\t$s90\r\n".
 			"【備考】\t$remark\r\n";
 	}
 

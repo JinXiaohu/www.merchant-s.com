@@ -37,7 +37,7 @@ class InfoChangingHandler extends ContactHandler
 	private function get_table1_body()
 	{
 		$service_type            = $this->get_service_type();
-		$contract_type           = $this->get_participating_contract_type();
+		$detail                  = $this->get_field("detail");
 		$branch_number           = $this->get_field("branch_number");
 		$company_name            = $this->get_field("company_name");
 		$shop_name               = $this->get_field("shop_name");
@@ -45,11 +45,14 @@ class InfoChangingHandler extends ContactHandler
 		$represent_name_furigana = $this->get_field("represent_name_furigana");
 		$contact_name            = $this->get_field("contact_name");
 		$tel                     = $this->get_field("tel");
+		$email                   = $this->get_field("email");
+		$send_addr               = $this->get_send_addr();
+		$send_addr_text          = $this->get_field("send_addr_text");
 		$textarea                = $this->get_field("textarea");		
 
 		return 
 			"【手続き内容】	$service_type\r\n".
-			"【契約形態】	$contract_type\r\n".
+			"【手続き内容詳細】	$detail\r\n".
 			"【加盟店番号】	$branch_number\r\n".
 			"【法人名】	$company_name\r\n".
 			"【店舗名】	$shop_name\r\n".
@@ -57,6 +60,9 @@ class InfoChangingHandler extends ContactHandler
 			"【代表者フリガナ】	$represent_name_furigana\r\n".
 			"【ご担当者名】	$contact_name\r\n".
 			"【連絡先電話番号】	$tel\r\n".
+			"【メールアドレス】	$email\r\n".
+			"【送付先住所】	$send_addr\r\n".
+			"【その他住所】	$send_addr_text\r\n".
 			"【その他追加情報】	$textarea\r\n".
 			"\r\n\r\n\r\n";
 	}
@@ -140,14 +146,17 @@ class InfoChangingHandler extends ContactHandler
 		}
 	}
 
-	//[2]契約形態
-	private function get_participating_contract_type()
+	private function get_send_addr()
 	{
-		switch($this->input->post('contract_type')){
-			case "contract_personal":
-				return "個人";
-			case "contract_legal":
+		switch($this->input->post('send_addr')){
+			case "addr_legal":
 				return "法人";
+			case "addr_shop":
+				return "店舗";
+			case "addr_represent":
+				return "代表者住所";
+			case "addr_other":
+				return "その他住所";
 			default:
 				return "?";
 		}

@@ -1,10 +1,28 @@
 <style type="text/css">
-.content{
-  margin-top: 50px;
-  margin-bottom: 50px;
+
+.img_ms{
+  float: right;
+  width: 50%;
 }
-.right{
-  text-align: right;
+.content{
+  float: left;
+  width: 50%;
+  padding-right: 20px;
+}
+@media (max-width: 767px){
+  .content{
+    float: none;
+    width: 100%;
+    margin-left:0;
+  }
+  .img_ms{
+    float: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.sign{
+  margin-top: 30px;
 }
 </style>
 
@@ -21,8 +39,8 @@
 
   <div class="rightbar">
     <div class="mb_separator div_hidden"></div>
-    <h1><img src="<?php echo $cdn_path; ?>images/aboutus/ms.png"/></h1>
-
+    <h1>コーポレートメッセージ</h1>
+    <img class="img_ms" src="<?php echo $cdn_path; ?>images/aboutus/ms_home.jpg"/>
     <div class="content">
       <p>
       マーチャント・サポートは2004年の創業以来、事業者様のキャッシュフローの改善と経済成長のために「クレジットカードの利便性を高め、誰もが利用しやすい環境を！」と考えてまいりました。<br/>
@@ -31,15 +49,12 @@
 
       <p>
       私たちは決済代行会社としての実績とノウハウを活かし、今後、事業者様へご提供できるサービスの拡充を図っていきます。<br/>
-      クレジットカード事業に留まらず、あらゆる決済に通じるオールラウンダーとして事業者様のサポートをしていきます。 
       </p>
+
+      <div class="sign">
+        <p class="text-right">マーチャント・サポート株式会社</p>
+        <p class="text-right">代表取締役社長　東山　正彦</p>
+      </div>
     </div>
-
-
-    <p class="right">マーチャント・サポート株式会社</p>
-    <p class="right">代表取締役社長　東山　正彦</p>
-
-
-
   </div>
 </div> 

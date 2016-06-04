@@ -148,8 +148,7 @@
 }
 .col_title{
   padding-left: 0;
-  font-size: 1.1em;
-}
+  font-size: 1.1em}
 .col_date{
   text-align: right;
   padding-right: 0;
@@ -251,7 +250,7 @@
     <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
 
-  <a class="right carousel-control  sysx" href="#carousel-id" data-slide="next">
+  <a class="right carousel-control sysx" href="#carousel-id" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 
@@ -270,8 +269,8 @@
       <div class="_td separator"></div>
 
       <div class="_td item" id="s_item2">
-        <h4><a href="<?php echo $base_path;?>service/wechat">WeChat決済</a></h4>
-        <p>WeChat決済は中国人観光客に向けた独自の決済手段で、マーチャント・サポートは日本の公式パートナーとして貴店をお手伝いいたします。
+        <h4><a href="<?php echo $base_path;?>service/wechat">WeChat Pay</a></h4>
+        <p>『WeChat　Pay』は中国人観光客に向けた独自の決済手段で、マーチャント・サポートは日本の公式パートナーとして貴店をお手伝いいたします。
         </p>
       </div>
       
@@ -332,7 +331,7 @@
 
       <div class="_td" id="links">
         <div class="link">
-          <a href="<?php echo $base_path;?>contact/info_changing">
+          <a href="<?php echo $base_path;?>contact">
             <div class="media">
               <div class="media-left media-middle">
                 <img class="hisun_logo" src="<?php echo $cdn_path;?>images/icon1.jpg">
@@ -346,7 +345,7 @@
         </div>
 
         <div class="link">
-          <a href="<?php echo $base_path;?>contact">
+          <a href="<?php echo $base_path;?>contact/join">
             <div class="media">
               <div class="media-left media-middle">
                 <img class="hisun_logo" src="<?php echo $cdn_path;?>images/icon2.jpg">

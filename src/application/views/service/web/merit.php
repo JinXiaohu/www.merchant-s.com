@@ -42,7 +42,7 @@ h2{
 }
 #visa, #mastercard{
   background-color: #EEEEEE;
-  padding: 0 10px;
+  padding: 15px 10px;
   font-size: 0.9em;
 }
 #visa{
@@ -141,8 +141,7 @@ ul{
             <a href="http://www.visa-asia.com/ap/jp/merchants/productstech/vbv_intro.shtml"><img class="media-object" src="<?php echo $cdn_path; ?>images/web/merit/visa.gif"></a>
           </div>
           <div class="media-body media-middle">
-            <div class="link"><a href="http://www.visa-asia.com/ap/jp/cardholders/security/vbv_demo.shtml" target="_blank">VISA認証サービス（VERIFID by VISA) 詳細はこちら</a></div>
-            <div class="link"><a href="http://www.visa-asia.com/ap/jp/merchants/productstech/popup_demo.html" target="_blank">デモ画面をみる</a></div>
+            <div class="link"><a href="http://www.visa.co.jp/personal/security/onlineshopping.shtml" target="_blank">VISA認証サービス（VERIFID by VISA) 詳細はこちら</a></div>
           </div>
         </div>
 
@@ -151,8 +150,7 @@ ul{
             <a href="http://www.mastercard.com/jp/personal/jp/cardholderservices/securecode/index.html"><img class="media-object" src="<?php echo $cdn_path; ?>images/web/merit/master.gif"></a>
           </div>
           <div class="media-body media-middle">
-            <div class="link"><a href="http://www.mastercard.com/jp/personal/jp/cardholderservices/securecode/index.html" target="_blank">MasterCard（R） SecureCode（TM） 詳細はこちら</a></div>
-            <div class="link"><a href="http://www.mastercard.com/jp/cardholderservices/securecode/flash/securecodedemo.html" target="_blank">デモ画面をみる</a></div>
+            <div class="link"><a href="http://www.mastercard.co.jp/personal/securecode/index.html" target="_blank">MasterCard（R） SecureCode（TM） 詳細はこちら</a></div>
           </div>
         </div>
 

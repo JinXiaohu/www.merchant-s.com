@@ -59,7 +59,6 @@ li{
   <li><a href="<?php echo $base_path;?>service/wechatad_merit">特徴・メリット</a></li> 
   <li><a href="<?php echo $base_path;?>service/wechatad_service">サービスの仕組み</a></li> 
   <li><a href="<?php echo $base_path;?>service/wechatad_flow">導入までの流れ</a></li> 
-  <li><a href="<?php echo $base_path;?>service/wechatad_faq">FAQ</a></li> 
 </ul>
 
 <h2>導入事例</h2>
@@ -91,8 +90,8 @@ li{
 <h2>お問い合わせ</h2>
 <ul>
   <li><a href="<?php echo $base_path;?>contact"><strong>加盟店様向けのご案内</strong></a></li>
-  <li><a href="<?php echo $base_path;?>contact/join">新規加盟をご検討のお客様</a></li>
   <li><a href="<?php echo $base_path;?>contact/info_changing">各種変更手続きフォーム</a></li>
   <li><a href="<?php echo $base_path;?>contact/order">ロール紙発注フォーム</a></li>
   <li><a href="<?php echo $base_path;?>contact/query">お問い合わせフォーム</a></li>
+  <li><a href="<?php echo $base_path;?>contact/join"><strong>新規加盟をご検討のお客様</strong></a></li>
 </ul>

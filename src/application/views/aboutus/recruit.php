@@ -2,9 +2,6 @@
 .ms-table-responsive th{
   background-color: #339933;
 }
-#a_hisun{
-  color: #6D4780;
-}
 </style>
 
 
