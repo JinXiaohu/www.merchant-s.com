@@ -112,9 +112,10 @@ class InfoChangingHandler extends ContactHandler
 	private function get_table3_body()
 	{
 		$reason = 
-			$this->get_checkbox_str("close_shop", "利用が少ない").
-			$this->get_checkbox_str("use_little", "営業権譲渡").
-			$this->get_checkbox_str("assignment", "早期決済にメリットがない").
+			$this->get_checkbox_str("close_shop", "閉店").
+			$this->get_checkbox_str("use_little", "利用が少ない").
+			$this->get_checkbox_str("assignment", "営業権譲渡").
+			$this->get_checkbox_str("not_merit", "早期決済にメリットがない").
 			$this->get_checkbox_str("change_other_co", "他社に切替え").
 			$this->get_checkbox_str("other", "その他");
 

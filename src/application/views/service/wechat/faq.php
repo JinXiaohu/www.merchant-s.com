@@ -6,10 +6,10 @@ h1 td{
   vertical-align: middle;
 }
 #td_toggle{
-  width: 80px;
+  width: 95px;
 }
 #toggle{
-  padding: 7px 10px;
+  padding: 7px 7px;
   font-size: 14px;
 }
 </style>
@@ -18,7 +18,7 @@ h1 td{
   <div class="vtitle">Wechat Pay</div>
   <table>
     <td>FAQ</td>
-    <td id="td_toggle"><div id="toggle" class="ms-button">toggle</div></td>
+    <td id="td_toggle"><div id="toggle" class="ms-button">全て表示</div></td>
   </table>
 </h1>
 
@@ -231,10 +231,12 @@ $(document).ready(function(){
   $("#toggle").click(function(){
     if(expand_all)
     {
+      $(this).text("全て非表示"); 
       $(".answer").fadeIn();
     }
     else
     {
+      $(this).text("全て表示");      
       $(".answer").fadeOut();
     }
     expand_all = !expand_all;

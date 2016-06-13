@@ -6,7 +6,7 @@
     <ul>
       <li class="level1 grid-12"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
-      <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/order">ロール紙発注<span class="vtitle">（PAX社製端末）</span></a></li>
+      <li class="level2 grid-8"><a href="<?php echo $base_path;?>contact/order">ロール紙発注<span class="vtitle">（PAX社製端末）</span></a></li>
       <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/query">お問い合わせ</a></li>
 
       <div class="li_sep"></div>   
@@ -48,7 +48,7 @@
         <div class="_tr">
           <div class="_td td_label">[3]電話番号<span class="required">（必須）</span></div>
           <div class="_td td_input">
-            <input type="text" id="tel" name="tel" maxlength="12">
+            <input type="text" id="tel" name="tel">
           </div>
         </div>
 
@@ -63,10 +63,10 @@
           <div class="_td td_label">[5]資料請求</div>
           <div class="_td td_input">
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <input type="radio" name="request" value="request_yes"><span>必要</span>
               </div>
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <input type="radio" name="request" value="request_no" checked="checked"><span> 不要</span>
               </div>
           </div>
@@ -77,13 +77,13 @@
           <div class="_td td_label">[6]ご希望の連絡方法<span class="required">（必須）</span></div>
           <div class="_td td_input">
             <div class="row">
-              <div class="col-sm-3">
+              <div class="col-xs-6 col-sm-3">
                 <input type="checkbox" value="con_by_tel" name="con_by_tel" id="con_by_tel"><span>電話</span>
               </div>
-              <div class="col-sm-3">
+              <div class="col-xs-6 col-sm-3">
                 <input type="checkbox" value="con_by_email" name="con_by_email" id="con_by_email"><span>Eメール</span>
               </div>
-              <div class="col-sm-6">
+              <div class="col-xs-12 col-sm-6">
                 <input type="checkbox" value="no_con" name="no_con" id="no_con"><span>連絡不要</span>
               </div>
             </div>
@@ -95,10 +95,10 @@
           <div class="_td td_label">[7]資料の送付方法</div>
           <div class="_td td_input">
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <input type="checkbox" value="send_by_mail" name="send_by_mail" id="send_by_mail"><span>ご郵送</span>
               </div>
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <input type="checkbox" value="send_by_email" name="send_by_email" id="send_by_email"><span>Eメール</span>
               </div>
             </div>
@@ -139,13 +139,9 @@
         </table>
       </div>
 
-      <div class="_table" id="table4">  
-        <div class="_tr">
-          <div class="_td tdleft"></div>
-          <div class="_td">
-            <input type="submit" id="submit_btn" class="ms-button" disabled="disabled" value="内容を確認する" onclick="if(!onConfirmClick()) return false;">
-          </div>
-        </div>
+
+      <div>
+        <input type="submit" id="submit_btn" class="ms-button" disabled="disabled" value="内容を確認する" onclick="if(!onConfirmClick()) return false;">
       </div>
 
     </form>

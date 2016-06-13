@@ -31,7 +31,7 @@
     <ul>
       <li class="level1 grid-12"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
-      <li class="level2 grid-4 active"><a href="<?php echo $base_path;?>contact/order">ロール紙発注<span class="vtitle">（PAX社製端末）</span></a></li>
+      <li class="level2 grid-8 active"><a href="<?php echo $base_path;?>contact/order">ロール紙発注<span class="vtitle">（PAX社製端末）</span></a></li>
       <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/query">お問い合わせ</a></li>
 
       <div class="li_sep"></div>   

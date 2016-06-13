@@ -8,6 +8,7 @@ class QueryHandler extends ContactHandler
 
 	public function validate()
 	{
+		/*
 		$name_mei     = $this->get_field("name_mei");
 		$company_name = $this->get_field("company_name");
 		$tel          = $this->get_field("tel");
@@ -24,6 +25,7 @@ class QueryHandler extends ContactHandler
 		{
 			return "電話番号を入力してください。";
 		}
+		*/
 		return true;
 	}
 	

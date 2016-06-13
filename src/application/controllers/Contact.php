@@ -8,47 +8,24 @@ class Contact extends BaseController
 {
 	function __construct()
 	{
-		parent::__construct();
+		parent::__construct();		
 		$this->set_view_data('nav_id',  "nav-contact");
-		$this->set_view_data('title',   "お問い合わせ | ". $this->config->item('site_name'));
 	}
 	
-
 	public function index()
 	{
+		$this->set_view_data('title',   "お問い合わせ | ". $this->config->item('site_name'));
 		$this->load_view('contact/index');
-	}
-
-
-	public function order_thanks()
-	{
-		$this->load_view('contact/order_thanks');
-	}
-
-	public function join_thanks()
-	{
-		$this->load_view('contact/join_thanks');
-	}
-
-	public function query_thanks()
-	{
-		$this->load_view('contact/query_thanks');
-	}
-
-	public function info_changing_thanks()
-	{
-		$this->load_view('contact/info_changing_thanks');
 	}
 
 
 	//申请加盟
 	public function join()
 	{
-		$this->set_view_data("h1", "新規加盟をご検討のお客様");
-		$this->set_view_data("active", "join");
+		$this->set_view_data('title',   "新規加盟をご検討のお客様 | ". $this->config->item('site_name'));
 		if($this->is_post_method())
 		{
-			$this->POST("JoinHandler", "contact/thanks", "contact/join");
+			$this->POST("JoinHandler", "contact/join_thanks", "contact/join");
 		}
 		else
 		{
@@ -60,6 +37,7 @@ class Contact extends BaseController
   //申请变更信息
   public function info_changing()
   {
+		$this->set_view_data('title',   "各種変更・解約手続き依頼フォーム | ". $this->config->item('site_name'));
 		if($this->is_post_method())
 		{
 			$this->POST("InfoChangingHandler", "contact/info_changing_thanks", "contact/info_changing");
@@ -73,11 +51,10 @@ class Contact extends BaseController
   //卷纸订单
 	public function order()
 	{
-		$this->set_view_data("h1", "ロール紙発注フォーム");
-		$this->set_view_data("active", "order");
+		$this->set_view_data('title',   "ロール紙発注フォーム | ". $this->config->item('site_name'));
 		if($this->is_post_method())
 		{
-			$this->POST("OrderHandler", "contact/thanks", "contact/order");
+			$this->POST("OrderHandler", "contact/order_thanks", "contact/order");
 		}
 		else
 		{
@@ -88,11 +65,10 @@ class Contact extends BaseController
   //其他查询
 	public function query()
 	{
-		$this->set_view_data("h1", "お問い合わせフォーム");
-		$this->set_view_data("active", "query");
+		$this->set_view_data('title',   "お問い合わせフォーム | ". $this->config->item('site_name'));
 		if($this->is_post_method())
 		{
-			$this->POST("QueryHandler", "contact/thanks", "contact/query");
+			$this->POST("QueryHandler", "contact/query_thanks", "contact/query");
 		}
 		else
 		{
@@ -103,7 +79,7 @@ class Contact extends BaseController
 
 	private function POST($class_handler, $thanks_page, $fail_page)
 	{
-    $handler = $this->create_mail_sender($class_handler);
+    $handler = $this->create_handler($class_handler);
 
     //如果验证输入不合格
     $msg = $handler->validate();
@@ -128,7 +104,7 @@ class Contact extends BaseController
 	}
 
 
-	private function create_mail_sender($class_handler)
+	private function create_handler($class_handler)
 	{
 		require_once("Contact/$class_handler.php");
 		$handler = new $class_handler();

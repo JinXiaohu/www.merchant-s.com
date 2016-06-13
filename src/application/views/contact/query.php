@@ -7,7 +7,7 @@
     <ul>
       <li class="level1 grid-12"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
-      <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/order">ロール紙発注<span class="vtitle">（PAX社製端末）</span></a></li>
+      <li class="level2 grid-8"><a href="<?php echo $base_path;?>contact/order">ロール紙発注<span class="vtitle">（PAX社製端末）</span></a></li>
       <li class="level2 grid-4 active"><a href="<?php echo $base_path;?>contact/query">お問い合わせ</a></li>
 
       <div class="li_sep"></div>   
@@ -54,7 +54,7 @@
         <div class="_tr">
           <div class="_td td_label">[3]電話番号<span class="required">（必須）</span></div>
           <div class="_td td_input">
-            <input type="text" id="tel" name="tel" maxlength="12">
+            <input type="text" id="tel" name="tel">
           </div>
         </div>
 
@@ -109,15 +109,11 @@
           <tr><td><input type="checkbox" id="agree_policy"></td> <td>上記「個人情報の取扱いについて」に同意する</td></tr>
         </table>
       </div>
-      
-      <div class="_table" id="table4">  
-        <div class="_tr">
-          <div class="_td tdleft"></div>
-          <div class="_td">
-            <input type="submit" id="submit_btn" class="ms-button" disabled="disabled" value="内容を確認する" onclick="if(!onConfirmClick()) return false;">
-          </div>
-        </div>
+
+      <div>
+        <input type="submit" id="submit_btn" class="ms-button" disabled="disabled" value="内容を確認する" onclick="if(!onConfirmClick()) return false;">
       </div>
+
     </form>
 
   </div>

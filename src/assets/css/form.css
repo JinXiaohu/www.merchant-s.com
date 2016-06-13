@@ -62,6 +62,10 @@ input[type="radio"], input[type="checkbox"]{
   ._table,._tbody,._tr,._td{
     display: block;
   }
+  ._table{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   ._td{
     padding: 0;
   }
@@ -86,29 +90,34 @@ input[type="radio"], input[type="checkbox"]{
   }
   .ms-button{
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
+
 @media (min-width: 768px){
   .ms-button{
     padding: 8px 15px;
   }
 }
 
-#policy{
-  border: solid 1px #ccc;
-  padding: 13px;
-  margin-top: 20px;
+#policy{  
+  border: solid 1px #ccc;  
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
   border-radius: 5px;
   font-size: 12px;
 }
+#policy p{
+  margin-bottom: 6px;
+}
 #policy .pl_title{
   font-weight: bold;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;  
 }
-#policy .pl_required{
+#policy .pl_required{ 
   background-color: #339933;
   margin-left: 15px;
   color: white;
@@ -122,8 +131,7 @@ input[type="radio"], input[type="checkbox"]{
 #policy td{
   vertical-align: middle;
   padding-top: 8px;
-  padding-bottom: 8px;
-  background-color: #f8f8f8;
+  font-weight: bold;
 }
 #policy td:first-child{
   width: 20px;

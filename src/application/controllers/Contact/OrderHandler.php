@@ -25,13 +25,13 @@ class OrderHandler extends ContactHandler
 		$email     = $this->get_field('email');
 		$addr      = $this->get_addr();
 		$addr_txt  = $this->get_field('addr_txt');
-		$s80       = $this->get_field('s80'). "個";
-		$s90       = $this->get_field('s90'). "個";
+		$s80       = $this->get_num('s80');
+		$s90       = $this->get_num('s90');
 		$remark    = $this->get_field('remark');
 
 		return 
 			"【加盟店番号】\t$merc_id\r\n".
-			"【端末番号】\t$term_id\r\n".
+			"【端末識別番号】\t$term_id\r\n".
 			"【店舗名】\t$shop_name\r\n".
 			"【メールアドレス】\t$email\r\n".
 			"【送付先住所】\t$addr\r\n".
@@ -54,6 +54,15 @@ class OrderHandler extends ContactHandler
 			default:
 				return "?";
 		}
+	}
+
+	private function get_num($name)
+	{
+		if($this->input->post($name))
+		{
+			return $this->input->post($name). "個";
+		}
+		return "0";
 	}
 
 }

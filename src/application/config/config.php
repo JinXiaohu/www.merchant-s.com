@@ -25,8 +25,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 
-$config['protocol'] = "http";
-
 //是否使用响应设计。
 //如果为true，那么PC站和手机站使用同一套响应式设计的模板。
 //如果为false，那么PC站和手机站各自使用独立的模板。
@@ -36,6 +34,7 @@ $config['enable_reponsive_design'] = true;
 //开发环境
 if(ENVIRONMENT == 'development')
 {
+	$config['protocol'] = "http";
 	$config['pc_host'] = 'pc.merchant-s.com';		//PC站域名
 	$config['mb_host'] = 'mb.merchant-s.com';		//手机站域名
 	$config['base_dir'] = "";
@@ -43,15 +42,26 @@ if(ENVIRONMENT == 'development')
 	//图片、js、css等静态文件的基础路径
 	$config['cdn_path'] = 'http://pc.merchant-s.com/assets/';
 }
+
 //生产环境
 else
 {
 	$config['pc_host'] = 'www.merchant-s.com';		//PC站域名
 	$config['mb_host'] = 'm.merchant-s.com';		//手机站域名
-	$config['base_dir'] = "new/";
+	//$config['base_dir'] = "new/";
+	$config['base_dir'] = "";
 	
-	//图片、js、css等静态文件的基础路径
-	$config['cdn_path'] = 'http://www.merchant-s.com/new/assets/';
+
+	$parent_dir = basename(dirname(APPPATH));
+	if(strpos($parent_dir, "ssl") != false)
+	{
+		$config['protocol'] = "https";
+		$config['cdn_path'] = 'https://www.merchant-s.com/assets/';
+	}
+	else{
+		$config['protocol'] = "http";
+		$config['cdn_path'] = 'http://www.merchant-s.com/assets/';
+	}
 }
 
 $config['site_name'] = 'マーチャント・サポート';

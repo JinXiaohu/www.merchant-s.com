@@ -31,7 +31,7 @@
     <ul>
       <li class="level1 grid-12"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
-      <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/order">ロール紙発注<span class="vtitle">（PAX社製端末）</span></a></li>
+      <li class="level2 grid-8"><a href="<?php echo $base_path;?>contact/order">ロール紙発注<span class="vtitle">（PAX社製端末）</span></a></li>
       <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/query">お問い合わせ</a></li>
 
       <div class="li_sep"></div>   
@@ -44,10 +44,7 @@
     <div class="mb_separator div_hidden"></div>
     <h1><span class="vtitle">新規のお客様</span><span>新規加盟をご検討のお客様</span></h1>
 
-    <p class="smallText">
-    下記のフォームより、お問い合わせ内容をご入力の上、お問い合わせいただきますようお願い致します。
-    </p>
-    <p class="smallText">
+    <p>
     万が一のため、弊社でメール受信後に自動返信をさせていただいておりますが、返信メールが翌日にもない場合には、お電話にてお問い合わせ下さいますよう、宜しくお願い申し上げます。
     </p>
 

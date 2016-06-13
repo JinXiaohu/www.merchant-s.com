@@ -22,7 +22,6 @@ class News extends BaseController
 	//news的列表页显示
 	public function index()
 	{
-		
 		$news = new NewsManager();
 		$full_list = $news->get_full_list();
 		$this->set_view_data("full_news", $full_list);
@@ -49,8 +48,9 @@ class News extends BaseController
 
 		if($file_type == "html")
 		{
-			$html_path = $this->get_web_path("$id.html");
-			$this->set_view_data('html_path', $html_path);
+			$html_path = $this->get_system_path("$id.html");
+			$file_content = file_get_contents($html_path);
+			$this->set_view_data('file_content', $file_content);
 			$this->load_view('news/show');
 		}
 		else if($file_type == "pdf")
@@ -63,9 +63,11 @@ class News extends BaseController
 		}
 	}
 	
+
 	//根据新闻的id，从文件系统中查找出该新闻的文件类型
 	private function find_news_file_type($id)
 	{
+		//一定要优先找html文件
 		if(file_exists($this->get_system_path("$id.html")))
 		{
 			return "html";
@@ -160,33 +162,48 @@ class News extends BaseController
 		$this->load_view('news/add');
 	}
 
-	private function create_news()
+	private function create_news($id = null)
 	{
+		if(!$id)
+		{
+			$id = date("YmdHis");
+		}
+		$this->delete_files($id);
+
 		$type = $this->input->post("type");
 
 		if($type == "edit_html")
 		{
-			return $this->create_news_by_edit();
+			return $this->create_news_by_edit($id);
 		}
 		else if($type == "upload_pdf")
 		{
-			return $this->create_news_by_upload("pdf");
+			return $this->create_news_by_upload($id, "pdf");
 		} 
 		else if($type == "upload_html")
 		{
-			return $this->create_news_by_upload("html");
+			return $this->create_news_by_upload($id, "html");
 		}
 		else
 		{
 			return null;
 		}
 	}
+
+	private function delete_files($id)
+	{
+		$file_name = $this->get_system_path($id. ".html");
+		unlink($file_name);
+
+		$file_name = $this->get_system_path($id. ".pdf");
+		unlink($file_name);
+	}
+
 	
 	//上传pdf文件，然后创建新的news。
 	//返回一个NewsInfo对象。如果创建失败，返回null
-	private function create_news_by_upload($file_ext)
+	private function create_news_by_upload($id, $file_ext)
 	{
-		$id = date("YmdHis");
 		$config['upload_path']   = APPPATH. '/../uploads/';
 		$config['allowed_types'] = '*';	
 		$config['file_name']     = "$id.$file_ext";
@@ -209,18 +226,16 @@ class News extends BaseController
 
 	//将管理员提交的文本内容作为html代码，写入到一个html文件中，作为一条新闻。
 	//返回一个NewsInfo对象。如果创建失败，返回null
-	private function create_news_by_edit()
+	private function create_news_by_edit($id)
 	{
-		$id       = date("YmdHis");
-		$fullname = $this->get_system_path("$id"). ".". $this->input->post("type");
+		$fullname = $this->get_system_path("$id"). ".html";
 		$content  = $this->input->post("content");
-		
+
 		if(file_put_contents($fullname, $content) === false)
 		{
 			$this->error = "add news failed: can't create news file";
 			return null;
 		}
-
 		return $this->create_newsInfo($id);
 	}
 
@@ -261,18 +276,72 @@ class News extends BaseController
 		$news_manager = new NewsManager();
 		$news_manager->delete_news($id);
 
-		$file_name = $this->get_system_path($id. ".". $file_type);
-		
-		if(unlink($file_name))
+		$this->delete_files($id);			
+		redirect($this->base_path. "news");
+	}
+
+
+	public function edit()
+	{
+		$this->logined_first();
+		if($this->is_post_method())
 		{
-			redirect($this->base_path. "news");
+			$this->edit_POST();
 		}
 		else
 		{
-			redirect($this->base_path. "news");
-			//show_500();
-		}
+			$this->edit_GET();
+		}		
 	}
-	
+
+	private function edit_POST()
+	{		
+		$this->validate_input();
+
+		$news =  $this->create_news($this->input->post('id'));
+
+		if($news == null)
+		{
+			$this->set_view_data('error', $this->error);
+			$this->load_view('news/edit');
+		}
+		else
+		{
+			$news_manager = new NewsManager();
+			$news_manager->set_news($news);
+			redirect($this->base_path. "news");
+		}
+
+	}
+
+	private function edit_GET()
+	{
+	  $news = new NewsManager();
+		$full_list = $news->get_full_list();
+		$id = $this->input->get("id");
+		if(!$id)
+		{
+			redirect($this->base_path. "news");
+		}
+
+		foreach ($full_list as $item)
+		{
+			if($item->id == $id)
+			{
+				$file_type = $this->find_news_file_type($id);
+
+				if($file_type == "html")
+				{
+					$html_path = $this->get_system_path("$id.html");
+					$file_content = file_get_contents($html_path);
+					$this->set_view_data('file_content', $file_content);
+				}
+				$this->set_view_data("news", $item);
+				$this->load_view("news/edit");
+				return;
+			}
+		}
+		redirect($this->base_path. "news");
+	}
 
 }

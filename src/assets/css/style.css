@@ -315,6 +315,12 @@ hr{
   .sidebar .grid-12{
     width: 100%;
   }
+  .sidebar .grid-9{
+    width: 75%;
+  }
+  .sidebar .grid-8{
+    width: 66.6666666%;
+  }
   .sidebar .grid-6{
     width: 50%;
   }
@@ -427,6 +433,9 @@ hr{
 .ul-faq .answer{
   display: none;
   padding-bottom: 5px;
+}
+.ul-faq .answer a{
+  color: #339933;
 }
 
 /*Responsive Table*/

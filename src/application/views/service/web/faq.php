@@ -6,10 +6,10 @@ h1 td{
   vertical-align: middle;
 }
 #td_toggle{
-  width: 80px;
+  width: 95px;
 }
 #toggle{
-  padding: 7px 10px;
+  padding: 7px 7px;
   font-size: 14px;
   background-color: #3FA3D1;
   border:solid 1px #287DA4;
@@ -26,13 +26,16 @@ h2{
 .ul-faq .question{
   color: #287DA4;
 }
+.ul-faq .answer a, .ul-faq .answer a:hover{
+  color: #287DA4;
+}
 </style>
 
 <h1>
   <div class="vtitle">Eコマース向け早期決済サービス</div>
   <table>
     <td>FAQ</td>
-    <td id="td_toggle"><div id="toggle" class="ms-button">toggle</div></td>
+    <td id="td_toggle"><div id="toggle" class="ms-button">全て表示</div></td>
   </table>
 </h1>
 
@@ -204,11 +207,13 @@ $(document).ready(function(){
   var expand_all = true;
   $("#toggle").click(function(){
     if(expand_all)
-    {
+    {      
+      $(this).text("全て非表示");
       $(".answer").fadeIn();
     }
     else
-    {
+    {      
+      $(this).text("全て表示");
       $(".answer").fadeOut();
     }
     expand_all = !expand_all;

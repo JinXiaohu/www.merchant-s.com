@@ -3,7 +3,7 @@
   background-color: #339933;
 }
 #a_hisun{
-  color: #1A55C5;
+  color: #6D4780;
 }
 </style>
 

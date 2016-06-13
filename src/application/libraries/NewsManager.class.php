@@ -64,6 +64,21 @@ class NewsManager
 		$this->update_db($full_list);
 	}
 	
+	public function set_news($news)
+	{
+		$full_list = $this->get_full_list();
+		for($i = 0; $i < count($full_list); $i++)
+		{
+			if($full_list[$i]->id == $news->id)
+			{
+				$full_list[$i]->title = $news->title;
+				$full_list[$i]->date = $news->date;
+				$this->update_db($full_list);
+				return;
+			}
+		}
+	}
+
 	public function delete_news($id)
 	{
 		$full_list = $this->get_full_list();
@@ -80,7 +95,7 @@ class NewsManager
 		$this->update_db($new_full_list);
 	}
 	
-	
+
 	private function update_db($full_list)
 	{
 		//update full_list_file
@@ -99,6 +114,8 @@ class NewsManager
 		$json = json_encode($top_news);
 		file_put_contents($this->top_list_file, $json);
 	}
+
+
 }
 
 ?>

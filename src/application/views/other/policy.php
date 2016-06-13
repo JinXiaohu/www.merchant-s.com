@@ -67,6 +67,6 @@
 <div>
 <br/>
 <br/>
-<p class="smallText text-right">2007年7月23日 マーチャント・サポート株式会社 </p>
+<p class="smallText text-right">2015年12月1日 マーチャント・サポート株式会社 </p>
 </div>
 

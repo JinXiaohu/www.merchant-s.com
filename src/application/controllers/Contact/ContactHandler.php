@@ -40,7 +40,7 @@ class ContactHandler
 		$jmailer->_setFrom($mailto, $this->get_from_name());
 		$jmailer->setSubject($this->get_subject());
 		$jmailer->setBody($this->get_mail_body());
- 		
+ 	
 		return $jmailer->send();
 	}
 

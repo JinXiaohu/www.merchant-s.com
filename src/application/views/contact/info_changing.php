@@ -6,7 +6,7 @@
     <ul>
       <li class="level1 grid-12"><a href="<?php echo $base_path;?>contact">ご加盟店様</a></li>
       <li class="level2 grid-4 active"><a href="<?php echo $base_path;?>contact/info_changing">各種変更</a></li>
-      <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/order">ロール紙発注<span class="vtitle">（PAX社製端末）</span></a></li>
+      <li class="level2 grid-8"><a href="<?php echo $base_path;?>contact/order">ロール紙発注<span class="vtitle">（PAX社製端末）</span></a></li>
       <li class="level2 grid-4"><a href="<?php echo $base_path;?>contact/query">お問い合わせ</a></li>
 
       <div class="li_sep"></div>   
@@ -49,10 +49,10 @@
         <div class="_td td_label">[1]手続き内容を選択 <span class="required">（必須） </span></div>
         <div class="_td td_input"> 
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-xs-6">
               <input type="radio" id="service_type" name="service_type" value="type_change_store" onchange="displayMode('type_change_store');"><span> 店舗情報変更</span>
             </div>
-            <div class="col-sm-6">
+            <div class="col-xs-6">
               <input type="radio" id="service_type2" name="service_type" value="type_termination_request" onchange="displayMode('type_termination_request');"><span> 解約希望</span>
             </div>
           </div>
@@ -132,16 +132,16 @@
         <div class="_td td_label">[10]送付先住所 <span class="required">（必須） </span></div>
         <div class="_td td_input"> 
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-xs-6">
               <input type="radio" id="addr_legal" name="send_addr" value="addr_legal"><span> 法人</span>
             </div>
-            <div class="col-sm-6">
+            <div class="col-xs-6">
               <input type="radio" id="addr_shop" name="send_addr" value="addr_shop"><span> 店舗</span>
             </div>
-            <div class="col-sm-6">
+            <div class="col-xs-6">
               <input type="radio" id="addr_represent" name="send_addr" value="addr_represent"><span> 代表者住所</span>
             </div>
-            <div class="col-sm-6">
+            <div class="col-xs-6">
               <input type="radio" id="addr_other" name="send_addr" value="addr_other" checked="checked"><span> その他住所</span>
             </div>
           </div>
@@ -172,13 +172,13 @@
         <div class="_td td_label">法人情報</div>
         <div class="_td td_input">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               <input type="checkbox" value="company_name" name="legal_info1" id="legal_info1"><span>社名</span>
             </div>
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               <input type="checkbox" value="company_address" name="legal_info2" id="legal_info2"><span>所在地</span>
             </div>
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               <input type="checkbox" value="company_contact" name="legal_info3" id="legal_info3"><span>連絡先</span>
             </div>
           </div>
@@ -189,13 +189,13 @@
         <div class="_td td_label">代表者情報</div>
         <div class="_td td_input">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               <input type="checkbox" value="check_represent_name" name="represent_info1" id="represent_info1"><span>代表者名</span>
             </div>
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               <input type="checkbox" value="check_represent_address" name="represent_info2" id="represent_info2"><span>所在地</span>
             </div>
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               <input type="checkbox" value="check_represent_contact" name="represent_info3" id="represent_info3"><span>連絡先</span>
             </div>
           </div>
@@ -206,13 +206,13 @@
         <div class="_td td_label">店舗情報</div>
         <div class="_td td_input">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               <input type="checkbox" value="check_shop_name" name="shop_info1" id="shop_info1"><span>店舗名</span>
             </div>
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               <input type="checkbox" value="check_shop_address" name="shop_info2" id="shop_info2"><span>所在地</span>
             </div>
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               <input type="checkbox" value="check_shop_contact" name="shop_info3" id="shop_info3"><span>連絡先</span>
             </div>
           </div>
@@ -333,13 +333,8 @@
       </table>
     </div>
 　　
-    <div class="_table" id="table4">  
-      <div class="_tr">
-        <div class="_td tdleft"></div>
-        <div class="_td">
-          <input type="submit" id="submit_btn" class="ms-button" disabled="disabled" value="内容を確認する" onclick="if(!onConfirmClick()) return false;">
-        </div>
-      </div>
+    <div>
+      <input type="submit" id="submit_btn" class="ms-button" disabled="disabled" value="内容を確認する" onclick="if(!onConfirmClick()) return false;">
     </div>
 
     </form>

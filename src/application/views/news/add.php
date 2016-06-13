@@ -49,6 +49,9 @@ select{
   height: 30px;
 }
 
+textarea[name="content"]{
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
 button{
   background-color: #339933;
   font-weight: bold;

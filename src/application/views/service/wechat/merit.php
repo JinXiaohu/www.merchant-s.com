@@ -194,7 +194,7 @@
         </div>
         <div>
           <div><strong>【お客様】</strong></div>
-          <div>金額確認後、スマホにて、自身専用のWeChat決済の「QRコード」を表示。</div>
+          <div>スマホにて、自身専用のWeChat決済の「QRコード」を表示。</div>
         </div>
       </div>
       

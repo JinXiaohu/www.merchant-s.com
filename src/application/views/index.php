@@ -54,13 +54,10 @@
 }
 
 #solutions #s_item1{
-  border-top: solid 1px #3FA3D1;
   border-top: solid 1px #5E8A8B;
 }
 #solutions #s_item1 a{
-  color: #3FA3D1;
   color: #5E8A8B;
-
 }
 
 #solutions #s_item2{
@@ -71,13 +68,10 @@
 }
 
 #solutions #s_item3{
-  border-top: solid 1px #6D4780;
-  border-top: solid 1px #4A748A;
+  border-top: solid 1px #496288;
 }
 #solutions #s_item3 a{
-  color: #6D4780;
-  color: #4A748A;
-
+  color: #496288;
 }
 
 #solutions .item h4 {
@@ -120,6 +114,9 @@
   font-weight: bold;
   margin-bottom: 5px;
 }
+._h1 a:hover{
+  text-decoration: none;
+}
 #cases .col{
   margin-top: 8px;
   margin-bottom: 8px;
@@ -148,7 +145,7 @@
 }
 .col_title{
   padding-left: 0;
-  font-size: 1.1em}
+}
 .col_date{
   text-align: right;
   padding-right: 0;
@@ -315,7 +312,7 @@
     <div class="_tr">
       <div class="_td">
         <!-- news -->
-        <a href="<?php echo $base_path; ?>news"><div class="_h1">新着情報</div></a>
+        <div class="_h1"><a href="<?php echo $base_path; ?>news">新着情報</a></div>
        
         <?php foreach ($news_data as $news_item):?>  
         <div class="row news_item">

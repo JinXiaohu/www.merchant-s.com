@@ -1,9 +1,9 @@
 <style type="text/css">
 .sidebar li.active {
-  background-color: #1A55C5;
+  background-color: #6D4780;
 }
 .sidebar .active:hover{
-  background-color: #1A55C5;
+  background-color: #6D4780;
 }
 .hisun_logo{
   height: 32px;
@@ -14,7 +14,7 @@
   margin-bottom: 30px;
 }
 .ms-table-responsive th{
-  background-color: #1A55C5;
+  background-color: #6D4780;
 }
 @media (max-width: 767px){
   .hisun_logo{
@@ -103,8 +103,8 @@
     </table>
 
 
-
-    <hr class="mb_separator" />
+    <div class="mb_separator"></div>
+    
     <h1 class="media">
       <div class="media-left media-middle">
         <img class="hisun_logo" src="<?php echo $cdn_path;?>images/aboutus/hisun_logo.png">

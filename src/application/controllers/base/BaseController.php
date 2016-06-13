@@ -12,7 +12,6 @@ class BaseController extends CI_Controller
 		$this->set_view_data('cdn_path',  $this->config->item('cdn_path'));
 	}
 
-	
 	//存放信息，给提供页面参数
 	protected $view_data = array();
 

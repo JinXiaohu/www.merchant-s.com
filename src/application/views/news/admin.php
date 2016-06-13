@@ -47,14 +47,18 @@
 <h1>All News</h1>
 <?php foreach ($full_news as $news_item):?>  
 <div class="row news_item">
-  <div class="col-sm-8 col-xs-12 col-title">
+  <div class="col-sm-7 col-xs-12 col-title">
     <a href="<?php echo $base_path;?>news/show?id=<?php echo $news_item->id; ?>" target="_blank"><?php echo $news_item->title; ?></a>
   </div>
 
-  <div class="col-sm-3 col-xs-10 col-date">
+  <div class="col-sm-3 col-xs-8 col-date">
     <?php echo $news_item->date; ?>
    </div>
    
+  
+  <div class="col-sm-1 col-xs-2 col-delete">
+    <a href="<?php echo $base_path; ?>news/edit?id=<?php echo $news_item->id; ?>">Edit</a>
+  </div>
   
   <div class="col-sm-1 col-xs-2 col-delete">
     <form id="<?php echo $news_item->id; ?>" method="post" action="<?php echo $base_path;?>news/delete">
