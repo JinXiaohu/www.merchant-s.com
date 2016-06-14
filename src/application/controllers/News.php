@@ -193,10 +193,16 @@ class News extends BaseController
 	private function delete_files($id)
 	{
 		$file_name = $this->get_system_path($id. ".html");
-		unlink($file_name);
+		if(file_exists($file_name))
+		{
+		  unlink($file_name);
+		}
 
 		$file_name = $this->get_system_path($id. ".pdf");
-		unlink($file_name);
+		if(file_exists($file_name))
+		{
+		  unlink($file_name);
+		}
 	}
 
 	

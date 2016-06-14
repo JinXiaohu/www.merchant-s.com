@@ -460,6 +460,27 @@ hr{
   margin-bottom: 10px;
 }
 
+/*News*/
+.div-news{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  font-size: 1.2em;
+}
+.div-news p{
+  margin-bottom: 38px;
+}
+.div-news h1{
+  font-size: 1.2em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px){
+  .div-news{
+    font-size: 1em;
+  }
+}
+
 /*Other*/
 .green_bg{
   background-color: #E7F6D6;
