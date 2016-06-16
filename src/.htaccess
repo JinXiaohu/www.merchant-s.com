@@ -8,5 +8,9 @@ php_value "mbstring.language" "Japanese"
 php_value "mbstring.internal_encoding" "UTF-8"
 
 RewriteEngine On
-RewriteCond $1 !^(index\.php|assets|uploads|images|robots\.txt)
+RewriteCond %{REQUEST_URI} (\.html|\.htm)$
+RewriteRule ^(.*?)(\.html?)$ redirect.php/$1 [L]
+
+RewriteCond $1 !^(index\.php|redirect\.php|assets|uploads|images|robots\.txt)
 RewriteRule ^(.*)$ index.php/$1 [L]
+
