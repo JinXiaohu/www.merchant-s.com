@@ -1,7 +1,7 @@
 <?php
 
-//ÎªÁË¼æÈÝÀÏ°æÍøÕ¾µÄurl£¬Ê¹¾ÉµÄurlÈÔÈ»ÄÜ¹»´ò¿ª£¬ÔÚ.htaccessÖÐÍ¨¹ýµØÖ·ÖØÐ´,
-//½«ÒÔhtmlÎª½áÎ²µÄurlÌø×ªµ½±¾Ò³ÖÐÀ´£¬È»ºóÕÒµ½¶ÔÓ¦µÄÐÂµÄurlµØÖ·£¬ÔÙ´ÎÖØ¶¨Ïò¡£
+//ä¸ºäº†å…¼å®¹è€ç‰ˆç½‘ç«™çš„urlï¼Œä½¿æ—§çš„urlä»ç„¶èƒ½å¤Ÿæ‰“å¼€ï¼Œåœ¨.htaccessä¸­é€šè¿‡åœ°å€é‡å†™,
+//å°†ä»¥htmlä¸ºç»“å°¾çš„urlè·³è½¬åˆ°æœ¬é¡µä¸­æ¥ï¼Œç„¶åŽæ‰¾åˆ°å¯¹åº”çš„æ–°çš„urlåœ°å€ï¼Œå†æ¬¡é‡å®šå‘ã€‚
 $schema = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? "https" : "http";
 $redirect_url  = $schema. "://". $_SERVER['HTTP_HOST']. get_redirect_url(); 
 header('HTTP/1.1 301 Moved Permanently');
@@ -11,7 +11,7 @@ function get_redirect_url()
 {
 	$old_url =  $_SERVER['REQUEST_URI'];
 	
-	//ÀÏÕ¾ÉÏµÄÕ¾µãµØÍ¼ÖÐ»ñÈ¡µÄÀÏÕ¾ËùÓÐurl
+	//è€ç«™ä¸Šçš„ç«™ç‚¹åœ°å›¾ä¸­èŽ·å–çš„è€ç«™æ‰€æœ‰url
 	$url_mappings = array(
 		"/index.html"                      => "/",
 		"/store/index.html"                => "/service/store",
