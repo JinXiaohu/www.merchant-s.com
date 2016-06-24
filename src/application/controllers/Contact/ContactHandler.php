@@ -69,7 +69,7 @@ class ContactHandler
 
 	protected function get_field($field_name)
 	{
-		return htmlspecialchars($this->input->post($field_name), ENT_QUOTES);
+		return $this->input->post($field_name);
 	}
 	
 	protected function get_checkbox_str($name, $title)

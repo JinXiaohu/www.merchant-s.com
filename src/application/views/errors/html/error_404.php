@@ -60,7 +60,7 @@ p {
     <h1><?php echo $heading; ?></h1>
     <?php echo $message; ?>
     <br/>
-    <p>Go to <a href="/">here</a>.</p>
+    <p>Go <a href="/">here</a>.</p>
     
   </div>
 </body>
